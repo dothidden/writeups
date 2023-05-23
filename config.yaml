@@ -1,0 +1,18 @@
+baseURL: http://dothidden.github.io/
+languageCode: en-us
+title: .hidden
+theme: archie
+params: 
+  mode: toggle
+  social: 
+    - name: GitHub
+      icon: github
+      url: https://github.com/athul/archie
+  homeFilterSections:
+    - about
+menu:
+  main:
+    - name: About
+      url: /about
+      weight: 1
+
