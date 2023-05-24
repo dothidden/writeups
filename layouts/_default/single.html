@@ -1,34 +1,37 @@
 {{ define "main" }}
 <main>
-    testttttttttttt
-	<article>
-		<div class="title">
-			<h1 class="title">{{ .Title }}</h1>
-			<div class="meta">Posted on {{ dateFormat "Jan 2, 2006" .Date }}{{ if .Draft }} <span class="draft-label">DRAFT</span> {{ end }}</div>
-		</div>
-		{{ if isset .Params "tldr" }}
-		<div class="tldr">
-			<strong>tl;dr:</strong>
-			{{ .Params.tldr }}
-		</div>{{ end }}
+    <article>
 
-		<section class="body">
-			{{ .Content }}
-		</section>
+        <div class="title">
+            {{ $sectionHeading := .Site.GetPage .Section .Section }}
+            <h1>{{ $sectionHeading.Title }}</h1>
 
-		<div class="post-tags">
-			{{ if ne .Type "page" }}
-			{{ if gt .Params.tags 0 }}
-			<nav class="nav tags">
-				<ul class="tags">
-					{{ range .Params.tags }}
-					<li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></li>
-					{{ end }}
-				</ul>
-			</nav>
-			{{ end }}
-			{{ end }}
-		</div>
-	</article>
+            <h2>{{ .Title }}</h2>
+            <div class="meta-bar">
+                <time class="meta">{{ .Date | dateFormat "02/01/06" }}</time>
+
+                {{ if .Draft }} 
+                <span class="draft-label">DRAFT</span>
+                {{ end }}
+
+                {{ if isset .Params "tags" }}
+                {{ range .GetTerms "tags" }}
+                <span class="tag"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></span>
+                {{ end }}
+                {{ end }}
+            </div>
+        </div>
+
+        {{ if isset .Params "tldr" }}
+        <div class="tldr">
+            <strong>tl;dr:</strong>
+            {{ .Params.tldr }}
+        </div>{{ end }}
+
+        <section class="body">
+            {{ .Content }}
+        </section>
+
+    </article>
 </main>
 {{ end }}

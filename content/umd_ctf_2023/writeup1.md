@@ -1,6 +1,9 @@
 ---
 title: Writeup-1
 date: 2023-01-02
+tags:
+- pwn
+tldr: this is way too short to be relevant right?
 ---
 
 

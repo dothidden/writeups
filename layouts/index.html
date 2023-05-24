@@ -8,38 +8,33 @@
 			<main class="list">
                 <h1 class="title"> Past CTFs we took part in </h1>
 
-                <ul>
-                {{ range .Site.Sections }} 
-                    <li>
-                        <time>[{{ .Date | dateFormat "02/01/06" }}]</time>
-                        <a href="{{ .Permalink}}"> {{.Title}} </a> 
-                        {{- if and (isset .Params "place") (isset .Params "total") -}}
-                        <span>- {{.Params.place}}/{{.Params.total}}</span>
-                        {{- end }}
-                    </li>
-                {{ end }}
-                </ul>
+                <section>
+                    <ul>
+                    {{ range .Site.Sections }} 
+                        <li>
+                            <time>[{{- .Date | dateFormat "02/01/06" -}}]</time>
+                            <a href="{{ .Permalink}}">{{.Title}}</a> 
+                            {{- if and (isset .Params "place") (isset .Params "total") -}}
+                            <span> - {{.Params.place}}/{{.Params.total}}</span>
+                            {{- end }}
+                        </li>
+                    {{ end }}
+                    </ul>
+                </section>
 
                 <h1 class="title"> Recent writeups </h1>
 
-				{{ $pages := where .Site.RegularPages "Type" "not in" .Site.Params.homeFilterSections }}
-				{{ $paginator := .Paginate (where $pages "Params.hidden" "ne" true) }}
-				{{ range $paginator.Pages }}
-                {{ $section_heading := .Site.GetPage .Section .Section }}
-				<section class="list-item">
+                {{ $pages := where .Site.RegularPages 
+                        "Type" "not in" .Site.Params.homeFilterSections }}
+                {{ range (first .Site.Params.HomeWriteupCnt $pages) }}
+                {{ $sectionHeading := .Site.GetPage .Section .Section }}
+				<div>
 					<h3>
                         <a href="{{ .RelPermalink }}">{{.Title}}</a>
-                        {{with $section_heading}}
-                        <span>[{{- .Title -}}]</span>
-                        {{end}}
+                        <span>[{{- $sectionHeading.Title -}}]</span>
                     </h3>
-					<!--<time>{{ dateFormat "Jan 2, 2006" .Date }}{{ if .Draft }} <span class="draft-label">DRAFT</span> {{ end }}</time>-->
-                    <!--<br>-->
-                    <!--{{ template "partials/pagedescription.html" . }}-->
-					<!--<a href="{{ .RelPermalink }}">Read the full Writeup ⟶</a>-->
-				</section>
+				</div>
 				{{ end }}
-				{{ template "partials/paginator.html" . }}
 			</main>
 			{{ partial "footer.html" . }}
 		</div>
