@@ -5,4 +5,3 @@ place: 7
 total: 55
 draft: false
 ---
-
