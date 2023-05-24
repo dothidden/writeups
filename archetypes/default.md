@@ -1,9 +1,10 @@
 ---
-
-title: "{{ replace .Name "-" " " | title }}"
+title: {{ replace .Name "_" " " | title }}
 date: {{ .Date }}
-place: final_place
-total: total_participants
-
+tags:
+- category1
+- category2
+place: final palce !only if this is _index delete otherwise!
+total: total number of participants !only if this is _index delete otherwise!
+draft: true
 ---
-
