@@ -1,18 +1,34 @@
 <footer>
-  <div style="display:flex">
     {{- range $index, $key := .Site.Params.Social -}}
-    <a class="soc" href="{{ $key.url }}" rel="me" title="{{ $key.name }}"><i data-feather="{{ $key.icon }}"></i></a>
-    <a class="border"></a>
+    <span style="margin-top:6px;" >
+        <a class="soc" href="{{ $key.url }}" rel="me" title="{{ $key.name }}">
+            <i data-feather="{{ $key.icon }}"></i>
+        </a>
+    </span>
     {{- end -}}
-  </div>
-  <div class="footer-info">
-    {{ dateFormat "2006" now }} {{ with .Site.Copyright }} {{ . }} | {{ end }} <a
-      href="https://github.com/athul/archie">Archie Theme</a> | Built with <a href="https://gohugo.io">Hugo</a>
-  </div>
+
+    |&nbsp;
+    {{ with .Site.Copyright }}
+    <span>
+        Copyright &copy;
+        {{ dateFormat "2006" now }}
+        {{.}} |&nbsp;
+    </span>
+    {{ end }}
+
+    <span>
+        Built with <a href="https://gohugo.io">Hugo</a>|&nbsp;
+    </span>
+
+    <span>
+        Based on <a href="https://github.com/athul/archie">Archie Theme</a>
+    </span>
+    </div>
 </footer>
 
 {{- if (isset .Site.Params "social") -}}
 <script>
-  feather.replace()
+    feather.replace()
 </script>
 {{- end -}}
+
