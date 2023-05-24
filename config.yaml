@@ -1,18 +1,31 @@
 baseURL: http://dothidden.github.io/
 languageCode: en-us
 title: .hidden
-theme: archie
+decription: adventures following a white rabbit
+buildDrafts: true
+copyright: .hidden
+
 params: 
   mode: toggle
   social: 
     - name: GitHub
       icon: github
       url: https://github.com/athul/archie
+    - name: CTFtime
+      icon: codesandbox
+      url: https://ctftime.org/team/225182
   homeFilterSections:
     - about
+  homeWriteupCnt: 10
+
 menu:
   main:
+    - name: Home
+      url: /
+      weight: 1
+    #- name: Writeups
+      #url: /writeups
+      #weight: 2
     - name: About
       url: /about
-      weight: 1
-
+      weight: 3
