@@ -4,13 +4,14 @@ title: .hidden
 decription: adventures following a white rabbit
 buildDrafts: true
 copyright: .hidden
+cononifyURLs: true
 
 params: 
   mode: toggle
   social: 
     - name: GitHub
       icon: github
-      url: https://github.com/athul/archie
+      url: https://github.com/orgs/dothidden/repositories
     - name: CTFtime
       icon: codesandbox
       url: https://ctftime.org/team/225182
