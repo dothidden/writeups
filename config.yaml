@@ -1,10 +1,10 @@
-baseURL: http://dothidden.github.io/writeups
+baseURL: http://dothidden.github.io/writeups/
 languageCode: en-us
 title: .hidden
 decription: adventures following a white rabbit
 buildDrafts: true
 copyright: .hidden
-#cononifyURLs: true
+cononifyURLs: true
 
 params: 
   mode: toggle
