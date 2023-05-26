@@ -1,10 +1,9 @@
-baseURL: http://dothidden.github.io/writeups/
+baseURL: https://dothidden.xyz
 languageCode: en-us
 title: .hidden
 decription: adventures following a white rabbit
 buildDrafts: true
 copyright: .hidden
-cononifyURLs: true
 
 params: 
   mode: toggle
@@ -24,9 +23,6 @@ menu:
     - name: Home
       url: /
       weight: 1
-    #- name: Writeups
-      #url: /writeups
-      #weight: 2
     - name: About
       url: /about
       weight: 3
