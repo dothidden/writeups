@@ -197,6 +197,10 @@ footer {
     margin-top: 2.5rem;
 }
 
+.soc-wrapper {
+    margin-top: 6px;
+}
+
 .soc {
     border: none;
     padding: 2px 1px 0px;

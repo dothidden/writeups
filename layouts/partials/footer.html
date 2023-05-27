@@ -1,11 +1,18 @@
 <footer>
     {{- range $index, $key := .Site.Params.Social -}}
-    <span style="margin-top:6px;" >
+    <span class="soc-wrapper" >
         <a class="soc" href="{{ $key.url }}" rel="me" title="{{ $key.name }}">
             <i data-feather="{{ $key.icon }}"></i>
         </a>
     </span>
     {{- end -}}
+
+    {{ with .OutputFormats.Get "rss" -}}
+    {{ printf `<span class="soc-wrapper">
+        <a class="soc" rel="%s" type="%s" href="%s" title="%s">
+            <i data-feather="rss"></i>
+        </a></span>` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+    {{ end -}}
 
     |&nbsp;
     {{ with .Site.Copyright }}
@@ -31,4 +38,3 @@
     feather.replace()
 </script>
 {{- end -}}
-
