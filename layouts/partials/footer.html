@@ -7,13 +7,6 @@
     </span>
     {{- end -}}
 
-    {{ with .OutputFormats.Get "rss" -}}
-    {{ printf `<span class="soc-wrapper">
-        <a class="soc" rel="%s" type="%s" href="%s" title="%s">
-            <i data-feather="rss"></i>
-        </a></span>` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
-    {{ end -}}
-
     |&nbsp;
     {{ with .Site.Copyright }}
     <span>

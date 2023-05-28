@@ -10,7 +10,7 @@ tags:
 The file looked perfectly normal and sounded perfectly normal. Extracting the
 LSB is quite a common technique to try and was fortunately successful.
 
-```python
+```shell
 # Use wave package (native to Python) for reading the received audio file
 import wave
 # Read file as binary stream do not forget to change the file name

@@ -14,6 +14,9 @@ params:
     - name: CTFtime
       icon: codesandbox
       url: https://ctftime.org/team/225182
+    - name: RSS
+      icon: rss
+      url: https://dothidden.xyz/index.xml
   homeFilterSections:
     - about
   homeWriteupCnt: 10

@@ -5,11 +5,13 @@
 		<div class="content">
 			{{ partial "head.html" . }}
 			
+            <div class="spacer"></div>
+
 			<main class="list">
                 <h1 class="title"> Past CTFs we took part in </h1>
 
                 <section>
-                    <ul>
+                    <ul class="home">
                     {{ range .Site.Sections }} 
                         <li>
                             <time>[{{- .Date | dateFormat "02/01/06" -}}]</time>

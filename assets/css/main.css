@@ -1,10 +1,16 @@
 /* Markdown */
 :root{
+    /* light colors */
     --maincolor: red;
     --bordercl: rebeccapurple;
-    --hovercolor: navy;
-    --darkMaincolor: #50fa7b;
-    --metacolor: darkgray;
+    --hovercolor: mediumblue;
+    --codecolor: whitesmoke;
+
+    /* generic colors */
+    --metacolor: #888;
+
+    /* other vars */
+    --borderradius: 1px;
 }
 html {
     color: #232333;
@@ -25,6 +31,11 @@ body{
     color: #fff;
 }
 
+.spacer {
+    display: block;
+    height: 0.5em;
+}
+
 p {
     font-family: 'Fira Sans', sans-serif;
     line-height: 1.5;
@@ -32,13 +43,13 @@ p {
 
 hr {
     border: 0;
-    border-top: 3px dotted var(--bordercl);
+    border-top: 3px solid var(--bordercl);
     margin: 1em 0;
 }
 
 blockquote {
     border-left: 3px solid var(--bordercl);
-    color: #737373;
+    color: grey;
     margin: 0;
     padding-left: 1em;
 }
@@ -46,32 +57,36 @@ blockquote {
 a {
     padding: 0px 4px 2px;
     border-bottom: 3px solid var(--maincolor);
-    border-radius: 1px;
+    border-radius: var(--borderradius);
     color: inherit;
     text-decoration: none;
 }
 a:hover {
     background-color: var(--hovercolor);
-    color: #fff;
+    color: white;
+}
+
+ol {
+    padding-left: 3ch;
 }
 
 ul {
-    list-style: none;
+    list-style-type: '* ';
     padding-left: 2ch;
 }
-ul li {
-    text-indent: -2ch;
-    margin-bottom: 0.5em;
+
+ul.home {
+    list-style-type: '>_ ';
 }
-ul > li::before {
-    content: '>_ ';
-    font-weight: bold;
+
+li {
+    margin: 0.3em 0em;
 }
 
 /* Images */
 img {
-    border: 3px solid #ececec;
     max-width: 100%;
+    border-radius: 3px;
 }
 
 figure {
@@ -102,8 +117,9 @@ figure h4::before {
 
 /* Code blocks */
 code {
-    background-color: #f1f1f1;
+    background: var(--codecolor);
     padding: .1em .2em;
+    border-radius: var(--borderradius);
 }
 
 pre {
@@ -111,6 +127,7 @@ pre {
     line-height: 1.4;
     overflow-x: auto;
     padding: 1em;
+    border-radius: 3px;
 }
 
 .highlight pre ::selection {
@@ -142,6 +159,10 @@ pre code {
     margin-top: 3px;
     cursor: pointer;
 }
+#dark-mode-toggle:hover {
+    background-color: var(--hovercolor);
+    color: white;
+}
 
 header {
     display: flex;
@@ -160,14 +181,9 @@ header nav a {
     margin: 0px 3px;
 }
 
-h1, h2 {
-    font-size: 1.7em;
-    margin-top: 2em;
-} 
-
-h3, h4, h5, h6 {
-    margin-top: 1em;
-} 
+h1 { font-size: 1.7em; margin-top: 1.5em; } 
+h2 { font-size: 1.5em; margin-top: 1.25em; } 
+h3, h4, h5, h6 { margin-top: 1em; } 
 
 h1::before { color: var(--maincolor); content: '# '; }
 h2::before { color: var(--maincolor); content: '## '; }
@@ -202,7 +218,11 @@ footer {
 
 .soc {
     border: none;
+    border-radius: var(--borderradius);
     padding: 2px 1px 0px;
+}
+.soc:hover {
+    color:white;
 }
 
 /* Common */
@@ -239,9 +259,6 @@ article .title {
 svg{
     max-height: 15px;
 }
-.soc:hover{
-    color: white;
-}
 .draft-label{ 
     color: var(--maincolor);
     padding: 0px 4px 2px;
@@ -256,17 +273,24 @@ svg{
     -webkit-overflow-scrolling: touch;
 }
 .highlight pre code[class*="language-"]::before {
-    background: black;
-    border-radius: 0 0 0.25rem 0.25rem;
     color: white;
-    font-size: 12px;
+    background: black;
+    font-size: 14px;
+    font-weight: bold;
     letter-spacing: 0.025rem;
     padding: 0.1rem 0.5rem;
     position: absolute;
+    top: 0;
     right: 1rem;
     text-align: right;
-    text-transform: uppercase;
-    top: 0;
+    text-transform: lowercase;
+    border-radius: 0 0 0.25rem 0.25rem;
+}
+
+.highlight pre code[class=language-c]::before {
+    content: "c";
+    color: white;
+    background: steelblue;
 }
 
 .highlight pre code[class=language-javaScript]::before,
@@ -275,45 +299,32 @@ svg{
     background: #f7df1e;
     color: black;
 }
-.highlight pre code[class*='language-yml']::before,
-.highlight pre code[class*='language-yaml']::before {
-    content: 'yaml';
-    background: #f71e6a;
-    color: white;
-}
+
 .highlight pre code[class*='language-shell']::before,
 .highlight pre code[class*='language-bash']::before,
 .highlight pre code[class*='language-sh']::before {
     content: 'shell';
-    background: green;
-    color:white
+    background: lime;
+    color: black;
 }
+
 .highlight pre code[class*='language-json']::before{
     content: 'json';
     background: dodgerblue;
-    color: #000000 
+    color: black;
 }
+
 .highlight pre code[class*='language-python']::before,
 .highlight pre code[class*='language-py']::before {
-    content: 'py';
+    content: 'python';
     background: blue;
-    color: yellow ;
+    color: yellow;
 }
-.highlight pre code[class*='language-css']::before{
-    content: 'css';
-    background: cyan;
-    color: black ;
-}
+
 .highlight pre code[class*='language-go']::before{
-    content: 'Go';
+    content: 'go';
     background: cyan;
-    color: royalblue ;
-}
-.highlight pre code[class*='language-md']::before,
-.highlight pre code[class*='language-md']::before{
-    content: 'Markdown';
-    background: royalblue;
-    color: whitesmoke ;
+    color: royalblue;
 }
 
 /* table */
