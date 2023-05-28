@@ -1,0 +1,10 @@
+.stranger-case-container {
+    background: black;
+    width: 20rem;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+
+
