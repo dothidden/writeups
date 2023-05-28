@@ -5,7 +5,5 @@ name: Heroctf
 place: 38
 total: 1085
 tags:
-- lol
-- why are there tags here
 - misc
 ---
