@@ -4,7 +4,7 @@ date: {{ .Date }}
 tags:
 - category1
 - category2
-place: final palce !only if this is _index delete otherwise!
+place: final place !only if this is _index delete otherwise!
 total: total number of participants !only if this is _index delete otherwise!
 draft: true
 ---
