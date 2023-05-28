@@ -26,6 +26,9 @@ menu:
     - name: Home
       url: /
       weight: 1
+    - name: Tags
+      url: /tags
+      weight: 2
     - name: About
       url: /about
       weight: 3

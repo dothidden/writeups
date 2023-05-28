@@ -1,15 +1,17 @@
 {{ define "main" }}
 <h1 class="page-title">{{.Title}} - all writeups</h1>
-<ul>
+<ul class="terminal-prefix">
     {{- range .Data.Pages -}}
     <li>
         <a href="{{ .RelPermalink }}">{{.Title}}</a> 
         {{- if .Draft -}} 
         <span class="draft-label">DRAFT</span> 
         {{- end -}}</span>
-    {{ range .GetTerms "tags" }}
-    <span class="tag"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></span>
-    {{ end }}
+        {{ range .GetTerms "tags" }}
+        <span class="tag">
+            <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+        </span>
+        {{ end }}
     </li>
     {{- end -}}
 </ul>

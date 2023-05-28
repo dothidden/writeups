@@ -16,7 +16,7 @@ html {
     color: #232333;
     font-family: 'Roboto Mono', monospace;
     font-size: 15px;
-    line-height: 1.6em;
+    line-height: 2.0em;
 }
 body{
     display: block;
@@ -31,7 +31,7 @@ body{
     color: #fff;
 }
 
-.spacer {
+spacer {
     display: block;
     height: 0.5em;
 }
@@ -75,12 +75,8 @@ ul {
     padding-left: 2ch;
 }
 
-ul.home {
+ul.terminal-prefix {
     list-style-type: '>_ ';
-}
-
-li {
-    margin: 0.3em 0em;
 }
 
 /* Images */

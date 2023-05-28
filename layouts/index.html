@@ -11,7 +11,7 @@
                 <h1 class="title"> Past CTFs we took part in </h1>
 
                 <section>
-                    <ul class="home">
+                    <ul class="terminal-prefix">
                     {{ range .Site.Sections }} 
                         <li>
                             <time>[{{- .Date | dateFormat "02/01/06" -}}]</time>
@@ -24,7 +24,7 @@
                     </ul>
                 </section>
 
-                <h1 class="title"> Recent writeups </h1>
+                <h1 class="title"> Most recent writeups </h1>
 
                 {{ $pages := where .Site.RegularPages 
                         "Type" "not in" .Site.Params.homeFilterSections }}
