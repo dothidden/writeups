@@ -1,12 +1,13 @@
 {{ define "main" }}
 <main>
     <article>
+        <div>
+            <h1>{{ .Title }}
+                {{ with .Site.GetPage .Section }}
+                [{{- .Title -}}]
+                {{- end -}}
+            </h1>
 
-        <div class="title">
-            {{ $sectionHeading := .Site.GetPage .Section .Section }}
-            <h1>{{ $sectionHeading.Title }}</h1>
-
-            <h2>{{ .Title }}</h2>
             <div class="meta-bar">
                 <time class="meta">{{ .Date | dateFormat "02/01/06" }}</time>
 

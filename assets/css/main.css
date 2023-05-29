@@ -178,9 +178,14 @@ header nav a {
     margin: 0px 3px;
 }
 
-h1 { font-size: 1.7em; margin-top: 1.5em; } 
-h2 { font-size: 1.5em; margin-top: 1.25em; } 
-h3, h4, h5, h6 { margin-top: 1em; } 
+h1 { font-size: 1.7em; margin: 1.6em 0 0.5em; } 
+h2 { font-size: 1.5em; margin: 1.4em 0 0.5em; } 
+h3 { font-size: 1.4em; margin: 1.1em 0 0.5em; }
+h4 { font-size: 1.3em; margin: 0.9em 0 0.5em; }
+h5 { font-size: 1.2em; margin: 0.7em 0 0.5em; }
+h6 { font-size: 1.1em; margin: 0.5em 0 0.5em; }
+
+/*h3, h4, h5, h6 { margin-top: 1em; } */
 
 h1::before { color: var(--maincolor); content: '# '; }
 h2::before { color: var(--maincolor); content: '## '; }
@@ -224,20 +229,9 @@ footer {
 
 /* Common */
 
-.title h2 {
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-}
-
 time {
     color: var(--metacolor);
 }
-
-/* Posts */
-article .title {
-    margin-bottom: 1em;
-}
-
 
 .site-description {
     display: flex;
