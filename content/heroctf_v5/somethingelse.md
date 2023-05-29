@@ -3,6 +3,7 @@ title: Test page
 date: 2023-01-02
 tags:
 - misc
+- forensics
 - reverse
 - reverse1
 - reverse2

@@ -17,6 +17,8 @@ params:
     - name: RSS
       icon: rss
       url: https://dothidden.xyz/index.xml
+  excludedSections:
+    - about
   homeWriteupCnt: 10
 
 menu:

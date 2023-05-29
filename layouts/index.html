@@ -27,7 +27,7 @@
                 <h1 class="title"> Most recent writeups </h1>
 
                 {{ $pages := where .Site.RegularPages 
-                        "Type" "not in" .Site.Params.homeFilterSections }}
+                        "Type" "not in" .Site.Params.excludedSections }}
                 {{ range (first .Site.Params.HomeWriteupCnt $pages) }}
                 {{ $sectionHeading := .Site.GetPage .Section .Section }}
 				<div>
