@@ -11,13 +11,13 @@
 
     /* other vars */
     --borderradius: 1px;
-    --taglineheight: 2.25em;
+    --taglineheight: 2.1em;
 }
 html {
     color: #232333;
     font-family: 'Roboto Mono', monospace;
     font-size: 15px;
-    line-height: 1.5em;
+    line-height: 1.7em;
 }
 body{
     display: block;
@@ -55,8 +55,8 @@ blockquote {
 }
 
 a {
-    padding: 0px 4px 2px;
-    border-bottom: 3px solid var(--maincolor);
+    padding: 0px 4px 1px;
+    border-bottom: 2px solid var(--maincolor);
     border-radius: var(--borderradius);
     color: inherit;
     text-decoration: none;
@@ -168,7 +168,6 @@ header {
     align-items:center;
     justify-content: space-between;
     margin: 1em 0;
-    line-height: 1.6rem;
 }
 
 header .main {
@@ -241,6 +240,7 @@ time {
 
 .tag a{
     border: 2px solid var(--maincolor); 
+    padding: 0px 4px 2px;
 }
 .tag a:hover{
     color: white;
