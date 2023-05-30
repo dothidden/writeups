@@ -104,7 +104,7 @@ She is a cybersecurity fan.
 - **Blog**: [https://tosalio.blog/](https://tosalio.blog/)
 
 His Blog has 3 snapshots on the wayback machine but nothing seems relevant except it runs WordPress, and it is associated with the username: lenainkiller0119.
-On his Twitter page we found several pieces of information: the first is that he is a fan of cycling and more particularly of the rider Thibaut PINOT. We also know that he follows the forum [https://www.jeuxvideo.com/](https://www.jeuxvideo.com/) maybe we can find something interesting there. The last big piece of information we learn is that he's a fan of the game Clash of Clans. 
+On his Twitter page we found several pieces of information: the first is that he is a fan of cycling and more particularly of the rider Thibaut PINOT. We also know that he follows the forum [https://www.jeuxvideo.com/](https://www.jeuxvideo.com/) but we did not find anything, we used the forgotten password feature to check if he had an account. The last big piece of information we learn is that he's a fan of the game Clash of Clans. 
 
 ![Tosalios](/images/stranger_case/coc.png)
 
@@ -139,9 +139,6 @@ Suspicious because he says the past few weeks have been good while all other rec
 - **Linkedin**: [https://www.linkedin.com/in/faye-terni-9a7508259/](https://www.linkedin.com/in/faye-terni-9a7508259/)
 - **Email**: faye.terni@gmail.com
 
-Her older Facebook profile picture has a special instruction with hexiftool:
-FBMD0a000a700100004d1400002236000078390000853d00006449000085690000e96c0000cf7100002e7700000eae0000
-
 #### Hortense Lutero {#hl}
 
 {{< imgWithClass "/images/stranger_case/hl.png" "Hortense Lutero" "hl.png" "" "stranger-case-pp" >}}
@@ -151,16 +148,11 @@ FBMD0a000a700100004d1400002236000078390000853d00006449000085690000e96c0000cf7100
 - **Email**: lutero.hortense@gmail.com
 
 
-Was threatened in an email sent by
-anonymous user, they want to buy a
-property next to where she lives. Due to email, she said she changed
-phone numbers, we have personal
-email address of her, and will leave
-town. She lives at 87 Bd Laennec, Lorient, France
+Was threatened in an email sent by anonymous user, they want to buy a property next to where she lives. Due to email, she said she changed phone numbers, we have personal email address of her, and will leave town. She lives at 85 and 87 (owns both) Bd Laennec, Lorient, France.
 
 Thanks to her email address we find out her Google calendar with the following event:
-- 24 of mai resignation from Copprethia
-- 15 & 16 may meeting Leclercq
+- 24 of May resignation from Copprethia
+- 15 & 16 May meeting Leclercq
 - 10 May meeting L'OREAL
 - 4-10 May moving to Marseille
 
