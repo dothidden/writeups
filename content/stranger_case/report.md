@@ -56,7 +56,7 @@ All the files seem to be poems.
 There are two pictures on the Flickr account of Eric. This first one is a picture of a typical French britain dish: a galette. Thanks to the cups we succeeded to find the restaurant where the picture was taken. The restaurant is called 'Mademoiselle Breizh' and is located in Bretagne, France. This picture was taken on the 28th of April.
 ![galette](/images/stranger_case/galette.png)
 
-The second picture seems to be a picture of a phone booth and the logo of Dairy queen on the right side of the picture. We were not able to find the exact location of the phone booth but we know that this is somewhere in Canada and maybe into the Quebec area.
+The second picture seems to be a picture of a phone booth and the logo of Dairy Queen on the right side of the picture. We were not able to find the exact location of the phone booth but we know that this is somewhere in Canada and maybe into the Quebec area.
 
 ![phone booth](/images/stranger_case/bell.png)
   
