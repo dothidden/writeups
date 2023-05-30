@@ -9,7 +9,7 @@ tags:
 - reverse
 - crypto
 - web
-- forensic
+- forensics
 - OSINT
 draft: false
 ---

@@ -11,6 +11,7 @@
 
     /* other vars */
     --borderradius: 1px;
+    --taglineheight: 2.25em;
 }
 html {
     color: #232333;
@@ -77,7 +78,7 @@ ul {
 ul.terminal-prefix {
     list-style-type: '>_ ';
     padding-left: 3ch;
-    line-height: 2.25em;
+    line-height: var(--taglineheight);
 }
 
 /* Images */
@@ -245,6 +246,9 @@ time {
     color: white;
     background-color: var(--hovercolor); 
     border: 2px solid var(--hovercolor);
+}
+.tag-cloud {
+    line-height: var(--taglineheight);
 }
 
 svg{

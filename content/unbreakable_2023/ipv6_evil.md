@@ -1,10 +1,8 @@
 ---
-
 title: "Ipv6 Evil"
 date: 2023-05-24T22:00:43+03:00
 tags:
 - network
-
 ---
 
 * Open the ipv6Evil capture with wireshark

@@ -9,7 +9,7 @@ tags:
 - network
 - forensics
 - stego
-- rev
+- reverse
 - pwn
 - misc
 - mobile

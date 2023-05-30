@@ -2,7 +2,7 @@
 title: Hidden Art
 date: 2023-05-24T21:44:04+03:00
 tags:
-- steganography
+- stego
 - forensics
 ---
 

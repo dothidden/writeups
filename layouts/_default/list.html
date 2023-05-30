@@ -7,9 +7,13 @@
         {{- if .Draft -}} 
         <span class="draft-label">DRAFT</span> 
         {{- end -}}</span>
-        {{ range .GetTerms "tags" }}
+
+        {{ range sort .Params.Tags }}
         <span class="tag">
-            <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+            <a href="{{ $.Site.LanguagePrefix | absURL }}
+                tags/{{ . | urlize }}">
+                {{- . | urlize -}}
+            </a>
         </span>
         {{ end }}
     </li>
