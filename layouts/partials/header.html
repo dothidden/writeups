@@ -4,9 +4,9 @@
 	{{- $title := ( .Title ) -}}
 	{{- $siteTitle := ( .Site.Title ) -}}
 	{{- if .IsHome -}}
-	<title>{{ $siteTitle }} | Home </title>
+	<title>{{ $siteTitle }} | Home</title>
 	{{- else -}}
-	<title>{{ $title }} - {{ $siteTitle }}</title>
+	<title>{{ $siteTitle }} | {{ $title }}</title>
 	{{- end -}}
 
 	{{- if isset .Site.Params "favicon" -}}

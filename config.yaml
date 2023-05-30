@@ -1,11 +1,11 @@
 baseURL: https://dothidden.xyz/
 languageCode: en-us
 title: .hidden
-decription: adventures following a white rabbit
 buildDrafts: true
 copyright: .hidden
 
 params: 
+  description: Adventures following the white rabbit
   mode: toggle
   social: 
     - name: GitHub
