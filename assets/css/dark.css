@@ -53,7 +53,7 @@ h5::before { color: var(--darkmaincolor); content: "##### "; }
 h6::before { color: var(--darkmaincolor); content: "###### "; }
 
 a {
-    border-bottom: 3px solid var(--darkmaincolor);
+    border-bottom: 2px solid var(--darkmaincolor);
     color: inherit;
 }
 a:hover {
