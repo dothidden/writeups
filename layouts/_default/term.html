@@ -9,10 +9,11 @@
 {{ $allPages := where .Data.Pages "Kind" "==" "page" }}
 {{ $allSections := where .Data.Pages "Kind" "==" "section" }}
 {{ range $allSections }}
+    {{ $pages := where $allPages "Section" "==" .Section }}
+    {{ if $pages }}
     <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
     <ul class="posts terminal-prefix">
-    {{ $pages := where $allPages "Section" "==" .Section }}
-    {{ range $pages }}
+        {{ range $pages }}
         <li class="post">
             <time>[{{- .Date | dateFormat "02/01/06" -}}]</time>
             <a href="{{ .RelPermalink }}">{{.Title}}</a>
@@ -20,6 +21,7 @@
             <span class="draft-label">DRAFT</span>
             {{ end }}
         </li>
+        {{ end }}
     {{ end }}
     </ul>
 {{ end }}
