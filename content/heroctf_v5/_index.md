@@ -5,6 +5,16 @@ name: Heroctf
 place: 38
 total: 1085
 tags:
-- misc
+- blockchain
+- crypto
 - forensics
+- osint
+- prog
+- pwn
+- reverse
+- stego
+- system
+- web
+- misc
+draft: false
 ---
