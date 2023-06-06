@@ -13,7 +13,7 @@
                 <section>
                     <ul class="terminal-prefix">
                     {{ range .Site.Sections }} 
-                        <li>
+                        <li class="nowrap">
                             <time>[{{- .Date | dateFormat "02/01/06" -}}]</time>
                             <a href="{{ .Permalink}}">{{.Title}}</a> 
                             {{- if and (isset .Params "place") (isset .Params "total") -}}
@@ -31,7 +31,7 @@
                 {{ range (first .Site.Params.HomeWriteupCnt $pages) }}
                 {{ $sectionHeading := .Site.GetPage .Section .Section }}
 				<div>
-					<h3>
+					<h3 class="nowrap">
                         <a href="{{ .RelPermalink }}">{{.Title}}</a>
                         <span>[{{- $sectionHeading.Title -}}]</span>
                     </h3>
