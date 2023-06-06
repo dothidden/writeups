@@ -16,9 +16,16 @@
 html {
     color: #232333;
     font-family: 'Roboto Mono', monospace;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.7em;
 }
+
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 14px;
+    }
+}
+
 body{
     display: block;
     margin: 8px;
@@ -171,7 +178,7 @@ header {
 }
 
 header .main {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
 header nav a {
@@ -229,6 +236,13 @@ footer {
 
 /* Common */
 
+
+@media screen and (max-width: 600px) {
+    .nowrap {
+        white-space: nowrap;
+    }
+}
+
 time {
     color: var(--metacolor);
 }
@@ -270,7 +284,7 @@ svg{
 .highlight pre code[class*="language-"]::before {
     color: white;
     background: black;
-    font-size: 14px;
+    font-size: 0.9rem;
     font-weight: bold;
     letter-spacing: 0.025rem;
     padding: 0.1rem 0.5rem;
