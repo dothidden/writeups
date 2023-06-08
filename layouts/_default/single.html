@@ -23,12 +23,6 @@
             </div>
         </div>
 
-        {{ if isset .Params "tldr" }}
-        <div class="tldr">
-            <strong>tl;dr:</strong>
-            {{ .Params.tldr }}
-        </div>{{ end }}
-
         <section class="body">
             {{ .Content }}
         </section>
