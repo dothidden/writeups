@@ -1,17 +1,12 @@
 ---
 title: {{ replace .Name "_" " " | title }}
 date: {{ .Date }}
-
 description: page description [optional]
-tldr: page tldr [optional]
-
 place: final place !only if this is _index delete otherwise!
 total: total number of participants !only if this is _index delete otherwise!
-
 tags:
 - category1 [optional]
 - category2
-
 draft: true
 ---
 
