@@ -94,6 +94,9 @@ a:hover {
 .highlight {
     background-color: #333;
 }
+.soc {
+    padding: 3px 0px 0px 0px;
+}
 .soc:hover {
     color: black;
 }

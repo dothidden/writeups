@@ -55,7 +55,7 @@ blockquote {
 }
 
 a {
-    padding: 0px 4px 1px;
+    padding: 1px 3px 1px;
     border-bottom: 2px solid var(--maincolor);
     border-radius: var(--borderradius);
     color: inherit;
@@ -221,10 +221,53 @@ footer {
 .soc {
     border: none;
     border-radius: var(--borderradius);
-    padding: 2px 1px 0px;
+    padding: 4px 1px 0px 0px;
 }
 .soc:hover {
     color:white;
+}
+
+.member-list {
+    list-style: none;
+    padding-left: 0ch;
+}
+
+.member {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 1.5em 0;
+}
+
+.member-icon {
+    max-width: 7em;
+    vertical-align: middle;
+    padding-right: 15px;
+}
+
+.member-description {
+    margin-top: 4px;
+    line-height: 1.3em;
+}
+
+.member-name {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 0.8em;
+}
+
+.member-tags {
+    font-size: 0.7em;
+    margin-bottom: 0.6em;
+}
+
+.member-tags > span {
+    margin-right: 10px;
+}
+
+.member-text {
+    font-size: 0.9em;
 }
 
 /* Common */
