@@ -17,6 +17,35 @@ params:
     - name: RSS
       icon: rss
       url: https://dothidden.xyz/index.xml
+  members:
+    - name: sunbather
+      link: icon1
+      picture: https://avatars.githubusercontent.com/u/39965799?v=4
+      tags: ['tag1','tag1','tag1','tag1']
+      description:
+        - line1
+        - line2
+    - name: zenbassi
+      link: https://github.com/stefan-radu
+      picture: https://avatars.githubusercontent.com/u/30214214?v=4
+      tags: ['forensics','misc','pwn']
+      description:
+        - line1
+        - thinks vim is cool
+    - name: koyosu
+      link: icon1
+      picture: https://avatars.githubusercontent.com/u/39965799?v=4
+      tags: ['tag1','tag1','tag1','tag1']
+      description:
+        - line1
+        - line2
+    - name: honeypot
+      link: icon1
+      picture: https://avatars.githubusercontent.com/u/39965799?v=4
+      tags: ['tag1','tag1','tag1','tag1']
+      description:
+        - line1
+        - line2
   excludedSections:
     - about
   homeWriteupCnt: 10
