@@ -20,6 +20,8 @@ params:
   excludedSections:
     - about
   homeWriteupCnt: 10
+  #mathjax: true
+  katex: true
 
 menu:
   main:
