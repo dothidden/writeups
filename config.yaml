@@ -28,10 +28,10 @@ params:
     - name: zenbassi
       link: https://github.com/stefan-radu
       picture: https://avatars.githubusercontent.com/u/30214214?v=4
-      tags: ['forensics','misc','pwn']
+      tags: ['forensics','pwn', 'rev']
       description:
-        - line1
-        - thinks vim is cool
+        - likes vim a bit too much
+        - into (film) photography
     - name: koyosu
       link: icon1
       picture: https://avatars.githubusercontent.com/u/39965799?v=4
