@@ -19,7 +19,7 @@ params:
       url: https://dothidden.xyz/index.xml
   members:
     - name: sunbather
-      link: icon1
+      link: https://github.com/costinteo
       picture: https://avatars.githubusercontent.com/u/39965799?v=4
       tags: [ 'rev','crypto','pwn' ]
       description:
