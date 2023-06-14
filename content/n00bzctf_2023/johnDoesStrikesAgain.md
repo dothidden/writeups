@@ -37,7 +37,7 @@ print(decrypted_message.decode())
 
 ```
 
-The output is the following: `John Doe: You know how much I love music so don't ask me that question every again! `
+The output is the following: `John Doe: You know how much I love music so don't ask me that question every again!`
 This output is a clue to find the name of the account of John Doe on Spotify or another music website. So let's go to
 Spotify but can we find the name of the account of John Doe? No, we can't. So let's go back to the challenge description
 and see if we can find something else. We notice that we did not use this information `31zdugxvkayexc4hzqhixxcfxb4y`.
