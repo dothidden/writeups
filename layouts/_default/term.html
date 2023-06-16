@@ -7,13 +7,13 @@
 {{ end }}
 
 {{ $allPages := where .Data.Pages "Kind" "==" "page" }}
-{{ $allSections := where .Data.Pages "Kind" "==" "section" }}
-{{ range $allSections }}
-    {{ $pages := where $allPages "Section" "==" .Section }}
-    {{ if $pages }}
-    <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+{{ range ($allPages.GroupBy "Section") }}
+
+    {{ $sectionHeading := $.Site.GetPage .Key }}
+    <h3><a href="{{ $sectionHeading.RelPermalink }}">{{ $sectionHeading.Title }}</a></h3>
+
     <ul class="posts terminal-prefix">
-        {{ range $pages }}
+        {{ range .Pages }}
         <li class="post">
             <time>[{{- .Date | dateFormat "02/01/06" -}}]</time>
             <a href="{{ .RelPermalink }}">{{.Title}}</a>
@@ -22,8 +22,7 @@
             {{ end }}
         </li>
         {{ end }}
-    {{ end }}
     </ul>
-{{ end }}
 
+{{ end }}
 {{ end }}
