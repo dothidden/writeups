@@ -21,6 +21,12 @@
                 {{ end }}
                 {{ end }}
             </div>
+            {{ if .Params.Author }}
+            <div class="author">
+                {{ $member := index (where .Site.Params.members "name" .Params.Author) 0 }}
+                <span>writeup by: <a href="{{ $member.link }}">{{ $member.name }}</a></span>
+            </div>
+            {{ end }}
         </div>
 
         {{ if isset .Params "tldr" }}
