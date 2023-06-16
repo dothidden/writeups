@@ -3,10 +3,17 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	{{- $title := ( .Title ) -}}
 	{{- $siteTitle := ( .Site.Title ) -}}
+
 	{{- if .IsHome -}}
 	<title>{{ $siteTitle }} | Home</title>
-	{{- else -}}
+	{{- else if eq .Kind "section" -}}
 	<title>{{ $siteTitle }} | {{ $title }}</title>
+    {{- else if and (eq .Kind "page") (not (in .Site.Params.ExcludedSections .Type)) -}}
+    {{ with $sectionHeading := .Site.GetPage .Section }}
+    <title>{{ $siteTitle }} | {{ .Title }} - {{ $title }}</title>
+    {{- end -}}
+    {{- else -}}
+    <title>{{ $siteTitle }} | {{ .Title }}</title>
 	{{- end -}}
 
 	{{- if isset .Site.Params "favicon" -}}
