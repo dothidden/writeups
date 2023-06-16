@@ -252,6 +252,9 @@ time {
     justify-content: space-between;
 }
 
+.tag {
+    white-space: nowrap;
+}
 .tag a{
     border: 2px solid var(--maincolor); 
     padding: 0px 4px 2px;
