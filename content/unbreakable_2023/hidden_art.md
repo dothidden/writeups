@@ -2,14 +2,16 @@
 title: Hidden Art
 date: 2023-05-24T21:44:04+03:00
 tags:
-- stego
-- forensics
+  - stego
+  - forensics
+author: H0N3YP0T
 ---
 
 ```python
 
 import heapq
 import pickle
+
 
 # We use a huffman tree because we have a dict whith the char frequency
 
@@ -19,9 +21,10 @@ class Node:
         self.freq = freq
         self.left_node = left_node
         self.right_node = right_node
-    
+
     def __lt__(self, other):
         return self.freq < other.freq
+
 
 def generate_huffman_tree(freq_dict):
     # Create a priority queue from the frequency dictionary
@@ -34,8 +37,9 @@ def generate_huffman_tree(freq_dict):
         high_node = heapq.heappop(priority_queue)
         combined_node = Node(None, low_node.freq + high_node.freq, low_node, high_node)
         heapq.heappush(priority_queue, combined_node)
-    
+
     return priority_queue[0]  # The remaining node is the root of the Huffman tree
+
 
 def generate_huffman_codes(root):
     huff_codes = {}
@@ -52,6 +56,7 @@ def generate_huffman_codes(root):
     generate_codes_recursive(root, '')
     return huff_codes
 
+
 def decode_huffman(huff_codes, binary_str):
     decoded_str = ''
     current_code = ''
@@ -63,6 +68,7 @@ def decode_huffman(huff_codes, binary_str):
                 current_code = ''
                 break
     return decoded_str
+
 
 # Load your pickle file
 with open('data_freq.pkl', 'rb') as handle:
