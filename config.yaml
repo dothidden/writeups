@@ -32,13 +32,14 @@ params:
       description:
         - likes vim a bit too much
         - into (film) photography
-    - name: koyosu
-      link: icon1
+    - name: Koyossu
+      link: https://github.com/SecioreanuStefanita
       picture: https://avatars.githubusercontent.com/u/39965799?v=4
-      tags: [ 'tag1','tag1','tag1','tag1' ]
+      tags: [ 'web','misc','forensics','mobile' ]
       description:
-        - line1
-        - line2
+        - Backend Bandit & De-bug Demon 
+        - Do not do it...
+        - d293ISB5b3UgcmVhbGx5IGRlY29kZWQgdGhpcyA=
     - name: H0N3YP0T
       link: https://github.com/Mathis-Dory
       picture: https://ctftime.org/media/cache/52/af/52af19f614f045a44bcd409964613ac4.jpg
