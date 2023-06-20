@@ -4,10 +4,10 @@ title: .hidden
 buildDrafts: true
 copyright: .hidden
 
-params: 
+params:
   description: Adventures following the white rabbit
   mode: toggle
-  social: 
+  social:
     - name: GitHub
       icon: github
       url: https://github.com/orgs/dothidden/repositories
@@ -17,6 +17,37 @@ params:
     - name: RSS
       icon: rss
       url: https://dothidden.xyz/index.xml
+  members:
+    - name: sunbather
+      link: https://github.com/costinteo
+      picture: https://avatars.githubusercontent.com/u/39965799?v=4
+      tags: [ 'rev','crypto','pwn' ]
+      description:
+        - bash wizard
+        - video game enjoyer
+    - name: zenbassi
+      link: https://github.com/stefan-radu
+      picture: https://avatars.githubusercontent.com/u/30214214?v=4
+      tags: [ 'forensics','pwn' ,'rev', 'misc' ]
+      description:
+        - likes vim a bit too much
+        - into (film) photography
+    - name: Koyossu
+      link: https://github.com/SecioreanuStefanita
+      picture: https://avatars.githubusercontent.com/u/48451382?s=400&u=b2a10a33c3ec8062c8b99e9191ee85af061272ef&v=4
+      tags: [ 'web','misc','forensics','mobile' ]
+      description:
+        - Backend Bandit & De-bug Demon 
+        - Do not do it...
+        - d293ISB5b3UgcmVhbGx5IGRlY29kZWQgdGhpcyA=
+    - name: H0N3YP0T
+      link: https://github.com/Mathis-Dory
+      picture: https://ctftime.org/media/cache/52/af/52af19f614f045a44bcd409964613ac4.jpg
+      tags: [ 'osint','forensics','web','misc' ]
+      description:
+        - I will find you, I'm really gonna find you...
+        - The only Belgian of the team
+        - FLAG{5TAY_CUR10U5_AND_CUNN1NG}
   excludedSections:
     - about
   homeWriteupCnt: 10

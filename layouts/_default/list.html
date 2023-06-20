@@ -10,9 +10,8 @@
 
         {{ range sort .Params.Tags }}
         <span class="tag">
-            {{ $tags := "tags/" }}
             <a href="{{- $.Site.LanguagePrefix | absURL -}}
-                    {{- $tags -}}{{- . | urlize -}}">
+                tags/{{- . | urlize -}}">
                 {{- . | urlize -}}
             </a>
         </span>

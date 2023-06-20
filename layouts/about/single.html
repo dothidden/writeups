@@ -1,3 +1,32 @@
 {{ define "main" }}
+
     {{.Content}}
+
+    <h2>Members</h1>
+
+    <ul class="member-list">
+        {{- range sort .Site.Params.members "name" "asc" -}}
+        <li>
+            <div class="member">
+                <span><img class="member-icon" src="{{ .picture }}" alt="{{ .name }}"></span>
+                <span class="member-description">
+                    <div class="member-name"> <a href="{{ .link }}">{{ .name }}</a></div>
+                    <div class="member-tags">
+                        {{- range .tags -}}
+                        {{ $tags := "tags/" }}
+                        <span class="tag"><a href="{{- $.Site.LanguagePrefix | absURL -}}
+                                {{- $tags -}}{{- . | urlize -}}">
+                                {{- . | urlize -}}
+                        </a></span>
+                        {{- end -}}
+                    </div>
+                    {{- range .description -}}
+                    <div class="member-text"> {{ . }} </div>
+                    {{- end -}}
+                </span>
+            </div>
+        </li>
+        {{- end -}}
+    </ul>
+
 {{ end }}
