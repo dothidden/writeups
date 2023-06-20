@@ -25,6 +25,6 @@ ___
 
 ### Flag
 
-**bestctf{I_love_.hidden}**
+`bestctf{I_love_.hidden}`
 
 ## References (in case you used [^footnotes] thingies)
