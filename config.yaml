@@ -34,7 +34,7 @@ params:
         - into (film) photography
     - name: Koyossu
       link: https://github.com/SecioreanuStefanita
-      picture: https://avatars.githubusercontent.com/u/39965799?v=4
+      picture: https://avatars.githubusercontent.com/u/48451382?s=400&u=b2a10a33c3ec8062c8b99e9191ee85af061272ef&v=4
       tags: [ 'web','misc','forensics','mobile' ]
       description:
         - Backend Bandit & De-bug Demon 
