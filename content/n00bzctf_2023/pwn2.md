@@ -1,6 +1,7 @@
 ---
 title: Pwn2
 date: 2023-06-10
+author: sunbather
 tags:
   - pwn
 ---
