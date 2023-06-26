@@ -1,6 +1,7 @@
 ---
 title: Report
 date: 2023-05-27T23:11:16+03:00
+author: H0N3YP0T
 tags:
   - osint
 ---
@@ -59,7 +60,7 @@ There are two pictures on the Flickr account of Eric. This first one is a pictur
 The second picture seems to be a picture of a phone booth and the logo of Dairy Queen on the right side of the picture. We were not able to find the exact location of the phone booth but we know that this is somewhere in Canada and maybe into the Quebec area.
 
 ![phone booth](/images/stranger_case/bell.png)
-  
+
 #### Copprethia
 
 - **Website**: [https://copprethia.fr/](https://copprethia.fr/)
@@ -85,7 +86,7 @@ The second picture seems to be a picture of a phone booth and the logo of Dairy 
 - **Linkedin**: [https://www.linkedin.com/in/jade-raynaud-899391275/](https://www.linkedin.com/in/jade-raynaud-899391275/)
 
 She is a Formula 1 fan.
-  
+
 #### Alice Blom {#ab}
 
 {{< imgWithClass "/images/stranger_case/ab.png" "Alice Blom" "ab.png" "" "stranger-case-pp" >}}
@@ -93,7 +94,7 @@ She is a Formula 1 fan.
 - **Linkedin**: [https://www.linkedin.com/in/alice-blom-6563b2257/](https://www.linkedin.com/in/alice-blom-6563b2257/)
 
 She is a cybersecurity fan.
-  
+
 #### Raphael Mabar {#rm}
 
 {{< imgWithClass "/images/stranger_case/tosalios.png" "Raphael Mabar" "tosalios.png" "" "stranger-case-pp" >}}
@@ -104,7 +105,7 @@ She is a cybersecurity fan.
 - **Blog**: [https://tosalio.blog/](https://tosalio.blog/)
 
 His Blog has 3 snapshots on the wayback machine but nothing seems relevant except it runs WordPress, and it is associated with the username: lenainkiller0119.
-On his Twitter page we found several pieces of information: the first is that he is a fan of cycling and more particularly of the rider Thibaut PINOT. We also know that he follows the forum [https://www.jeuxvideo.com/](https://www.jeuxvideo.com/) but we did not find anything, we used the forgotten password feature to check if he had an account. The last big piece of information we learn is that he's a fan of the game Clash of Clans. 
+On his Twitter page we found several pieces of information: the first is that he is a fan of cycling and more particularly of the rider Thibaut PINOT. We also know that he follows the forum [https://www.jeuxvideo.com/](https://www.jeuxvideo.com/) but we did not find anything, we used the forgotten password feature to check if he had an account. The last big piece of information we learn is that he's a fan of the game Clash of Clans.
 
 ![Tosalios](/images/stranger_case/coc.png)
 
@@ -161,7 +162,7 @@ Thanks to her email address we find out her Google calendar with the following e
 {{< imgWithClass "/images/stranger_case/ad.png" "Alexandre Dubais" "ad.png" "" "stranger-case-pp" >}}
 
 Nothing
-  
+
 #### Amine Sartori {#as}
 
 -**Linkedin**: [https://www.linkedin.com/in/amine-sartori-4603a1258/?locale=en_US](https://www.linkedin.com/in/amine-sartori-4603a1258/?locale=en_US)

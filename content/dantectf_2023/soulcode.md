@@ -1,6 +1,7 @@
 ---
 title: Soulcode
 date: 2023-06-05T23:11:16+03:00
+author: sunbather
 tags:
   - pwn
 ---

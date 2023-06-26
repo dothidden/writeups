@@ -2,9 +2,10 @@
 title: "Hidden Wave"
 date: 2023-05-24T21:53:09+03:00
 tags:
-- forensics
-- stego
-- audio
+  - forensics
+  - stego
+  - audio
+author: H0N3YP0T
 ---
 
 The file looked perfectly normal and sounded perfectly normal. Extracting the
@@ -31,4 +32,5 @@ song.close()
 ```
 
 ### Decoded Flag
+
 `CTF{UNZSFEFEWF@SDF-NOICE}`

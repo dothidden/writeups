@@ -2,9 +2,10 @@
 ---
 title: Sockpuppet
 date: 2023-05-27T23:11:16+03:00
+author: H0N3YP0T
 tags:
-- osint
-- sockpuppet
+  - osint
+  - sockpuppet
 ---
 
 ### Sockpuppet used to investigate

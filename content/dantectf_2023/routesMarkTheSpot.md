@@ -4,6 +4,7 @@ date: 2023-06-02
 tags:
 - network
 - forensics
+author: H0N3YP0T
 ---
 
 ___
@@ -43,7 +44,8 @@ The close bracket `}`:
 Unfortunately, the packets are not in the right order, so we need to sort in a way to have the flag in the right order.
 But if we look at every binary flow label, we notice that we can use it to sort the packets.
 
-For example, the first packet with the capital `D` of DANTE has the flow label `0000 0000 0000 0000 0000` and the second packet with the capital `A` has the flow label `0000 0000 0000 0001` and so on.
+For example, the first packet with the capital `D` of DANTE has the flow label `0000 0000 0000 0000 0000` and the second
+packet with the capital `A` has the flow label `0000 0000 0000 0001` and so on.
 We can now add a column in Wireshark to sort the packets by flow label and get the right order of the flag.
 
 ![wireshark capture](/images/dantectf_2023/sortFlow.png)
