@@ -2,6 +2,7 @@
 title: Vm
 date: 2023-06-15T12:16:46+03:00
 description: Writeup for VM
+author: zenbassi
 tags:
 - rev
 draft: false
