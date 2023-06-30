@@ -5,7 +5,7 @@ description: Writeup for Npc [Google Ctf 2023]
 author: zenbassi
 tags:
 - misc
-draft: true
+draft: false
 ---
 ___
 
