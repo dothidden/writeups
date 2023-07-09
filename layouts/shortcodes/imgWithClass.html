@@ -1,3 +1,14 @@
+
+
+{{/*
+
+This custom Markdown tag is used to add an image with a custom class and a container class.
+It was created in order to be able to apply custom css style to images in the markdown files referenced in /static/css/custom-style.css
+
+Usage : {{< imgWithClass " Source image.jpg" "Alt text" "Title text" "Class image tag" "class container" >}}
+
+*/}}
+
 <div class="{{ .Get 4 }}">
     <img src="{{ .Get 0 }}" alt="{{ .Get 1 }}" title="{{ .Get 2 }}" class="{{ .Get 3 }}" />
 </div>
