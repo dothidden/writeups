@@ -12,7 +12,7 @@ ___
 
 ## Challenge Description
 
-Can't remeber. ups
+Can't remember. ups
 
 ## Intuition
 
