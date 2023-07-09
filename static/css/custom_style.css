@@ -11,6 +11,16 @@
     height: auto;
 }
 
+.sorry-image{
+    width: 30rem;
+    height: auto;
+}
+
+.sorry-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 

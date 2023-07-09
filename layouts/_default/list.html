@@ -1,22 +1,29 @@
 {{ define "main" }}
 <h1 class="page-title">{{.Title}} - all writeups</h1>
 <ul class="terminal-prefix">
-    {{- range sort .Data.Pages "Title" "asc" -}}
-    <li>
-        <a href="{{ .RelPermalink }}">{{.Title}}</a> 
-        {{- if .Draft -}} 
-        <span class="draft-label">DRAFT</span> 
-        {{- end -}}</span>
+    {{ if eq (len .Data.Pages) 0 }}
+    <p class="sorry-message">Sorry, we were too lazy to write anything here or maybe we just do not remember the solution 😢.</p>
+    <section class="sorry-section">
+    <img src="{{- $.Site.LanguagePrefix | absURL -}}images/others/meme_lost.gif" alt="sorry" class="sorry-image">
+    </section>
+    {{ else }}
+        {{- range sort .Data.Pages "Title" "asc" -}}
+        <li>
+            <a href="{{ .RelPermalink }}">{{.Title}}</a>
+            {{- if .Draft -}}
+            <span class="draft-label">DRAFT</span>
+            {{- end -}}</span>
 
-        {{ range sort .Params.Tags }}
-        <span class="tag">
-            <a href="{{- $.Site.LanguagePrefix | absURL -}}
-                tags/{{- . | urlize -}}">
-                {{- . | urlize -}}
-            </a>
-        </span>
-        {{ end }}
-    </li>
-    {{- end -}}
+            {{ range sort .Params.Tags }}
+            <span class="tag">
+                <a href="{{- $.Site.LanguagePrefix | absURL -}}
+                    tags/{{- . | urlize -}}">
+                    {{- . | urlize -}}
+                </a>
+            </span>
+            {{ end }}
+        </li>
+        {{- end -}}
 </ul>
+{{ end }}
 {{ end }}
