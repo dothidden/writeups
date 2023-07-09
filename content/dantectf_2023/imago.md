@@ -4,6 +4,7 @@ date: 2023-06-08T15:11:49+03:00
 description: Image Qualitatis writeup
 tags:
 - forensics
+- radio
 author: zenbassi
 draft: false
 ---

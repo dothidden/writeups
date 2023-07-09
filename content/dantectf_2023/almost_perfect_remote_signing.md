@@ -4,6 +4,7 @@ date: 2023-06-08T21:51:59+03:00
 description: Almost Perfect Remote Signing writeup
 tags:
 - forensics
+- radio
 author: zenbassi
 draft: false
 ---
