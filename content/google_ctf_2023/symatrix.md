@@ -9,11 +9,13 @@ draft: false
 ---
 
 ## Challenge Description
+
 The CIA has been tracking a group of hackers who communicate using PNG files embedded with a custom steganography algorithm. 
 An insider spy was able to obtain the encoder, but it is not the original code. 
 You have been tasked with reversing the encoder file and creating a decoder as soon as possible in order to read the most recent PNG file they have sent.
 
 ## Solution
+
 We are given a PNG file and a CPython transpilation/compilation of the original Python script used to embed a secret in the PNG file. We can see it sometimes contains comments leaking parts of the original Python script. We can extract those using a script to recreate the original script.
 
 ```py
