@@ -1,5 +1,5 @@
 ---
-title: zzz
+title: Zzz
 date: 2023-06-10
 author: sunbather
 tags:

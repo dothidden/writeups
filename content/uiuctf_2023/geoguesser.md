@@ -1,5 +1,5 @@
 ---
-title: geoguesser
+title: Geoguesser
 date: 2023-06-10
 author: sunbather
 tags:
