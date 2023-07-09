@@ -1,7 +1,7 @@
 {{ define "main" }}
 <h1 class="page-title">{{.Title}} - all writeups</h1>
 <ul class="terminal-prefix">
-    {{- range .Data.Pages -}}
+    {{- range sort .Data.Pages "Title" "asc" -}}
     <li>
         <a href="{{ .RelPermalink }}">{{.Title}}</a> 
         {{- if .Draft -}} 
