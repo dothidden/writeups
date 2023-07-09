@@ -89,7 +89,7 @@ if ((mode_flags & PRINTF_FORTIFY) != 0)
 ```
 
 It's clear that `__readonly_area` gets called and returns something lower than
-0. The plant would be to return something greater than 0 to bypass the security
+0. The plan would be to return something greater than 0 to bypass the security
 check. Looking at the `__readonly_area` implementation we see the following:
 
 ```c
