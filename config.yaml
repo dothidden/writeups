@@ -48,6 +48,19 @@ params:
         - I will find you, I'm really gonna find you...
         - The only Belgian of the team
         - FLAG{5TAY_CUR10U5_AND_CUNN1NG}
+    - name: MettleSphee
+      link: https://github.com/MettleSphee
+      picture: https://avatars.githubusercontent.com/u/69507856?s=400&u=6b8b52fb7d3634193be75ee1e60bd87457fd29e4&v=4
+      tags: [ 'osint','forensics','crypto','misc','mobile' ]
+      description:
+        - Don't let a bug ruin your amazing experience. Exploit it!
+    - name: cartouche70
+      link: https://github.com/DalmatianuSebikk
+      picture: https://avatars.githubusercontent.com/u/70603934?v=4
+      tags: ['web','forensics','crypto','misc']
+      description: 
+        - keeps injecting malicious code
+        - games and sports enjoyer.
   excludedSections:
     - about
   homeWriteupCnt: 10
