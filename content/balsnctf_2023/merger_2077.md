@@ -6,7 +6,7 @@ tags:
 author: MettleSphee
 ---
 
-##Challenge description
+## Challenge description
 
 Title: merger-2077
 
@@ -17,7 +17,7 @@ If you manage to run it on emulators, you shall fix it on your own.
 
 Challenge Author: asef18766
 
-##Solution
+## Solution
 
 One very straight-forward Android challenge, that doesn't really require much reversing at all.
 
