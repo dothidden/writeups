@@ -12,6 +12,7 @@
     /* other vars */
     --borderradius: 1px;
     --taglineheight: 2.1em;
+    --logo-size: 75vh;
 }
 html {
     color: #232333;
@@ -403,4 +404,26 @@ table td{
     font-size: 1.5rem;
     text-align: center;
     margin: 4rem 4rem;
+}
+
+.background-logo:before {
+    content: "";
+    position: fixed;
+    height: var(--logo-size);
+    width: var(--logo-size);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    background-image: url('/images/logo-4000x4000.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.15;
+    z-index: -10;
+}
+
+@media screen and (min-height: 100vw) {
+    .background-logo:before {
+        --logo-size: 75vw;
+    }
 }

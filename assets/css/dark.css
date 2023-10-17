@@ -151,3 +151,7 @@ a:hover {
     background: royalblue;
     color: whitesmoke;
 }
+
+.background-logo:before {
+    opacity: 0.20;
+}

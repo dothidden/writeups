@@ -4,6 +4,10 @@
 	{{- $title := ( .Title ) -}}
 	{{- $siteTitle := ( .Site.Title ) -}}
 
+    <link rel="shortcut icon" type="image/png" href="/images/logo-192x192.png">
+    <link rel="shortcut icon" sizes="192x192" href="/images/logo-192x192.png">
+    <link rel="apple-touch-icon" href="/images/logo-192x192.png">
+
 	{{- if .IsHome -}}
 	<title>{{ $siteTitle }} | Home</title>
 	{{- else if eq .Kind "section" -}}
