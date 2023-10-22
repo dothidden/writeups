@@ -5,7 +5,7 @@ description: Writeup for Log-Forensics [Defcamp Quals 2023]
 author: zenbassi
 tags:
 - forensics
-draft: true
+draft: false
 ---
 ___
 
