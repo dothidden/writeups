@@ -9,4 +9,4 @@ If you desire to know more about us or if you want to see our resolved challenge
 ## How to contribute
 
 If you are one of our new members, you can contribute to this repository by adding your writeups but first you
-need to know how to do it. Follow the steps described in the [wiki](https://github.com/dothidden/writeups/wiki/Contribute-🚀) .
+need to know how to do it. Follow the steps described in the [wiki](https://github.com/dothidden/writeups/wiki/Contribute-🚀).
