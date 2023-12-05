@@ -1,11 +1,11 @@
 ---
 title: Los-ifier
-date: 
+date: 2023-11-24T20:00:00+02:00
 description: Writeup for Los-ifier [GlacierCTF 2023]
-author: pinebel
+author: PineBel
 tags:
 - pwn
-draft: true
+draft: false
 ---
 
 ## Challenge Description:
