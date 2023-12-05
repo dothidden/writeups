@@ -92,6 +92,7 @@ void loscopy(char *param_1,char *param_2,char param_3)
  
  Let's see what we can get from GDB, putting a breakpoint in the loscopy() function we can see that we can overwrite the __printf_function_invoke() with our input.  
 
+```
 [#0] 0x40182c → loscopy()
 [#1] 0x4018d0 → printf_handler()
 [#2] 0x43c3b7 → __printf_function_invoke()
@@ -112,6 +113,8 @@ gef➤  x/20g 0x00007fffffffc940
 0x7fffffffc9b0: 0x0000000000000000      0x00007fffffffdc00
 0x7fffffffc9c0: 0x00007fffffffc9e0      0x000000000043c3b7
 0x7fffffffc9d0: 0x0000000000000000      0x00007fffffffcc30
+```
+
 
 The question now is, with what do we overwrite the __printf_function_invoke() address. Remembering that it's statically linked we can craft a payload and invoke a shell. First we need to see how much padding there is needed  10*8+5 bytes. To create this exploit we use a small ROP chain (gadgets were found with ROPgadget) , first we need to put the “/bin/sh” address into RDI (system's argument register) and then we should return to system. Let's see if it works! 
 
