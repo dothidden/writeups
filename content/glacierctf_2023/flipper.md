@@ -5,6 +5,7 @@ description: Writeup for Flipper [Glacier CTF 2023]
 author: sunbather
 tags:
 - pwn
+- kernel
 draft: false
 ---
 ___
