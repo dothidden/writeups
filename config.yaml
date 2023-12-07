@@ -73,6 +73,13 @@ params:
       tags: [ 'rev', 'pwn', 'network' ]
       description:
         - currently unwinding the stack
+    - name: PineBel
+      link: https://github.com/Stefan2320
+      picture: https://avatars.githubusercontent.com/u/77758442?s=400&u=66d9d227463285d74e23bcbedbdcb712555defa7&v=4
+      tags: [ 'pwn', 'rev', 'misc' ]
+      description:
+        - Segmentation faults make me happy
+        - The second Belgian
   excludedSections:
     - about
   homeWriteupCnt: 10
