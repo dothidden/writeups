@@ -77,14 +77,14 @@ inline bool PageFaultHandler::checkPageFaultIsValid(size_t address, bool user,
 }
 ```
 
-If we check Ghidra, we can see the addresses for every instruction. Remember, these should be the real addresses as well, as no PIE/PIC/ASLR is implemented in our OS. Here is the last 3 instructions from the function above:
+If we check Ghidra, we can see the addresses for every instruction. Remember, these should be the real addresses as well, as no PIE/PIC/ASLR is implemented in our OS. Here are the last 3 instructions from the function above:
 ```
 						 LAB_ffffffff8012ef47                            XREF[4]:     ffffffff8012ee71(j), 
 																					  ffffffff8012eebf(j), 
 																					  ffffffff8012ef08(j), 
 																					  ffffffff8012ef3e(j)  
  ffffffff8012ef47 b8 00 00        MOV        EAX,0x0
-			 00 00
+                  00 00
 						 LAB_ffffffff8012ef4c                            XREF[1]:     ffffffff8012ef45(j)  
  ffffffff8012ef4c c9              LEAVE
  ffffffff8012ef4d c3              RET
@@ -161,14 +161,14 @@ After the CTF, [Ferr0x](https://github.com/Ferr0x) shared his [super cool exploi
 ```
 						 LAB_ffffffff8010a73a                            XREF[1]:     ffffffff8010a731(j)  
  ffffffff8010a73a e8 6d c2        CALL       flipped_already                                  undefined flipped_already()
-				  ff ff
+                  ff ff
  ffffffff8010a73f 8b 00           MOV        EAX,dword ptr [RAX]
  ffffffff8010a741 85 c0           TEST       EAX,EAX
  ffffffff8010a743 0f 95 c0        SETNZ      AL
  ffffffff8010a746 84 c0           TEST       AL,AL
  ffffffff8010a748 74 07           JZ         LAB_ffffffff8010a751    ; <---- INTERESTING
  ffffffff8010a74a b8 fe ff        MOV        EAX,0xfffffffe
-				  ff ff
+                  ff ff
 ```
 
 The above checks if we already flipped once. But we can ignore the jump from the ``test`` instruction by turning ``jz`` into ``jnz``. Luckily for us, those two instructions are literally 1 bit apart. Let's flip it!
@@ -199,20 +199,20 @@ size_t Syscall::write(size_t fd, pointer buffer, size_t size)
   return num_written;
 }
 ```
-The first check in the syscall verifies that the buffer we're writing from is found in userland. This might seem like the end of our adventure, but remember - infinite bit flips mean infinite possibilities. We can simply patch out the jumps like we did before. Here is the relevant assembly instructions at the beginning of the syscall:
+The first check in the syscall verifies that the buffer we're writing from is found in userland. This might seem like the end of our adventure, but remember - infinite bit flips mean infinite possibilities. We can simply patch out the jumps like we did before. Here are the relevant assembly instructions at the beginning of the syscall:
 
 ```
  ffffffff8010a88a 48 b8 ff        MOV        RAX,0x7fffffffffff
-				  ff ff ff 
-				  ff 7f 00 00
+                  ff ff ff 
+                  ff 7f 00 00
  ffffffff8010a894 48 39 45 e0     CMP        qword ptr [RBP + local_28],RAX ; local_28 is buffer
  ffffffff8010a898 77 1a           JA         LAB_ffffffff8010a8b4           ; jump if buffer >= USER_BREAK
  ffffffff8010a89a 48 8b 55 e0     MOV        RDX,qword ptr [RBP + local_28]
  ffffffff8010a89e 48 8b 45 d8     MOV        RAX,qword ptr [RBP + local_30]
  ffffffff8010a8a2 48 01 c2        ADD        RDX,RAX
  ffffffff8010a8a5 48 b8 00        MOV        RAX,0x800000000000
-				  00 00 00 
-				  00 80 00 00
+                  00 00 00 
+                  00 80 00 00
  ffffffff8010a8af 48 39 c2        CMP        RDX,RAX
  ffffffff8010a8b2 76 0a           JBE        LAB_ffffffff8010a8be           ; jump if buffer + size < USER_BREAK
 ```
