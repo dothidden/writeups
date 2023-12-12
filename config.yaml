@@ -5,7 +5,7 @@ buildDrafts: true
 copyright: .hidden
 
 params:
-  description: Adventures following the white rabbit
+  description: Adventures following the white rabbit...
   mode: toggle
   social:
     - name: GitHub
@@ -21,14 +21,14 @@ params:
     - name: sunbather
       link: https://github.com/costinteo
       picture: https://avatars.githubusercontent.com/u/39965799?v=4
-      tags: [ 'rev','crypto','pwn' ]
+      tags: [ 'pwn','rev','crypto' ]
       description:
         - bash wizard
         - video game enjoyer
     - name: zenbassi
       link: https://github.com/stefan-radu
       picture: https://avatars.githubusercontent.com/u/30214214?v=4
-      tags: [ 'forensics','pwn' ,'rev', 'misc' ]
+      tags: [ 'forensics','pwn','rev','misc' ]
       description:
         - likes vim a bit too much
         - into (film) photography
@@ -67,6 +67,19 @@ params:
       tags: ['web', 'pwn' ,'misc']
       description:
         - I don't know what I am doing
+    - name: Honesty
+      link: https://github.com/MxHonesty
+      picture: https://avatars.githubusercontent.com/u/11357963?v=4
+      tags: [ 'rev', 'pwn', 'network' ]
+      description:
+        - currently unwinding the stack
+    - name: PineBel
+      link: https://github.com/Stefan2320
+      picture: https://avatars.githubusercontent.com/u/77758442?s=400&u=66d9d227463285d74e23bcbedbdcb712555defa7&v=4
+      tags: [ 'pwn', 'rev', 'misc' ]
+      description:
+        - Segmentation faults make me happy
+        - The second Belgian
   excludedSections:
     - about
   homeWriteupCnt: 10
