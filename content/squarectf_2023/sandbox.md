@@ -2,7 +2,7 @@
 title: Sandbox
 date: 2024-02-19T14:54:01+02:00
 description: Writeup for Sandbox [Square CTF 2023]
-author: HON3YP0T
+author: H0N3YP0T
 tags:
 - pwn
 draft: false
