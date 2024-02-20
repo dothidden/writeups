@@ -5,7 +5,7 @@ description: Writeup for Flaglang [Lactf 2024]
 author: H0N3YP0T
 tags:
 - web
-draft: true
+draft: false
 ---
 ___
 
@@ -15,14 +15,20 @@ Do you speak the language of the flags?
 
 ## Intuition
 
-**what lead you to the solution**
+The website has two dropdown where I can choose two countries and see how they say "Hello world". But, in the list there is also another country
+which is the `Flagistan`. If I try to select it, the website return an error. To resume I need to access to the Flagistan language.
+
+![flag web](/images/lactf_2024/flag_chall.png)
+
+![error](/images/lactf_2024/flagistan.png)
 
 ## Solution
 
-**the actual solution**
+The solution is really simple, I can just capture the request using Burp and I notice that a cookie is set by using the ISO code of the country. I can just change the value of the cookie to `FL` for flagistan (I know this ISO code by looking in the source code) and I will have access to the Flagistan page. It is an insecure token vulnerability.
+
+![flag](/images/lactf_2024/flag_flagistan.png)
 
 ### Flag
 
-`bestctf{I_love_.hidden}`
+`lactf{n0rw3g7an_y4m7_f4ns_7n_sh4mbl3s}`
 
-## References (in case you used [^footnotes] thingies)
