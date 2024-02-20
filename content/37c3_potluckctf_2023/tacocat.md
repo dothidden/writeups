@@ -36,10 +36,11 @@ This can give us the flag, or a shell, but the catch is that:
 * we cannot use comments
 * sum of ASCII values for each character in the input has to be equal to 69 (modulo 256)
 
-I had multiple ideas, including using string formatting to insert comments, using tuples which
-are evaluated element by element and to use triple quotes strings as a form of comment. Sadly I
-had no success with any of them, but I'm happy to see that some of my ideas were in a solution
-by `pspaul @ FluxFingers`.
+I had multiple ideas, including using string formatting to insert comments,
+using tuples which are evaluated element by element and to use triple quotes
+strings as a form of comment. Sadly I had no success with any of them, but I'm
+happy to see that some of my ideas were in a solution by `pspaul @
+[FluxFingers](https://fluxfingers.net/)`, which I we will discuss below.
 
 ## Solution
 
