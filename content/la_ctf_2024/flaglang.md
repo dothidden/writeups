@@ -1,7 +1,7 @@
 ---
 title: Flaglang
 date: 2024-02-18T20:04:40+02:00
-description: Writeup for Flaglang [Lactf 2024]
+description: Writeup for Flaglang [La ctf 2024]
 author: H0N3YP0T
 tags:
 - web
@@ -16,7 +16,7 @@ Do you speak the language of the flags?
 ## Intuition
 
 The website has two dropdown where I can choose two countries and see how they say "Hello world". But, in the list there is also another country
-which is the `Flagistan`. If I try to select it, the website return an error. To resume I need to access to the Flagistan language.
+which is the `Flagistan`. If I try to select it, the website returns an error. To resume I need access to the Flagistan language.
 
 ![flag web](/images/lactf_2024/flag_chall.png)
 

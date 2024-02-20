@@ -1,7 +1,7 @@
 ---
 title: New-Housing-Portal
 date: 2024-02-18T20:05:23+02:00
-description: Writeup for New-Housing-Portal [Lactf 2024]
+description: Writeup for New-Housing-Portal [La ctf 2024]
 author: H0N3YP0T
 tags:
 - web
@@ -54,6 +54,11 @@ The bot will visit the profile and in background it will send the invitation to 
 
 ![XSS flag](/images/lactf_2024/secret.png)
 
+### BONUS
+
+A very smart way to find the flag (but smaller chance to succeed) is to brute force a very stupid username and password and
+pray. If you are lucky enough you will find the credentials used by another team that already got the admin invitation and therefore
+steal their flag 😈.
 
 ### Flag
 

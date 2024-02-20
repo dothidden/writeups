@@ -1,7 +1,7 @@
 ---
 title: La-Housing-Portal
 date: 2024-02-18T20:05:09+02:00
-description: Writeup for La-Housing-Portal [Lactf 2024]
+description: Writeup for La-Housing-Portal [La ctf 2024]
 author: H0N3YP0T
 tags:
 - web
@@ -89,4 +89,4 @@ The final payload is the following is `'+UNION+SELECT+1,*,3,4,5,6+FROM+flag+WHER
 
 `lactf{us3_s4n1t1z3d_1npu7!!!}`
 
-## References (in case you used [^footnotes] thingies)
+

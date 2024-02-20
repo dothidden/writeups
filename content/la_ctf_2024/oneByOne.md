@@ -1,7 +1,7 @@
 ---
 title: OneByOne
 date: 2024-02-18T20:03:57+02:00
-description: Writeup for OneByOne [Lactf 2024]
+description: Writeup for OneByOne [La ctf 2024]
 author: H0N3YP0T
 tags:
 - misc
@@ -23,8 +23,8 @@ I may have to use the same technique as in the [Infinite loop](/lactf_2024/infin
 
 In the script tag, we see a huge list of characters that we can choose from the select. I quickly noticed a weird 
 pattern where all characters have the same number except one per list. By taking note of the character with the different number for every list, I was able to reconstruct the flag.
-!
-[google form.png](/images/lactf_2024/form3.png)
+
+![google form.png](/images/lactf_2024/form3.png)
 
 Putting the script in a beautifier can help.
 

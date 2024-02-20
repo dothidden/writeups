@@ -1,7 +1,7 @@
 ---
 title: Penguin-Login
 date: 2024-02-18T20:05:34+02:00
-description: Writeup for Penguin-Login [Lactf 2024]
+description: Writeup for Penguin-Login [La ctf 2024]
 author: H0N3YP0T
 tags:
 - web
@@ -117,9 +117,12 @@ print("Found! "+found_string)
 
 ![script](/images/lactf_2024/script_penguins.png)
 
+For some reason the flag in the exploit does not contain any `_` character but the flag we have to
+submit contains it between the different words which is absolutely demonic. I had a 
+lot of trouble to understand the meaning of the flag and put the `_` at the right
+place 😡, like, seriously am I the only one who got troubles to understand this `90stgr353sn0tl7k3th30th3rdbs0w0` ???
 
 ### Flag
 
 `lactf{90stgr35_3s_n0t_l7k3_th3_0th3r_dbs_0w0}`
 
-## References (in case you used [^footnotes] thingies)
