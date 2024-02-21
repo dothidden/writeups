@@ -1,7 +1,7 @@
 ---
 title: Flaglang
 date: 2024-02-18T20:04:40+02:00
-description: Writeup for Flaglang [La ctf 2024]
+description: Writeup for Flaglang [LA CTF 2024]
 author: H0N3YP0T
 tags:
 - web
