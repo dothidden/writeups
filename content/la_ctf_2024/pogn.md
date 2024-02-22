@@ -257,11 +257,11 @@ Weird/impossible math usually ends up with weird results. To cover these cases, 
   const normalize = (v) => mul(v, 1 / norm(v));
 ```
 
-What if ``norm(v)`` was 0? We can do that by passing a ``[0, 0]`` vector for our paddle velocity, to mess up this line: ``opV = mul(normalize(paddleV), 2);``.
+What if ``norm(v)`` was 0 in the last operation? We can do that by passing a ``[0, 0]`` vector for our paddle velocity, to mess up this line: ``opV = mul(normalize(paddleV), 2);``.
 
 Then, when the ball collides with the paddle, its position will turn into ``NaN``, which will evaluate the win condition (``ball[0] >= 100``) to ``true``, giving us the flag. Thanks, division by zero!
 
-To send 0 to the websocket, I modified the original client code to send ``[0, 0]`` as the paddle velocity and also the websocket url to the real url and not localhost, then ran it. I used a simple trick to run it, just embedded into an html file and opened it in browser (Thanks [MettleSphee](https://github.com/MettleSphee/)!)
+To send 0 to the websocket, I modified the original client code to send ``[0, 0]`` as the paddle velocity and also changed the websocket url to the real url (and not localhost). I used a simple trick to run it, just embedded it into an html file and opened it in browser (Thanks [MettleSphee](https://github.com/MettleSphee/)!)
 
 ### Flag
 
