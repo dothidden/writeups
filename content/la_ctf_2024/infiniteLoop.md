@@ -18,13 +18,13 @@ I found this google form but I keep getting stuck in a loop! Can you leak to me 
 
 If I submit the form, I keep having to fill it out again. So maybe I can find something in the source code ?
 
-![from](/images/lactf_2024/form.png)
+![from](/images/la_ctf_2024/form.png)
 
 ## Solution
 
 If we look in the source code, in the script tag, we can see the that the flag is hidden in two parts.
 
-![from](/images/lactf_2024/form2.png)
+![from](/images/la_ctf_2024/form2.png)
 
 ### Flag
 

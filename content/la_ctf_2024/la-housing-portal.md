@@ -23,15 +23,15 @@ The website is a simple one, we can enter our username and then choose among dif
 a table with a list of match. I try to edit the parameter in Burp Suite in order to perfom an SLQ injection it seems that the website is vulnerable to it.
 Furthermore, the challenge description gives us a hint about the `--` character which is the comment character in SQL.
 
-![welcome](/images/lactf_2024/housing.png)
+![welcome](/images/la_ctf_2024/housing.png)
 
-![table](/images/lactf_2024/housing_table.png)
+![table](/images/la_ctf_2024/housing_table.png)
 
 ## Solution
 
 If I try to make a basic SQL injection by using the `--` character, I can see that the website return a special page:
 
-![hacker](/images/lactf_2024/hacker.png)
+![hacker](/images/la_ctf_2024/hacker.png)
 
 Unfortunately the `/*` character is also blocked so the only solution is to finish the query to make it a valid one. Let's open the code:
 
@@ -78,11 +78,11 @@ def get_matching_roommates(prefs: dict[str, str]):
 
 The original query is the following: `select * from users where {} LIMIT 25;` and in order to escape it I can transform it in the following query:
 
-![payload](/images/lactf_2024/sql_housing.png)
+![payload](/images/la_ctf_2024/sql_housing.png)
 
 The final payload is the following is `'+UNION+SELECT+1,*,3,4,5,6+FROM+flag+WHERE+''='`
 
-![flag](/images/lactf_2024/housing_flag.png)
+![flag](/images/la_ctf_2024/housing_flag.png)
 
 
 ### Flag

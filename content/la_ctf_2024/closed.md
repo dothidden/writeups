@@ -17,7 +17,7 @@ Where is this rock?
 
 Answer using the coordinates of the bottom left corner of the rock, rounded to the nearest thousandth. If the coordinates were the physical location of the [bruin bear statue](https://www.google.com/maps/place/34°04'15.5%22N+118°26'42.0%22W/@34.0710041,-118.4450305,39m/data=!3m1!1e3!4m4!3m3!8m2!3d34.070968!4d-118.445002?entry=ttu), the flag would be lactf{34.071,-118.445}. Note that there is no space in the flag.
 
-![closed](/images/lactf_2024/closed.png)
+![closed](/images/la_ctf_2024/closed.png)
 
 ## Intuition
 
@@ -29,9 +29,9 @@ Further more I see the beginning of a trail path called ***ore trail.
 
 We have to look manually for the location starting from the south of California and I found it here:
 
-![closed maps](/images/lactf_2024/closed1.png)
+![closed maps](/images/la_ctf_2024/closed1.png)
 
-![closed rock](/images/lactf_2024/rock.png)
+![closed rock](/images/la_ctf_2024/rock.png)
 
 ### Flag
 

@@ -17,9 +17,9 @@ I got tired of people leaking my password from the db so I moved it out of the d
 
 The website is really basic, it only does one request which is vulnerable to SQL injections.
 
-![login](/images/lactf_2024/penguin.png)
+![login](/images/la_ctf_2024/penguin.png)
 
-![test_sqli](/images/lactf_2024/penguin_test.png)
+![test_sqli](/images/la_ctf_2024/penguin_test.png)
 
 ## Solution
 
@@ -73,13 +73,13 @@ def submit_form():
 The server does not send the query back, it only sends a message if the query was successful or not. Therefore I need to build an 
 error based SQLi. I can use the `BETWEEN` query in order to simulate the `LIKE` query. The following payload is used to guess one by one character of the flag.
 
-![payload](/images/lactf_2024/payload_penguins.png)
+![payload](/images/la_ctf_2024/payload_penguins.png)
 
 This payload is an example where I already know the beginning of the flag (flag{tes) and I want to find out the next character. I use the `BETWEEN` query to check if the character I will inject in the first position of the flag is correct or not. If the server returns `We found a penguin!!!!!` then the character is good otherwise it is not. 
 Note that I had `z` at the end of the second part of the `BETWEEN` to check from `a` to `z` and if it is a number then I will add `9` to check from `0` to `9`.
 In order to be faster I can use `fuff` to fuzz every character by using a wordlist.
 
-![payload](/images/lactf_2024/fuff_penguins.png)
+![payload](/images/la_ctf_2024/fuff_penguins.png)
 
 or even do it by using a script (thanks to [MettleSphee](https://github.com/MettleSphee))
 
@@ -115,7 +115,7 @@ while found_string[len(found_string)-1] != "}":
 print("Found! "+found_string)
 ```
 
-![script](/images/lactf_2024/script_penguins.png)
+![script](/images/la_ctf_2024/script_penguins.png)
 
 For some reason the flag in the exploit does not contain any `_` character but the flag we have to
 submit contains it between the different words which is absolutely demonic. I had a 

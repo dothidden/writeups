@@ -17,7 +17,7 @@ I swear I knew what the flag was, but I can't seem to remember it anymore... can
 
 Let's open first the program using `ghidra` and see what we can find.
 
-![Ghidra](/images/lactf_2024/stack.png)
+![Ghidra](/images/la_ctf_2024/stack.png)
 
 It seems the flag is split into different parts into the stack.
 
@@ -27,7 +27,7 @@ We can start looking at the first offset `local_98` which is the `lactf{no` stri
 stack use the _LIFO_ method, we have to reconstruct the flag by taking the highest offset after `local_98` which is
 `acStack_90`, then `acStack_88` and so on. By looking on all those offset we can find the flag.
 
-![Flag](/images/lactf_2024/flag_memories.png)
+![Flag](/images/la_ctf_2024/flag_memories.png)
 
 ### Flag
 

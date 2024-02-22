@@ -23,7 +23,7 @@ To resume, I can use the XSS vulnerability chained with an SSRF to get the flag.
 <img src=x onerror="alert('vulnerable')">
 ```
 
-![XSS](/images/lactf_2024/xss.png)
+![XSS](/images/la_ctf_2024/xss.png)
 
 ## Solution
 
@@ -52,7 +52,7 @@ https://new-housing-portal.chall.lac.tf/finder/?q=<img src=x onerror="var req = 
 ```
 The bot will visit the profile and in background it will send the invitation to the user `brole`. After that, I will receive the invitation and I can use it to get the flag.
 
-![XSS flag](/images/lactf_2024/secret.png)
+![XSS flag](/images/la_ctf_2024/secret.png)
 
 ### BONUS
 

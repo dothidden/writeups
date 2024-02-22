@@ -17,20 +17,20 @@ Note: the flag does have random characters at the end - that is intentional.
 
 ## Intuition
 
-I may have to use the same technique as in the [Infinite loop](/lactf_2024/infiniteloop/) challenge, so let's look at the source code.
+I may have to use the same technique as in the [Infinite loop](/la_ctf_2024/infiniteloop/) challenge, so let's look at the source code.
 
 ## Solution
 
 In the script tag, we see a huge list of characters that we can choose from the select. I quickly noticed a weird 
 pattern where all characters have the same number except one per list. By taking note of the character with the different number for every list, I was able to reconstruct the flag.
 
-![google form.png](/images/lactf_2024/form3.png)
+![google form.png](/images/la_ctf_2024/form3.png)
 
 Putting the script in a beautifier can help.
 
-![Beautify 1](/images/lactf_2024/beautify.png)
+![Beautify 1](/images/la_ctf_2024/beautify.png)
 
-![Beautify 2](/images/lactf_2024/beautfy2.png)
+![Beautify 2](/images/la_ctf_2024/beautfy2.png)
 
 ...
 SNIP
