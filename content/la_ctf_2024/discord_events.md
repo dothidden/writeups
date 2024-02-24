@@ -5,6 +5,7 @@ description: Writeup for Discord Events [LA CTF 2024]
 author: H0N3YP0T
 tags:
 - misc
+- forensics
 draft: false
 ---
 ___
