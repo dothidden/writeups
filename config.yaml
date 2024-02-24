@@ -43,7 +43,7 @@ params:
     - name: H0N3YP0T
       link: https://github.com/Mathis-Dory
       picture: https://ctftime.org/media/cache/52/af/52af19f614f045a44bcd409964613ac4.jpg
-      tags: [ 'osint','forensics','web','misc' ]
+      tags: [ 'osint','forensics','web','misc','network' ]
       description:
         - I will find you, I'm really gonna find you...
         - The only Belgian of the team
