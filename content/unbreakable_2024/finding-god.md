@@ -104,3 +104,8 @@ After some pray, god found us.
 
 `CTF{be353ec1796c6c5e5d99e31fa14ce0458977d329a0e97356622fdaf80722d7cd}`
 
+### Acknowledge
+
+This writeup was co-authored by [sunbather](https://github.com/costinteo) becoming joker with me.
+
+![200w.webp](/images/unbreakable_2024/joker.webp)
