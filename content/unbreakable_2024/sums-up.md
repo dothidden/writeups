@@ -5,24 +5,24 @@ description: Writeup for Sums-Up [Unbreakable 2024]
 author: H0N3YP0T
 tags:
 - network
-draft: true
+draft: false
 ---
 ___
 
 ## Challenge Description
 
-Our SOC analysts saw some strange DNS traffic. Wanted you to figure out what was exfiltated , can you check it and sum it up ?
+Our SOC analysts saw some strange DNS traffic. Wanted you to figure out what was exfiltrated, can you check it and sum it up ?
 
 ## Intuition
 
-Since it is a `.pcap` let's open using Wireshark and we notice a lot of DNS request to different websites. I am used to this kind
-of challenges and I started to scroll down to search for some patterns since the capture is quiet small.
+Since it is a `.pcap` let's open using Wireshark,and we notice a lot of DNS requests to different websites. I am used to this kind
+of challenges and I started to scroll down to search for some patterns since the capture is small.
 
 ![img.png](/images/unbreakable_2024/sums.png)
 
 ## Solution
 
-I immediately noticed the flag pattern by scrolling down. The flag start at the google request and continues with amazon, facebook, ...
+I immediately noticed the flag pattern by scrolling down. The flag starts at the Google request and continues with Amazon, Facebook, ...
 
 ![img.png](/images/unbreakable_2024/google.png)
 ![img.png](/images/unbreakable_2024/amazon.png)
