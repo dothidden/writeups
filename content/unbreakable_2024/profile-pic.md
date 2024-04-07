@@ -27,7 +27,7 @@ we finally looked at XXE upload chaining with the upload feature.
 Another hint about svg exploit was that the file was renamed and retyped to `png` after upload therefore it was obvious
 that we had to exploit something else than php.
 
-![img.png](static/images/unbreakable_2024/png.png)
+![img.png](/images/unbreakable_2024/png.png)
 
 ## Solution
 
