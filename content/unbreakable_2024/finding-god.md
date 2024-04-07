@@ -2,7 +2,7 @@
 title: Finding-God
 date: 2024-04-07T13:45:05+03:00
 description: Writeup for Finding-God [Unbreakable 2024]
-author: H0N3YP0T
+author: H0N3YP0T, sunbather
 tags:
 - osint
 draft: false
@@ -87,7 +87,7 @@ Unfortunately this query timed out such as all the other queries we tried. We st
 Being in depression I started to look at other possible tools to find the location. I found the following [tool](https://osm-search.bellingcat.com/) and
 noticed it uses the exact same filter as in the description. 
 
-![img.png](images/unbreakable_2024/map.png)
+![img.png](/images/unbreakable_2024/map.png)
 
 Unfortunately after scanning all over Italy, I found many different places and by some miracle I understood I had to put the 
 filter in the same order as the description. `Church`, `Water`, `Hospital`, `Park` and `Railroad`. After scanning again all over
