@@ -20,7 +20,7 @@ EX: CTF{sha256("Parrocchia S. Teresa di Gesù Bambino")}
 
 ## Intuition
 
-Since the challenge mention OSM (OpenStreetMap), we know wa had to use OSM queries to find the location. Therefore our 
+Since the challenge mentioned OSM (OpenStreetMap), we knew we had to use OSM queries to find the location. Therefore, our 
 first choice went to [overpass-turbo](https://overpass-turbo.eu/) and we started building queries to find the location.
 
 ```sql
@@ -80,12 +80,12 @@ first choice went to [overpass-turbo](https://overpass-turbo.eu/) and we started
 // print results
 out geom;
 ```
-Unfortunately this query timed out such as all the other queries we tried. We started severe depression after working more than 2 days on it.
+Unfortunately this query timed out such as all the other queries we tried. We started to suffer from severe depression after working for more than 2 days on it.
 
 ## Solution
 
-Being on depression I started to look at other possible tools to find the location. I found the following [tool](https://osm-search.bellingcat.com/) and
-noticed it use the exact same filter as in the description. 
+Being in depression I started to look at other possible tools to find the location. I found the following [tool](https://osm-search.bellingcat.com/) and
+noticed it uses the exact same filter as in the description. 
 
 ![img.png](images/unbreakable_2024/map.png)
 
