@@ -90,9 +90,12 @@ menu:
     - name: Home
       url: /
       weight: 1
+    - name: Events
+      url: /events
+      weight: 2
     - name: Tags
       url: /tags
-      weight: 2
+      weight: 3
     - name: About
       url: /about
-      weight: 3
+      weight: 4
