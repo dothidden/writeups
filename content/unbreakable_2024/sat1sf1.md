@@ -6,7 +6,7 @@ author: zenbassi
 tags:
 - rev
 - crypto
-draft: true
+draft: false
 ---
 ___
 
