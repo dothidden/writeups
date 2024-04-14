@@ -82,6 +82,7 @@ params:
         - The second Belgian
   excludedSections:
     - about
+    - events
   homeWriteupCnt: 10
   katex: true
 
