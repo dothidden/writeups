@@ -1,8 +1,8 @@
 :root {
     /* dark colors */
-    --darkmaincolor: lawngreen;
+    --darkmaincolor: red;
     --darkbordercl: thistle;
-    --darkhovercolor: lawngreen;
+    --darkhovercolor: pink;
     --darkcodecolor: darkslateblue;
 }
 
@@ -12,13 +12,13 @@ body {
 }
 
 ::-moz-selection {
-    background: var(--darkmaincolor);
+    background: var(--darkhovercolor);
     color: black;
     text-shadow: none;
 }
 
 ::selection {
-    background: var(--darkmaincolor);
+    background: var(--darkhovercolor);
     color: black;
     text-shadow: none;
 }
