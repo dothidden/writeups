@@ -63,4 +63,3 @@ arriving at the final payload.
 
 `ctf{38754723ac2ce496f98359fc7f0acdea211269d812a3f4d30e779bc2aae6565`
 
-## References (in case you used [^footnotes] thingies)
