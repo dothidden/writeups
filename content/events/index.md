@@ -11,12 +11,12 @@ For our 1 year anniversary we're hosting a collection of presentations and works
 
 | Type | Title | Time | Place |
 |------|-------|------|-------|
-| Presentation | Dissecting the Unknown - Introduction to Reverse Engineering | 23rd April, 18:00-19:30 | Amf. Pompeiu |
-| Workshop | Codebending: Introduction to Binary Exploitation | 24th April, 18:00-20:00 | Amf. Pompeiu |
-| Workshop | Finding vulnerabilities with Symbolic Execution | TBD | TBD |
+| Presentation | Dissecting the Unknown - Introduction to Reverse Engineering | 23 April, 18:00-19:30 | Amf. Pompeiu |
+| Workshop | Codebending: Introduction to Binary Exploitation | 24 April, 18:00-20:00 | Amf. Pompeiu |
+| Workshop | Tearing apart an APK: Introduction to Mobile Reverse Engineering | 15 May, 18:00-20:00 | TBD |
+| Workshop | Finding vulnerabilities with Symbolic Execution | 29 April, 18:00-20:00 | TBD |
+| Presentation | From XSS to SQL Injection: On Web Vulnerabilities | 22 May, 18:00-20:00 | TBD |
 | Workshop | Unveiling the Dark Arts: Introducere în Analiza de Malware | TBD | TBD |
-| Workshop | Tearing apart an APK: Introduction to Mobile Reverse Engineering | TBD | TBD |
-| Presentation | From XSS to SQL Injection: On Web Vulnerabilities | TBD | TBD |
 | Presentation | Android Modding (how 2 🧱 your phone) | TBD | TBD |
 | Presentation | Tech Liberation: Introduction to Open Source | TBD | TBD |
 
