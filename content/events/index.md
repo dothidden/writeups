@@ -13,7 +13,6 @@ For our 1 year anniversary we're hosting a collection of presentations and works
 
 | Type         | Title                                                            | Time | Place | Requirements |
 |--------------|------------------------------------------------------------------|------|-------|--------------|
-| Workshop     | Finding vulnerabilities with Symbolic Execution                  | 29 April, 18:00-20:00 | Amf. Pompeiu | Python3 |
 | Presentation | Android Modding (how 2 🧱 your phone)                            | 14 May, 18:00-19:30 | TBD | None |
 | Workshop     | Tearing apart an APK: Introduction to Mobile Reverse Engineering | 15 May, 18:00-20:00 | TBD | TBD |
 | Presentation | From XSS to SQL Injection: On Web Vulnerabilities                | 22 May, 18:00-20:00 | TBD | TBD |
@@ -27,6 +26,7 @@ If you want specific information on a particular presentation or workshop, or if
 
 | Type | Title | Time | Place | Requirements |
 |------|-------|------|-------|--------------|
+| Workshop | Finding vulnerabilities with Symbolic Execution | 29 April, 18:00-20:00 | Amf. Pompeiu | Python3 |
 | Workshop | Codebending: Introduction to Binary Exploitation | 24 April, 18:00-20:00 | Amf. Pompeiu | Linux VM, Laptop |
 | Presentation | Dissecting the Unknown: Introduction to Reverse Engineering | 23 April, 18:00-19:30 | Amf. Pompeiu | None |
 
