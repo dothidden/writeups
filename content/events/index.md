@@ -36,3 +36,4 @@ If you want specific information on a particular presentation or workshop, or if
 
 * [Slides - Dissecting the Unknown: Introduction to Reverse Engineering](https://docs.google.com/presentation/d/1__mQ4fDVBDJshSXbMCwh6L5ACbZPffFDWExjdsCUhT4/edit?usp=sharing)
 * [Slides - Codebending: Introduction to Binary Exploitation](https://docs.google.com/presentation/d/1H1jfutKSter7UFtRmciRgn3QCBCej-o84l6MS-XXMvQ/edit?usp=sharing)
+* [Slides - Finding vulnerabilities with Symbolic Execution](https://docs.google.com/presentation/d/1DF5qNXU4qqbUgPOlzjYeCCSvzdgyRr88epN4atRgGMc/edit?usp=sharing)
