@@ -11,14 +11,15 @@ For our 1 year anniversary we're hosting a collection of presentations and works
 
 ## Upcoming
 
-| Type | Title | Time | Place | Requirements |
-|------|-------|------|-------|--------------|
-| Workshop | Finding vulnerabilities with Symbolic Execution | 29 April, 18:00-20:00 | Amf. Pompeiu | Python3 |
-| Presentation | Android Modding (how 2 🧱 your phone) | 14 May, 18:00-19:30 | TBD | None |
-| Workshop | Tearing apart an APK: Introduction to Mobile Reverse Engineering | 15 May, 18:00-20:00 | TBD | TBD |
-| Presentation | From XSS to SQL Injection: On Web Vulnerabilities | 22 May, 18:00-20:00 | TBD | TBD |
-| Workshop | Unveiling the Dark Arts: Introduction in Malware Analysis | TBD | TBD | TBD |
-| Presentation | Tech Liberation: Introduction to Open Source | TBD | TBD | TBD |
+| Type         | Title                                                            | Time | Place | Requirements |
+|--------------|------------------------------------------------------------------|------|-------|--------------|
+| Workshop     | Finding vulnerabilities with Symbolic Execution                  | 29 April, 18:00-20:00 | Amf. Pompeiu | Python3 |
+| Presentation | Android Modding (how 2 🧱 your phone)                            | 14 May, 18:00-19:30 | TBD | None |
+| Workshop     | Tearing apart an APK: Introduction to Mobile Reverse Engineering | 15 May, 18:00-20:00 | TBD | TBD |
+| Presentation | From XSS to SQL Injection: On Web Vulnerabilities                | 22 May, 18:00-20:00 | TBD | TBD |
+| Workshop     | Unveiling the Dark Arts: Introduction in Malware Analysis        | TBD | TBD | TBD |
+| Presentation | Tech Liberation: Introduction to Open Source                     | TBD | TBD | TBD |
+| Workshop     | Find anything using secret agency techniques (OSINT)             | TBD | TBD | TBD |
 
 If you want specific information on a particular presentation or workshop, or if you're interested in joining us, please contact us directly. Check the [About](/about) page to find out how.
 
