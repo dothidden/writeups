@@ -49,7 +49,7 @@ brute-forcing the crib's position enables us to recover the flag.
 On a closer inspection, we notice that we're dealing with a logical formula
 where the unknown terms are the characters of the flag. If it's satisfiable,
 the model for this formula should be unique, and should correspond to our flag.
-After an upsolvig session and some discord hints, we came up with a simpler
+After an upsolving session and some discord hints, we came up with a simpler
 solution based on the Z3 SMT solver [^z3]. We build the formula in the z3
 format and then find a model for it. A partial solution can be checked out
 below.
