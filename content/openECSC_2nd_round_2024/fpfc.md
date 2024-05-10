@@ -5,7 +5,7 @@ description: Writeup for fpfc [openECSC 2024 (2nd Round)]
 author: zenbassi
 tags:
 - rev
-draft: true
+draft: false
 ---
 ___
 
