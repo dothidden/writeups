@@ -83,7 +83,7 @@ Usually, when you're limited in your "moves" in pwn challenges, the first step y
 004012b2 0f 05           SYSCALL
 ```
 
-We can see that the only functions called after our shellcode are *munmap* and *__stack_chk_fail*. We can't trigger the stack fail, as there is not buffer overflow, so we choose to overwrite *munmap* with the address for *main*. And ta-da, we have infinite[^inf] 15 bytes shellcodes to run by returning to main in a closed loop. We overwrite munmap like so:
+We can see that the only functions called after our shellcode are *munmap* and *__stack_chk_fail*. We can't trigger the stack fail, as there is no buffer overflow, so we choose to overwrite *munmap* with the address for *main*. And ta-da, we have infinite[^inf] 15 bytes shellcodes to run by returning to main in a closed loop. We overwrite munmap like so:
 
 ```asm
 mov edi, 0x00404038 ; move the GOT location for munmap in rdi

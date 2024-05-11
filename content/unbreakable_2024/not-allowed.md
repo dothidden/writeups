@@ -40,7 +40,7 @@ Since the stack is NX, our remaining option is to ROP. Sadly we don't have a lot
 0x00000000004011cc : syscall
 ```
 
-We have control over RAX, RDI and we also have a syscall gadget. Sadly however, the imported libc functions do not let us print anythign! So we cannot leak libc and jump to *system* or *execve*. We can, however, do SROP! We can craft a signal return frame on the stack and then trigger it using a sigreturn syscall. But how do we get an address for ``/bin/sh``? The *wish* function has everything prepared for us:
+We have control over RAX, RDI and we also have a syscall gadget. Sadly however, the imported libc functions do not let us print anything! So we cannot leak libc and jump to *system* or *execve*. We can, however, do SROP! We can craft a signal return frame on the stack and then trigger it using a sigreturn syscall. But how do we get an address for ``/bin/sh``? The *wish* function has everything prepared for us:
 
 ```c
 void wish(void)
