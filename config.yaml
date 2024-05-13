@@ -29,7 +29,7 @@ params:
     - name: zenbassi
       link: https://github.com/stefan-radu
       picture: https://avatars.githubusercontent.com/u/30214214?v=4
-      tags: [ 'forensics','pwn','rev','misc' ]
+      tags: [ 'rev', 'pwn', 'misc' ]
       description:
         - likes vim a bit too much
         - into (film) photography
