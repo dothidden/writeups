@@ -13,9 +13,9 @@ For our 1 year anniversary we're hosting a collection of presentations and works
 
 | Type         | Title                                                            | Time | Place | Requirements |
 |--------------|------------------------------------------------------------------|------|-------|--------------|
-| Presentation | Android Modding (how 2 🧱 your phone)                            | 14 May, 18:00-19:30 | TBD | None |
-| Workshop     | Tearing apart an APK: Introduction to Mobile Reverse Engineering | 15 May, 18:00-20:00 | TBD | TBD |
-| Presentation | From XSS to SQL Injection: On Web Vulnerabilities                | 22 May, 18:00-20:00 | TBD | TBD |
+| Presentation | Android Modding (how 2 🧱 your phone)                            | 14 May, 18:15-19:30 | Amf. Pompeiu | None |
+| Workshop     | Tearing apart an APK: Introduction to Mobile Reverse Engineering | 21 May, 18:00-20:00 | Amf. Pompeiu | TBD |
+| Presentation | From XSS to SQL Injection: On Web Vulnerabilities                | 22 May, 18:00-20:00 | Amf. Pompeiu | TBD |
 | Workshop     | Unveiling the Dark Arts: Introduction in Malware Analysis        | TBD | TBD | TBD |
 | Presentation | Tech Liberation: Introduction to Open Source                     | TBD | TBD | TBD |
 | Workshop     | Find anything using secret agency techniques (OSINT)             | TBD | TBD | TBD |
