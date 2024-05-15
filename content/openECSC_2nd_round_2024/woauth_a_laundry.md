@@ -18,7 +18,7 @@ Site: http://woauthalaundry.challs.open.ecsc2024.it
 
 ## Intuition
 
-I'm not good with web challenges, so I was very proud when I solved this challenge, even thought it was one of most solved.
+I'm not good with web challenges, so I was very proud when I solved this challenge, even though it was one of most solved.
 
 After logging in, I inspected the session storage. There, I immediately noticed an admin entry with the value 0. Setting its value to 1 revealed an `/admin` page with a `Generate Report` button. Pressing the button generates a POST request. After getting a response with status code `401` Unauthorised, I assumed our user does not have enough privileges. I logged out, and more carefully inspected the login process.
 
