@@ -11,14 +11,13 @@ For our 1 year anniversary we're hosting a collection of presentations and works
 
 ## Upcoming
 
-| Type | Title | Time | Place | Requirements |
-|------|-------|------|-------|--------------|
-| Workshop | Finding vulnerabilities with Symbolic Execution | 29 April, 18:00-20:00 | Amf. Pompeiu | Python3 |
-| Presentation | Android Modding (how 2 🧱 your phone) | 14 May, 18:00-19:30 | TBD | None |
-| Workshop | Tearing apart an APK: Introduction to Mobile Reverse Engineering | 15 May, 18:00-20:00 | TBD | TBD |
-| Presentation | From XSS to SQL Injection: On Web Vulnerabilities | 22 May, 18:00-20:00 | TBD | TBD |
-| Workshop | Unveiling the Dark Arts: Introduction in Malware Analysis | TBD | TBD | TBD |
-| Presentation | Tech Liberation: Introduction to Open Source | TBD | TBD | TBD |
+| Type         | Title                                                            | Time | Place | Requirements |
+|--------------|------------------------------------------------------------------|------|-------|--------------|
+| Workshop     | Tearing apart an APK: Introduction to Mobile Reverse Engineering | 21 May, 18:00-20:00 | Amf. Pompeiu | Laptop, Android Phone w/ dev mode unlocked, wire for connecting the phone to PC |
+| Presentation | From XSS to SQL Injection: On Web Vulnerabilities                | 22 May, 18:00-20:00 | Amf. Pompeiu | None |
+| Workshop     | Unveiling the Dark Arts: Introduction in Malware Analysis        | TBD | TBD | TBD |
+| Presentation | Tech Liberation: Introduction to Open Source                     | TBD | TBD | TBD |
+| Workshop     | Find anything using secret agency techniques (OSINT)             | TBD | TBD | TBD |
 
 If you want specific information on a particular presentation or workshop, or if you're interested in joining us, please contact us directly. Check the [About](/about) page to find out how.
 
@@ -26,6 +25,8 @@ If you want specific information on a particular presentation or workshop, or if
 
 | Type | Title | Time | Place | Requirements |
 |------|-------|------|-------|--------------|
+| Presentation | Android Modding (how 2 🧱 your phone)                            | 14 May, 18:15-19:30 | Amf. Pompeiu | None |
+| Workshop | Finding vulnerabilities with Symbolic Execution | 29 April, 18:00-20:00 | Amf. Pompeiu | Python3 |
 | Workshop | Codebending: Introduction to Binary Exploitation | 24 April, 18:00-20:00 | Amf. Pompeiu | Linux VM, Laptop |
 | Presentation | Dissecting the Unknown: Introduction to Reverse Engineering | 23 April, 18:00-19:30 | Amf. Pompeiu | None |
 
@@ -35,3 +36,5 @@ If you want specific information on a particular presentation or workshop, or if
 
 * [Slides - Dissecting the Unknown: Introduction to Reverse Engineering](https://docs.google.com/presentation/d/1__mQ4fDVBDJshSXbMCwh6L5ACbZPffFDWExjdsCUhT4/edit?usp=sharing)
 * [Slides - Codebending: Introduction to Binary Exploitation](https://docs.google.com/presentation/d/1H1jfutKSter7UFtRmciRgn3QCBCej-o84l6MS-XXMvQ/edit?usp=sharing)
+* [Slides - Finding vulnerabilities with Symbolic Execution](https://docs.google.com/presentation/d/1DF5qNXU4qqbUgPOlzjYeCCSvzdgyRr88epN4atRgGMc/edit?usp=sharing)
+* [Slides - Android Modding (how 2 🧱 your phone)](https://docs.google.com/presentation/d/1sX4SL64gJeqD6HK9VuCCKKmWTsBGQ0tk167o2sEkV-s/edit?usp=sharing)
