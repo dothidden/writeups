@@ -115,12 +115,9 @@ We can see in the image below that the RBP value is used in the exception handle
 ```
 
 To address this issue, we need a valid address for RBP after our input of length 44. This address can be the stack leak we get.
-
 Because the stack leak address and the address where RBP is used are very close, we need to add an offset to avoid interfering with the stack when executing future instructions. Therefore, I subtracted 0x10 from the stack leak address.
-
 The goal here is to make the exception execute normally so that we return to main and overwrite the return address of main. 
 To achieve this, I needed to replicate the stack.
-
 So I extended the payload with an address that was normally on the stack (this was found by running the program with gdb),
 ensuring that the exception would execute smoothly and return in the the main function.
 To complete the exploit, I added the address of the print_flag function to the end of the payload. 
