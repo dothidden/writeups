@@ -38,3 +38,4 @@ If you want specific information on a particular presentation or workshop, or if
 * [Slides - Codebending: Introduction to Binary Exploitation](https://docs.google.com/presentation/d/1H1jfutKSter7UFtRmciRgn3QCBCej-o84l6MS-XXMvQ/edit?usp=sharing)
 * [Slides - Finding vulnerabilities with Symbolic Execution](https://docs.google.com/presentation/d/1DF5qNXU4qqbUgPOlzjYeCCSvzdgyRr88epN4atRgGMc/edit?usp=sharing)
 * [Slides - Android Modding (how 2 🧱 your phone)](https://docs.google.com/presentation/d/1sX4SL64gJeqD6HK9VuCCKKmWTsBGQ0tk167o2sEkV-s/edit?usp=sharing)
+* [Slides - Tearing apart an APK: Introduction to Mobile Reverse Engineering](https://docs.google.com/presentation/d/1jjQ7ku8t1AqS1jrDP5hiXXmtO0gpjPupUtmYJCVsu8Q/edit?usp=sharing)
