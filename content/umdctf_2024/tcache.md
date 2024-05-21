@@ -9,7 +9,7 @@ tags:
 ----
 ## Tcache
 
-Tcache (per thread cache) was added in glibc 2.26 to make heap allocation more efficient, and basically each thread will get it s own bin of small chunks. 
+Tcache (per-thread cache) was added in glibc 2.26 to make heap allocation more efficient by allowing each thread to have its own tcache.
 
 Important things to know:
 
