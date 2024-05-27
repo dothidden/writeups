@@ -15,7 +15,7 @@ SO Classic !
 
 ## Intuition
 
-Automated tools like sqlmap or bruteforcing are not allowed for this challange. 
+Automated tools like sqlmap or bruteforcing are not allowed for this challenge. 
 
 This challange involves a flask application where the login function does not use a prepared statement and it uses a raw query, vulnerable to sql injection.
 For now, this looks like an easy sql injection challange, but the twist is this code section:

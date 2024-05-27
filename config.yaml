@@ -86,7 +86,7 @@ params:
       picture: https://avatars.githubusercontent.com/u/17956023?v=4
       tags: [ 'web', 'forensics', 'misc' ]
       description:
-        - None
+        - Exploring the depths of web security
   excludedSections:
     - about
     - events
