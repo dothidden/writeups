@@ -64,6 +64,3 @@ Since bruteforcing, including time based or error based sql injection is not all
 
 `L3ak{__V3RY_B4S1C_SQLI}`
 
-## References
-
--
