@@ -81,6 +81,12 @@ params:
       description:
         - Segmentation faults make me happy
         - The second Belgian
+    - name: Hust
+      link: https://github.com/radumihai8
+      picture: https://avatars.githubusercontent.com/u/17956023?v=4
+      tags: [ 'web', 'forensics', 'misc' ]
+      description:
+        - None
   excludedSections:
     - about
     - events
