@@ -5,6 +5,15 @@ type: events
 draft: false
 ---
 
+# .hidden Seminar
+
+We're now hosting a technical seminar. Join us on the last Wednesday of every month to discuss exploits, mitigations, new security research and everything in between. 
+
+| Title | Place | Datetime |
+| :---: | :----:   | :-----: | 
+| Intel CET Overview and Exploit Techniques | Google Room @ FMI | 30th Oct. 18:00 |
+
+
 # OSCTF LAN Party
 
 Join us to play OSCTF on 13th of July, 2024. We'll be waiting for you at the University of Bucharest, at 10:00 local time. We'll play until 19:30 and then share solutions for the challenges.
