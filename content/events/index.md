@@ -11,7 +11,7 @@ We're now hosting a technical seminar. Join us on the last Wednesday of every mo
 
 | Title | Place | Datetime |
 | :---: | :----:   | :-----: | 
-| Intel CET Overview and Exploit Techniques | Google Room @ FMI | 30th Oct. 18:00 |
+| Intel CET Overview and Exploit Techniques | Amf Pompeiu @ FMI | 30th Oct. 18:00 |
 
 
 # OSCTF LAN Party
