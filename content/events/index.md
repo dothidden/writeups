@@ -9,9 +9,10 @@ draft: false
 
 We're now hosting a technical seminar. Join us on the last Wednesday of every month to discuss exploits, mitigations, new security research and everything in between. 
 
-| Title | Place | Datetime |
-| :---: | :----:   | :-----: | 
-| Intel CET Overview and Exploit Techniques | Amf Pompeiu @ FMI | 30th Oct. 18:00 |
+| Title | Speaker  | Place | Datetime | Slides |
+| :---: | :-----:  | :---: | :------: | :----: |
+| TBD | TBD | Amf Pompeiu @ FMI | 27th Nov. 18:00 | TBD |
+| Intel CET Overview and Exploit Techniques | sunbather | Amf Pompeiu @ FMI | 30th Oct. 18:00 | [Link](https://docs.google.com/presentation/d/1PaTpV5Mgql9OySzzYRPV8RSVNGSPHaTAUfcFXqawhik) |
 
 
 # OSCTF LAN Party
@@ -34,12 +35,12 @@ If you want specific information on a particular presentation or workshop, or if
 
 | Type | Title | Time | Place | Requirements |
 |------|-------|------|-------|--------------|
-| Presentation | From XSS to SQL Injection: On Web Vulnerabilities                | 22 May, 18:00-20:00 | Amf. Pompeiu | None |
-| Workshop     | Tearing apart an APK: Introduction to Mobile Reverse Engineering | 21 May, 18:00-20:00 | Amf. Pompeiu | Laptop, Android Phone w/ dev mode unlocked, wire for connecting the phone to PC |
-| Presentation | Android Modding (how 2 🧱 your phone)                            | 14 May, 18:15-19:30 | Amf. Pompeiu | None |
-| Workshop | Finding vulnerabilities with Symbolic Execution | 29 April, 18:00-20:00 | Amf. Pompeiu | Python3 |
-| Workshop | Codebending: Introduction to Binary Exploitation | 24 April, 18:00-20:00 | Amf. Pompeiu | Linux VM, Laptop |
-| Presentation | Dissecting the Unknown: Introduction to Reverse Engineering | 23 April, 18:00-19:30 | Amf. Pompeiu | None |
+| Presentation | From XSS to SQL Injection: On Web Vulnerabilities                | 22 May, 18:00-20:00   | Amf. Pompeiu | None |
+| Workshop     | Tearing apart an APK: Introduction to Mobile Reverse Engineering | 21 May, 18:00-20:00   | Amf. Pompeiu | Laptop, Android Phone w/ dev mode unlocked, wire for connecting the phone to PC |
+| Presentation | Android Modding (how 2 🧱 your phone)                            | 14 May, 18:15-19:30   | Amf. Pompeiu | None |
+| Workshop     | Finding vulnerabilities with Symbolic Execution                  | 29 April, 18:00-20:00 | Amf. Pompeiu | Python3 |
+| Workshop     | Codebending: Introduction to Binary Exploitation                 | 24 April, 18:00-20:00 | Amf. Pompeiu | Linux VM, Laptop |
+| Presentation | Dissecting the Unknown: Introduction to Reverse Engineering      | 23 April, 18:00-19:30 | Amf. Pompeiu | None |
 
 
 
