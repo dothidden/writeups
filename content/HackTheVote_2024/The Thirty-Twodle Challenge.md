@@ -37,10 +37,14 @@ Guess not. By looking through the code, it gives access to ``/bin/sh`` only when
 
 We can extract the full wordlist from the binary, and we can get the solution for that seed. As it turns out, finding the right words to auto-solve for a specific seed *may* be difficult. Factors which include having too many letters. As we have only 5 guesses with 5 letters each, that means a total of 25 letters. Given that we don't have many vowels, or other characters that repeat more often than not, we're going to have to find a good seed. The words are taken in a pseudo-random order from the wordlist using libc's ``srand(seed)`` function.
 
+To get a good 'seed', we had to find a seed that had all of the 32 solutions with fewer distinct characters, and preferabily more repeating letters. Then, we would calculate the score based on the following explanation:
+For each word in the solution we computed a dictionary with the letter frequency. We then computed the union of these dictionaries, taking the maximum from the common values. The score is the sum of the values in the union divided by 5. It represents something like the average number of unique letters from the solution alphabet, that each of our chosen words is expected to contain. This number is relevant, because a score greater than 5 will mean that we cannot find a solution, given that we're limited to words of size 5.
+
+
 (zenbassi) wrote the scripts to do the following things (simplified):
 - Find a seed with a score less than 5; the lower score the easier result;
 - Find (bruteforce) valid words to be used in the solve that are NOT part of the 32 words to be found;
-For each word in the solution we computed a dictionary with the letter frequency. We then computed the union of these dictionaries, taking the maximum from the common values. The score is the sum of the values in the union divided by 5. It represents something like the average number of unique letters from the solution alphabet, that each of our chosen words is expected to contain. This number is relevant, because a score greater than 5 will mean that we cannot find a solution, given that we're limited to words of size 5.
+
 
 While doing all of this, I decided to keep the script running for the lulz to see if I can find a seed with a score low enough. Turns out I found one with a score as low as 4.2, which was a very, very good candidate.
 
