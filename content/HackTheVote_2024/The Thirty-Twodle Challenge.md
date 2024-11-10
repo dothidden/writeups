@@ -2,7 +2,7 @@
 title: The Thirty-Twodle Challenge
 date: 2024-11-06T22:20:02+03:00
 description: Writeup for The Thirty-Twodle Challenge [HackTheVote 2024]
-author: MettleSphee, zenbassi
+author: MettleSphee
 tags:
   - rev
 draft: false
@@ -16,6 +16,7 @@ machine and help us predict their each and every future story?
 This write-up is going to be less of a technical one because I (MettleSphee) took a weird approach: I like thinking about how games would work technically by looking at how they behave. Therefore, I found the directions to the flag without looking myself at the code, but the help I've gotten was incredible. I couldn't have written such amazing scripts/solutions for the challenge, and the credit goes to (zenbassi) for basically doing the harder part of the challenge :) .
 
 ## Write-up
+``Authors: MettleSphee, zenbassi``
 My teammate was doing the whole reversing process, while I chimed in and just wanted to try and run the binary to see what happens.
 
 Alright, who knows Wordle? The game has the player try to guess a 5 letter word, while allowing a total of 6 guesses. While guessing, each letter is marked in the word as follows:
