@@ -2,7 +2,7 @@
 title: The Thirty-Twodle Challenge
 date: 2024-11-06T22:20:02+03:00
 description: Writeup for The Thirty-Twodle Challenge [HackTheVote 2024]
-author: MettleSphee, Zenbassi
+author: MettleSphee, zenbassi
 tags:
   - rev
 draft: false
@@ -13,7 +13,7 @@ of interns got side tracked playing the -dles! Can you crack this disinformation
 machine and help us predict their each and every future story?
 
 ## Intuition
-This write-up is going to be less of a technical one because I (MettleSphee) took a weird approach: I like thinking about how games would work technically by looking at how they behave. Therefore, I found the directions to the flag without looking myself at the code, but the help I've gotten was incredible. I couldn't have written such amazing scripts/solutions for the challenge, and the credit goes to (Zenbassi) for basically doing the harder part of the challenge :) .
+This write-up is going to be less of a technical one because I (MettleSphee) took a weird approach: I like thinking about how games would work technically by looking at how they behave. Therefore, I found the directions to the flag without looking myself at the code, but the help I've gotten was incredible. I couldn't have written such amazing scripts/solutions for the challenge, and the credit goes to (zenbassi) for basically doing the harder part of the challenge :) .
 
 ## Write-up
 My teammate was doing the whole reversing process, while I chimed in and just wanted to try and run the binary to see what happens.
@@ -37,10 +37,13 @@ Guess not. By looking through the code, it gives access to ``/bin/sh`` only when
 
 We can extract the full wordlist from the binary, and we can get the solution for that seed. As it turns out, finding the right words to auto-solve for a specific seed *may* be difficult. Factors which include having too many letters. As we have only 5 guesses with 5 letters each, that means a total of 25 letters. Given that we don't have many vowels, or other characters that repeat more often than not, we're going to have to find a good seed. The words are taken in a pseudo-random order from the wordlist using libc's ``srand(seed)`` function.
 
-(Zenbassi) wrote the scripts to do the following things (simplified):
+(zenbassi) wrote the scripts to do the following things (simplified):
 - Find a seed with a score less than 5; the lower score the easier result;
 - Find (bruteforce) valid words to be used in the solve that are NOT part of the 32 words to be found;
+For each word in the solution we computed a dictionary with the letter frequency. We then computed the union of these dictionaries, taking the maximum from the common values. The score is the sum of the values in the union divided by 5. It represents something like the average number of unique letters from the solution alphabet, that each of our chosen words is expected to contain. This number is relevant, because a score greater than 5 will mean that we cannot find a solution, given that we're limited to words of size 5.
+
 While doing all of this, I decided to keep the script running for the lulz to see if I can find a seed with a score low enough. Turns out I found one with a score as low as 4.2, which was a very, very good candidate.
+
 
 After lots of trial and error due to some seeds being too difficult during testing, the scripts were ready. All that was left to do was to test the found words and get the flag:
 ![[wordle2.png]]
