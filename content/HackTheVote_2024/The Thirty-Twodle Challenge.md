@@ -17,6 +17,7 @@ This write-up is going to be less of a technical one because I (MettleSphee) too
 
 ## Write-up
 ``Authors: MettleSphee, zenbassi``
+
 My teammate was doing the whole reversing process, while I chimed in and just wanted to try and run the binary to see what happens.
 
 Alright, who knows Wordle? The game has the player try to guess a 5 letter word, while allowing a total of 6 guesses. While guessing, each letter is marked in the word as follows:
