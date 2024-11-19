@@ -17,6 +17,7 @@ This write-up is going to be less of a technical one because I (MettleSphee) too
 
 ## Write-up
 ``Authors: MettleSphee, zenbassi``
+
 My teammate was doing the whole reversing process, while I chimed in and just wanted to try and run the binary to see what happens.
 
 Alright, who knows Wordle? The game has the player try to guess a 5 letter word, while allowing a total of 6 guesses. While guessing, each letter is marked in the word as follows:
@@ -33,7 +34,7 @@ But don't worry, it's not *that* hard. This game has some specific caveats:
 - You have 37 guesses to find all the words;
 
 That's a lot of information. Okay, so that means we just have to input all words and we win, right?
-![[/images/HackTheVote_2024/wordle1.png]]
+![wordle1](/images/HackTheVote_2024/wordle1.png)
 Guess not. By looking through the code, it gives access to ``/bin/sh`` only when (simplified) all words are auto-solved. Given that it adds a guess whenever it auto-solves a word, we basically have 37 - 32 = 5 guesses which we can use to add words that contribute to auto-solving. How do we do that?
 
 We can extract the full wordlist from the binary, and we can get the solution for that seed. As it turns out, finding the right words to auto-solve for a specific seed *may* be difficult. Factors which include having too many letters. As we have only 5 guesses with 5 letters each, that means a total of 25 letters. Given that we don't have many vowels, or other characters that repeat more often than not, we're going to have to find a good seed. The words are taken in a pseudo-random order from the wordlist using libc's ``srand(seed)`` function.
@@ -51,9 +52,9 @@ While doing all of this, I decided to keep the script running for the lulz to se
 
 
 After lots of trial and error due to some seeds being too difficult during testing, the scripts were ready. All that was left to do was to test the found words and get the flag:
-![[/images/HackTheVote_2024/wordle2.png]]
+![wordle2](/images/HackTheVote_2024/wordle2.png)
 After we got the flag, I wanted to combine all scripts into a singular one for solving to make it slightly more clean.
-![[/images/HackTheVote_2024/wordle_solve.png]]
+![wordle_solve](/images/HackTheVote_2024/wordle_solve.png)
 ## Flag
 ``flag{my_opening_words_are_stare_and_doing_wbu}``
 ## Appendix
