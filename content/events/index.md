@@ -11,6 +11,7 @@ We're now hosting a technical seminar. Join us on the last Wednesday of every mo
 
 | Title | Speaker  | Place | Datetime | Slides |
 | :---: | :-----:  | :---: | :------: | :----: |
+| Lightning Talks: DNS Tunneling, ROP Techniques, OpenWRT, Function Hooking & more! | .hidden community | Amf Pompeiu @ FMI | 18th Dec. 18:00 | TBD |
 | Reverse Engineering Obfuscated Applications with Symbolic Execution | zenbassi | Amf Pompeiu @ FMI | 27th Nov. 18:00 | TBD |
 | Intel CET Overview and Exploit Techniques | sunbather | Amf Pompeiu @ FMI | 30th Oct. 18:00 | [Link](https://docs.google.com/presentation/d/1PaTpV5Mgql9OySzzYRPV8RSVNGSPHaTAUfcFXqawhik) |
 
