@@ -107,3 +107,9 @@ menu:
     - name: About
       url: /about
       weight: 4
+
+markup:
+  goldmark:
+    renderer:
+      # To allow including raw HTML tags in our Markdown input
+      unsafe: true

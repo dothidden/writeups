@@ -1,7 +1,7 @@
 ---
-title: Tcache 
+title: Tcache
 date: 2024-04-17T14:23:28+03:00
-description: Information about tcache 
+description: Information about tcache
 author: PineBel
 tags:
     - pwn
@@ -46,7 +46,7 @@ typedef struct tcache_entry
 typedef struct tcache_perthread_struct
 {
   uint16_t counts[TCACHE_MAX_BINS];  // --> count of free chunks for each size (max 7 of the same size) [define TCACHE_MAX_BINS 64]
-  tcache_entry *entries[TCACHE_MAX_BINS]; // --> points to the entry for each size 
+  tcache_entry *entries[TCACHE_MAX_BINS]; // --> points to the entry for each size
 } tcache_perthread_struct;
  ```
 
@@ -76,8 +76,8 @@ Let's see how **__libc_malloc** works with tcache:
 3. Upon completion of step 2, it returns a tcache_perthread_struct.
 4. If the tcache entries are not empty, it will invoke tcache_get(), which retrieves the first chunk from the entries list and decrements the count. (`GETTING CHUNK`)
 ```C
-       
-        tcache_get (size_t tc_idx) 
+
+        tcache_get (size_t tc_idx)
         {
 
         tcache_entry *e = tcache->entries[tc_idx];
@@ -91,7 +91,7 @@ Let's see how **__libc_malloc** works with tcache:
         --(tcache->counts[tc_idx]); // Get a chunk, counts decreases
         return (void *) e;
         }
-```       
+```
 5. When calling free(), it will call tcache_put() which adds the freed chunk. (`SETTING CHUNK`)
 ```C
         /* Caller must ensure that we know tc_idx is valid and there's room
@@ -146,7 +146,7 @@ For other versions, the concept remains the same but may require adjustments. Fo
 
 I suggest experimenting a bit with the [how2heap](https://github.com/shellphish/how2heap) repository, it's very cool!
 ## Safe linking
-Leaking from the heap isn't that easy anymore, since glibc > 2.32 there is something called 'safe linking' (fastbins and tcachebins) which make heap exploits a little harder. 
+Leaking from the heap isn't that easy anymore, since glibc > 2.32 there is something called 'safe linking' (fastbins and tcachebins) which make heap exploits a little harder.
 Safe-linking's goal is to prevent attackers from leaking heap addresses and arbitrarily overwriting linked-list metadata.
 
 Safe linking implementation:
