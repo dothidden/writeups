@@ -20,3 +20,5 @@ that wants to join in on the fun.
 Email us at: `Y29udGFjdEBkb3RoaWRkZW4ueHl6Cg==`
 
 We would love to expand the team!
+
+You can find *contributing* members of the community below.
