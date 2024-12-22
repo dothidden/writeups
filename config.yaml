@@ -24,8 +24,8 @@ params:
       picture: https://avatars.githubusercontent.com/u/39965799?v=4
       tags: [ 'pwn','rev','crypto' ]
       description:
-        - bash wizard
-        - video game enjoyer
+        - 0day grepper
+        - loves memory corruptions
     - name: zenbassi
       link: https://github.com/stefan-radu
       picture: https://avatars.githubusercontent.com/u/30214214?v=4
