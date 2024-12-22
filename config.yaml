@@ -38,7 +38,7 @@ params:
       picture: https://avatars.githubusercontent.com/u/48451382?s=400&u=b2a10a33c3ec8062c8b99e9191ee85af061272ef&v=4
       tags: [ 'web','misc','forensics','mobile' ]
       description:
-        - Backend Bandit & De-bug Demon 
+        - Backend Bandit & De-bug Demon
         - Do not do it...
         - d293ISB5b3UgcmVhbGx5IGRlY29kZWQgdGhpcyA=
     - name: H0N3YP0T
@@ -59,7 +59,7 @@ params:
       link: https://github.com/DalmatianuSebikk
       picture: https://avatars.githubusercontent.com/u/70603934?v=4
       tags: ['web','forensics','crypto','misc']
-      description: 
+      description:
         - keeps injecting malicious code
         - games and sports enjoyer.
     - name: expnx
@@ -87,6 +87,12 @@ params:
       tags: [ 'web', 'forensics', 'misc' ]
       description:
         - Exploring the depths of web security
+    - name: GabrielMajeri
+      link: https://github.com/GabrielMajeri
+      picture: https://avatars.githubusercontent.com/u/3010346?v=4
+      tags: [ 'crypto', 'network', 'web', 'rev', 'misc' ]
+      description:
+        - I like breaking stuff
   excludedSections:
     - about
     - events
@@ -107,3 +113,9 @@ menu:
     - name: About
       url: /about
       weight: 4
+
+markup:
+  goldmark:
+    renderer:
+      # To allow including raw HTML tags in our Markdown input
+      unsafe: true
