@@ -99,6 +99,12 @@ params:
       tags: [ 'crypto', 'network', 'web', 'rev', 'misc' ]
       description:
         - I like breaking stuff
+    - name: Mega
+      link: https://github.com/Matteoverzotti
+      picture: https://avatars.githubusercontent.com/u/58049266?v=4
+      tags: [ 'rev', 'web', 'osint' ]
+      description:
+        - When life gives you pears, don't write a book about it
   excludedSections:
     - about
     - events
