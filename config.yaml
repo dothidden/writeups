@@ -105,6 +105,12 @@ params:
       tags: [ 'rev', 'web', 'osint' ]
       description:
         - When life gives you pears, don't write a book about it
+    - name: h3pha
+      link: https://github.com/VladSteopoaie/
+      picture: https://avatars.githubusercontent.com/u/69504268?s=400&u=0bb78ff707338ad58e677d856fbe92766e116010&v=4
+      tags: [ 'pwn', 'web', 'rev', 'misc', 'network' ]
+      description:
+        - Don't hate me, but... Try harder!
   excludedSections:
     - about
     - events
