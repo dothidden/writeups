@@ -12,7 +12,7 @@ ___
 
 We are given a single `index.html` file. Opening it we are greeted with a login page.
 
-![Login Page Image](/images/HTB_University_2024/security_login.png)
+![Login Page Image](/images/HTB_University_2024/image.png)
 
 Viewing the page source, we see a very interesting Javascript function, `checkCredentials()`. It seems to be obfuscated, so we can run it through a [deobfuscator](https://deobfuscate.relative.im/).
 
