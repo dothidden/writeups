@@ -11,7 +11,7 @@ We're now hosting a technical seminar. Join us on the last Wednesday of every mo
 
 | Title | Speaker  | Place | Datetime | Slides |
 | :---: | :-----:  | :---: | :------: | :----: |
-| Overview on heap exploits | PineBel | Amf Pompeiu @ FMI | 26.03.2025 18:00 | n/a |
+| WTF is a Heap? And how to hack it! | PineBel | Amf Pompeiu @ FMI | 26.03.2025 18:00 | [Link](https://docs.google.com/presentation/d/1YYWyx4UTIeK0Pv1kM7F2QmOV7IdKdKhGu_JTOg_b_Og/edit?usp=sharing) |
 | uefi-rs - The story of a low-level Rust library <br> What is Remote Attestation? An introduction | Gabi Majeri, Honesty | Amf Pompeiu @ FMI | 26.02.2025 18:30 | n/a |
 | The modern boot process <br> Exa-Punks overview | zenbassi, sunbather | Amf Pompeiu @ FMI | 29.01.2025 18:00 | n/a |
 | Lightning Talks: DNS Tunneling, ROP Techniques, OpenWRT, Function Hooking & more! | .hidden community | Amf Pompeiu @ FMI | 18th Dec. 18:00 | n/a |
