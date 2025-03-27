@@ -108,7 +108,7 @@ params:
     - name: h3pha
       link: https://github.com/VladSteopoaie/
       picture: https://avatars.githubusercontent.com/u/69504268?s=400&u=0bb78ff707338ad58e677d856fbe92766e116010&v=4
-      tags: [ 'pwn', 'web', 'rev', 'misc', 'network' ]
+      tags: [ 'pwn', 'web', 'rev', 'misc', 'network', 'crypto' ]
       description:
         - Don't hate me, but... Try harder!
   excludedSections:
