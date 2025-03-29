@@ -22,7 +22,7 @@ params:
     - name: sunbather
       link: https://github.com/costinteo
       picture: https://avatars.githubusercontent.com/u/39965799?v=4
-      tags: [ 'pwn','rev','web' ]
+      tags: [ 'pwn','rev','forensics']
       description:
         - grepmaxxer
         - might flame you if you complain
