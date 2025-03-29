@@ -406,7 +406,7 @@ if __name__ == "__main__":
     run()
 ```
 
-Note that the port is `31337`, as that is the malware connects to in the API monitor screenshot.
+Note that the port is `31337`, as that is the port the malware connects to in the API monitor screenshot.
 
 Then, re-running the malware, we can see in Wireshark that an additional POST request goes through:
 
