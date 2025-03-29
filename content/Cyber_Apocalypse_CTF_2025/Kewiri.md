@@ -1,7 +1,7 @@
 ---
 title: Kewiri
 date: 2025-03-27T14:28:56+03:00
-description: Writeup for Kewiri [Cyber Apocalypse CTF 2025]
+description: Writeup for Kewiri [HTB Cyber Apocalypse CTF 2025]
 author: h3pha
 tags:
 - crypto

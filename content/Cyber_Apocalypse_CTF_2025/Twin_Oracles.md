@@ -1,7 +1,7 @@
 ---
 title: Twin Oracles
 date: 2025-03-27T19:00:25+03:00
-description: Writeup for Twin Oracles [Cyber Apocalypse CTF 2025]
+description: Writeup for Twin Oracles [HTB Cyber Apocalypse CTF 2025]
 author: h3pha 
 tags:
 - crypto

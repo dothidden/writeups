@@ -1,7 +1,7 @@
 ---
 title: Blessing
 date: 2025-03-26T03:00:19+03:00
-description: Writeup for Blessing [HTB Apocalypse 2025]
+description: Writeup for Blessing [HTB Cyber Apocalypse 2025]
 author: PineBel
 tags:
 - pwn
@@ -11,6 +11,7 @@ ___
 
 ## Challenge Description
 In the realm of Eldoria, where warriors roam, the Dragon's Heart they seek, from bytes to byte's home. Through exploits and tricks, they boldly dare, to conquer Eldoria, with skill and flair.
+
 ## Intuition
 
 We get a binary that does a malloc of 0x30000.

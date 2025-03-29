@@ -22,10 +22,10 @@ params:
     - name: sunbather
       link: https://github.com/costinteo
       picture: https://avatars.githubusercontent.com/u/39965799?v=4
-      tags: [ 'pwn','rev','crypto' ]
+      tags: [ 'pwn','rev','web' ]
       description:
-        - 0day grepper
-        - loves memory corruptions
+        - grepmaxxer
+        - might flame you if you complain
     - name: zenbassi
       link: https://github.com/stefan-radu
       picture: https://avatars.githubusercontent.com/u/30214214?v=4

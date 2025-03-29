@@ -1,12 +1,12 @@
 ---
 title: Strategist
 date: 2025-03-26:00:19+03:00
-description: Writeup for Strategist [HTB Apocalypse 2025]
+description: Writeup for Strategist [HTB Cyber Apocalypse 2025]
 author: PineBel
 tags:
 - pwn 
 - heap
-draft: true 
+draft: false
 ---
 
 ## Challenge description

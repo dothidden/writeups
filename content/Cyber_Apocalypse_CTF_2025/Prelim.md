@@ -1,7 +1,7 @@
 ---
 title: Prelim
 date: 2025-03-27T17:57:30+03:00
-description: Writeup for Prelim [Cyber Apocalypse CTF 2025]
+description: Writeup for Prelim [HTB Cyber Apocalypse CTF 2025]
 author: h3pha 
 tags:
 - crypto
