@@ -12,9 +12,17 @@ We're now hosting a technical seminar. Join us on the last Wednesday of every mo
 | Title | Speaker  | Place | Datetime | Slides |
 | :---: | :-----:  | :---: | :------: | :----: |
 | WTF is a Heap? And how to hack it! | PineBel | Amf Pompeiu @ FMI | 26.03.2025 18:00 | [Link](https://docs.google.com/presentation/d/1YYWyx4UTIeK0Pv1kM7F2QmOV7IdKdKhGu_JTOg_b_Og/edit?usp=sharing) |
-| uefi-rs - The story of a low-level Rust library <br> What is Remote Attestation? An introduction | Gabi Majeri, Honesty | Amf Pompeiu @ FMI | 26.02.2025 18:30 | n/a |
-| The modern boot process <br> Exa-Punks overview | zenbassi, sunbather | Amf Pompeiu @ FMI | 29.01.2025 18:00 | n/a |
-| Lightning Talks: DNS Tunneling, ROP Techniques, OpenWRT, Function Hooking & more! | .hidden community | Amf Pompeiu @ FMI | 18th Dec. 18:00 | n/a |
+| uefi-rs - The story of a low-level Rust library | Gabi Majeri | Amf Pompeiu @ FMI | 26.02.2025 18:30 | [Link](/presentations/uefi-rs-presentation.pdf) |
+| What is Remote Attestation? An introduction | Honesty | Amf Pompeiu @ FMI | 26.02.2025 18:30 | [Link](https://docs.google.com/presentation/d/1Tc9tbrD-WBZv14qWpmSeaZWAgIBmmnRS_P8YiOcIjYM/edit?slide=id.p#slide=id.p) |
+| The modern boot process | zenbassi | Amf Pompeiu @ FMI | 29.01.2025 18:00 | n/a |
+| Exa-Punks overview | sunbather | Amf Pompeiu @ FMI | 29.01.2025 18:00 | n/a |
+| Lightning Talks: DNS Tunneling | h3pha | Amf Pompeiu @ FMI | 18th Dec. 18:00 | [Link](https://docs.google.com/presentation/d/1Ne63U08HZiVEf2CU29Ybys3AalocJyGG2UUt9PZ7LhE/edit?slide=id.g32010dfb119_0_0#slide=id.g32010dfb119_0_0) |
+| Lightning Talks: ROP Techniques | sunbather | Amf Pompeiu @ FMI | 18th Dec. 18:00 | [Link](https://docs.google.com/presentation/d/1zrBrUuMewJYIOim5Nl2XRIBlW6ovatvzK8rnvE6qt14/edit?slide=id.g31eb2b1e0e5_1_656#slide=id.g31eb2b1e0e5_1_656) |
+| Lightning Talks: OpenWRT| MettleSphee | Amf Pompeiu @ FMI | 18th Dec. 18:00 | [Link](https://docs.google.com/presentation/d/1Wfjz62XBLOXUvr_fNUq8317_ESXfDmXSRmpm6QtoebM/edit?slide=id.p1#slide=id.p1) |
+| Lightning Talks: Function Hooking | zenbassi | Amf Pompeiu @ FMI | 18th Dec. 18:00 | n/a |
+| Lightning Talks: Binary Patching | PineBel | Amf Pompeiu @ FMI | 18th Dec. 18:00 | [Link](https://docs.google.com/presentation/d/1YhvLMWwQ_YzhfzmosAk76YJGzCIt2UYOddU5JGAAM9o/edit?usp=sharing) |
+| Lightning Talks: How I lost all my data | Mircea | Amf Pompeiu @ FMI | 18th Dec. 18:00 | n/a |
+| Lightning Talks: Ping Pong Tracker | Sebi | Amf Pompeiu @ FMI | 18th Dec. 18:00 | [Link](/presentations/Ping_Pong_Tracker_Using_Computer_Vision.pdf) |
 | Reverse Engineering Obfuscated Applications with Symbolic Execution | zenbassi | Amf Pompeiu @ FMI | 27th Nov. 18:00 | n/a |
 | Intel CET Overview and Exploit Techniques | sunbather | Amf Pompeiu @ FMI | 30th Oct. 18:00 | [Link](https://docs.google.com/presentation/d/1PaTpV5Mgql9OySzzYRPV8RSVNGSPHaTAUfcFXqawhik) |
 
