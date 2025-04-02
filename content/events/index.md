@@ -9,21 +9,47 @@ draft: false
 
 We're now hosting a technical seminar. Join us on the last Wednesday of every month to discuss exploits, mitigations, new security research and everything in between. 
 
-| Title | Speaker  | Place | Datetime | Slides |
+### Seminar VI
+<p style="text-align: right;">
+  This text is aligned to the right.
+</p>
+
+
+| Title <div style="width:290px"></div> | Speaker <div style="width:90px"></div> | Place <div style="width:40px"></div> | Datetime <div style="width:40px"></div> | Slides <div style="width:40px"></div> |
+| :---: | :-----:  |:------------------------------------:| :------: | :----: |
+| WTF is a Heap? And how to hack it! | PineBel |          Amf Pompeiu @ FMI           | 26.03.2025 18:00 | [Link](https://docs.google.com/presentation/d/1YYWyx4UTIeK0Pv1kM7F2QmOV7IdKdKhGu_JTOg_b_Og/edit?usp=sharing) |
+
+### Seminar V
+| Title <div style="width:290px"></div> | Speaker <div style="width:90px"></div> | Place <div style="width:40px"></div> | Datetime <div style="width:40px"></div> | Slides <div style="width:40px"></div> |
 | :---: | :-----:  | :---: | :------: | :----: |
-| WTF is a Heap? And how to hack it! | PineBel | Amf Pompeiu @ FMI | 26.03.2025 18:00 | [Link](https://docs.google.com/presentation/d/1YYWyx4UTIeK0Pv1kM7F2QmOV7IdKdKhGu_JTOg_b_Og/edit?usp=sharing) |
 | uefi-rs - The story of a low-level Rust library | Gabi Majeri | Amf Pompeiu @ FMI | 26.02.2025 18:30 | [Link](/presentations/uefi-rs-presentation.pdf) |
 | What is Remote Attestation? An introduction | Honesty | Amf Pompeiu @ FMI | 26.02.2025 18:30 | [Link](https://docs.google.com/presentation/d/1Tc9tbrD-WBZv14qWpmSeaZWAgIBmmnRS_P8YiOcIjYM/edit?slide=id.p#slide=id.p) |
-| The modern boot process | zenbassi | Amf Pompeiu @ FMI | 29.01.2025 18:00 | n/a |
-| Exa-Punks overview | sunbather | Amf Pompeiu @ FMI | 29.01.2025 18:00 | n/a |
-| Lightning Talks: DNS Tunneling | h3pha | Amf Pompeiu @ FMI | 18.12.2024 18:00 | [Link](https://docs.google.com/presentation/d/1Ne63U08HZiVEf2CU29Ybys3AalocJyGG2UUt9PZ7LhE/edit?slide=id.g32010dfb119_0_0#slide=id.g32010dfb119_0_0) |
-| Lightning Talks: ROP Techniques | sunbather | Amf Pompeiu @ FMI | 18.12.2024 18:00 | [Link](https://docs.google.com/presentation/d/1zrBrUuMewJYIOim5Nl2XRIBlW6ovatvzK8rnvE6qt14/edit?slide=id.g31eb2b1e0e5_1_656#slide=id.g31eb2b1e0e5_1_656) |
-| Lightning Talks: OpenWRT| MettleSphee | Amf Pompeiu @ FMI | 18.12.2024 18:00 | [Link](https://docs.google.com/presentation/d/1Wfjz62XBLOXUvr_fNUq8317_ESXfDmXSRmpm6QtoebM/edit?slide=id.p1#slide=id.p1) |
-| Lightning Talks: Function Hooking | zenbassi | Amf Pompeiu @ FMI | 18.12.2024 18:00 | n/a |
-| Lightning Talks: Binary Patching | PineBel | Amf Pompeiu @ FMI | 18.12.2024 18:00 | [Link](https://docs.google.com/presentation/d/1YhvLMWwQ_YzhfzmosAk76YJGzCIt2UYOddU5JGAAM9o/edit?usp=sharing) |
-| Lightning Talks: How I lost all my data | Mircea | Amf Pompeiu @ FMI | 18.12.2024 18:00 | n/a |
-| Lightning Talks: Ping Pong Tracker | Sebi | Amf Pompeiu @ FMI | 18.12.2024 18:00 | [Link](/presentations/Ping_Pong_Tracker_Using_Computer_Vision.pdf) |
-| Reverse Engineering Obfuscated Applications with Symbolic Execution | zenbassi | Amf Pompeiu @ FMI | 27.11.2024 18:00 | n/a |
+
+### Seminar IV
+| Title <div style="width:290px"></div> | Speaker <div style="width:90px"></div> | Place <div style="width:40px"></div> | Datetime <div style="width:40px"></div> | Slides <div style="width:40px"></div> |
+|:---------------------------------------:| :-----:  | :---: | :------: | :----: |
+|         The modern boot process         | zenbassi | Amf Pompeiu @ FMI | 29.01.2025 18:00 | n/a |
+|            EXAPUNKS overview            | sunbather | Amf Pompeiu @ FMI | 29.01.2025 18:00 | n/a |
+
+### Seminar III (Lightning Talks)
+| Title <div style="width:290px"></div> | Speaker <div style="width:90px"></div> | Place <div style="width:40px"></div> | Datetime <div style="width:40px"></div> | Slides <div style="width:40px"></div> |
+| :---: | :-----:  | :---: | :------: |:--------------------------------------------------------------------------------------------------------------------------------------------------------:|
+|  DNS Tunneling | h3pha | Amf Pompeiu @ FMI | 18.12.2024 18:00 |   [Link](https://docs.google.com/presentation/d/1Ne63U08HZiVEf2CU29Ybys3AalocJyGG2UUt9PZ7LhE/edit?slide=id.g32010dfb119_0_0#slide=id.g32010dfb119_0_0)   |
+|  ROP Techniques | sunbather | Amf Pompeiu @ FMI | 18.12.2024 18:00 | [Link](https://docs.google.com/presentation/d/1zrBrUuMewJYIOim5Nl2XRIBlW6ovatvzK8rnvE6qt14/edit?slide=id.g31eb2b1e0e5_1_656#slide=id.g31eb2b1e0e5_1_656) |
+| OpenWRT| MettleSphee | Amf Pompeiu @ FMI | 18.12.2024 18:00 |                 [Link](https://docs.google.com/presentation/d/1Wfjz62XBLOXUvr_fNUq8317_ESXfDmXSRmpm6QtoebM/edit?slide=id.p1#slide=id.p1)                 |
+| Function Hooking | zenbassi | Amf Pompeiu @ FMI | 18.12.2024 18:00 |                                                     [Link](/presentations/frida-lightning-talk.pdf)                                                      |
+|  Binary Patching | PineBel | Amf Pompeiu @ FMI | 18.12.2024 18:00 |                       [Link](https://docs.google.com/presentation/d/1YhvLMWwQ_YzhfzmosAk76YJGzCIt2UYOddU5JGAAM9o/edit?usp=sharing)                       |
+|  How I lost all my data | Mircea | Amf Pompeiu @ FMI | 18.12.2024 18:00 |                                                      [Link](/presentations/cum-sa-pierzi-date.pdf)                                                       |
+|  Ping Pong Tracker | Sebi | Amf Pompeiu @ FMI | 18.12.2024 18:00 |                                            [Link](/presentations/Ping_Pong_Tracker_Using_Computer_Vision.pdf)                                            |
+
+### Seminar II
+| Title <div style="width:290px"></div> | Speaker <div style="width:90px"></div> | Place <div style="width:40px"></div> | Datetime <div style="width:40px"></div> | Slides <div style="width:40px"></div> |
+| :---: | :-----:  | :---: | :------: | :----: |
+| Reverse Engineering Obfuscated Applications<br/> with Symbolic Execution | zenbassi | Amf Pompeiu @ FMI | 27.11.2024 18:00 | n/a |
+
+### Seminar I
+| Title <div style="width:290px"></div> | Speaker <div style="width:90px"></div> | Place <div style="width:40px"></div> | Datetime <div style="width:40px"></div> | Slides <div style="width:40px"></div> |
+| :---: | :-----:  | :---: | :------: | :----: |
 | Intel CET Overview and Exploit Techniques | sunbather | Amf Pompeiu @ FMI | 30.10.2024 18:00 | [Link](https://docs.google.com/presentation/d/1PaTpV5Mgql9OySzzYRPV8RSVNGSPHaTAUfcFXqawhik) |
 
 
