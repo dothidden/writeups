@@ -1,45 +1,4 @@
 <!DOCTYPE html>
 <html>
-	{{ partial "header.html" . }}
-	<body class="background-logo">
-		<div class="content">
-			{{ partial "head.html" . }}
-			
-            <div class="spacer"></div>
-
-			<main class="list">
-                <h1 class="title"> Past CTFs we took part in </h1>
-
-                <section>
-                    <ul class="terminal-prefix">
-                    {{ range .Site.Sections }} 
-                        <li class="nowrap">
-                            <time>[{{- .Date | dateFormat "02/01/06" -}}]</time>
-                            <a href="{{ .Permalink}}">{{.Title}}</a> 
-                            {{- if and (isset .Params "place") (isset .Params "total") -}}
-                            <span> - {{.Params.place}}/{{.Params.total}}</span>
-                            {{- end }}
-                        </li>
-                    {{ end }}
-                    </ul>
-                </section>
-
-                <h1 class="title"> Most recent writeups </h1>
-
-                {{ $pages := where .Site.RegularPages 
-                        "Type" "not in" .Site.Params.excludedSections }}
-                {{ range (first .Site.Params.HomeWriteupCnt $pages) }}
-                {{ $sectionHeading := .Site.GetPage .Section .Section }}
-				<div>
-					<h3 class="nowrap">
-                        <a href="{{ .RelPermalink }}">{{.Title}}</a>
-                        <span>[{{- $sectionHeading.Title -}}]</span>
-                    </h3>
-				</div>
-				{{ end }}
-			</main>
-			{{ partial "footer.html" . }}
-		</div>
-		
-	</body>
+     hello
 </html>

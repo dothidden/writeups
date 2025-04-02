@@ -114,6 +114,7 @@ params:
   excludedSections:
     - about
     - events
+    - test
   homeWriteupCnt: 10
   katex: true
 
