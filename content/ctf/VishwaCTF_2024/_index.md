@@ -2,6 +2,7 @@
 title: VishwaCTF 2024
 date: 2024-03-01T17:10:37+03:00
 description: Writeups for [VishwaCTF 2024]
+type: writeup
 place: 79
 total: 1038
 ---
