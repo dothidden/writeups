@@ -15,6 +15,9 @@ params:
     - name: CTFtime
       icon: codesandbox
       url: https://ctftime.org/team/225182
+    - name: Instagram
+      icon: instagram
+      url: https://www.instagram.com/dothidden_/
     - name: RSS
       icon: rss
       url: https://dothidden.xyz/index.xml
