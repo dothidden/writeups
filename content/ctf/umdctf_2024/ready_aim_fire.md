@@ -2,6 +2,7 @@
 title: ready-aim-fire
 date: 2024-04-26T14:23:28+03:00
 description: Writeup for ready-aim-fire [UMD 2024]
+type: writeup
 author: PineBel
 tags:
   - pwn

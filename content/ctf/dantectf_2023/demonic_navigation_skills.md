@@ -4,6 +4,7 @@ date: 2023-06-08T22:42:49+03:00
 description: Demonic Navigation Skills writeup
 tags:
 - misc
+type: writeup
 author: zenbassi
 draft: false
 ---

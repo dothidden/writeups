@@ -2,6 +2,7 @@
 title: Flipper
 date: 2023-11-24T20:00:00+02:00
 description: Writeup for Flipper [Glacier CTF 2023]
+type: writeup
 author: sunbather
 tags:
 - pwn

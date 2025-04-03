@@ -26,13 +26,13 @@
 
                 <h1 class="title"> Most recent writeups </h1>
 
-                {{ $pages := .Site.RegularPages }}
-                {{ range (first .Site.Params.HomeWriteupCnt $pages) }}
-                {{ $sectionHeading := .Site.GetPage .Section .Section }}
+                {{ $recentWriteupsCnt := 10 }}
+                {{ $pages := .RegularPagesRecursive.ByDate.Reverse }}
+                {{ range first $recentWriteupsCnt $pages }}
 				<div>
 					<h3 class="nowrap">
                         <a href="{{ .RelPermalink }}">{{.Title}}</a>
-                        <span>[{{- $sectionHeading.Title -}}]</span>
+                        <span>[{{ .Parent.Title }}]</span>
                     </h3>
 				</div>
 				{{ end }}

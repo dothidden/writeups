@@ -2,6 +2,7 @@
 title: Notecard
 date: 2025-03-30T23:02:58+03:00
 description: Writeup for Notecard [Swamp CTF 2025]
+type: writeup
 author: sunbather
 tags:
 - pwn

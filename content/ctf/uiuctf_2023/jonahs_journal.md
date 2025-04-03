@@ -2,6 +2,7 @@
 title: Jonahs Journal
 date: 2023-07-01T19:42:39+02:00
 description: Writeup for Jonahs Journal [UIUCTF 2023]
+type: writeup
 author: H0N3YP0T
 tags:
 - osint

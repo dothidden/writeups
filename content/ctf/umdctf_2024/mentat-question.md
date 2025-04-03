@@ -2,6 +2,7 @@
 title: mentat-question
 date: 2024-04-28T23:58:34+03:00
 description: Writeup for mentat-question [UMDCTF_2024]
+type: writeup
 author: sunbather
 tags:
 - pwn

@@ -2,18 +2,10 @@
 <main>
     <article>
         <div>
-            <h1>{{ .Title }}
-                {{ with .Site.GetPage .Section }}
-                [{{- .Title -}}]
-                {{- end -}}
-            </h1>
+            <h1>{{ .Title }} [{{- .Parent.Title -}}] </h1>
 
             <div class="meta-bar">
                 <time class="meta">{{ .Date | dateFormat "02/01/06" }}</time>
-
-                {{ if .Draft }} 
-                <span class="draft-label">DRAFT</span>
-                {{ end }}
 
                 {{ if isset .Params "tags" }}
                 {{ range .GetTerms "tags" }}

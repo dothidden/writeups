@@ -3,6 +3,7 @@ title: merger_2077
 date: 2023-10-09
 tags:
   - rev
+type: writeup
 author: MettleSphee
 ---
 

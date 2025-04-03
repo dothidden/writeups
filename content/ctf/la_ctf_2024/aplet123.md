@@ -2,6 +2,7 @@
 title: aplet123
 date:  2024-02-25T20:00:00+02:00
 description: Writeup for aplet123 [LA CTF 2024]
+type: writeup
 author: PineBel
 tags:
 - pwn

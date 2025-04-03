@@ -4,6 +4,7 @@ date: 2023-05-24T21:44:04+03:00
 tags:
   - stego
   - forensics
+type: writeup
 author: H0N3YP0T
 ---
 

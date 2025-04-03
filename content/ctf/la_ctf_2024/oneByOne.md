@@ -2,6 +2,7 @@
 title: OneByOne
 date: 2024-02-18T20:03:57+02:00
 description: Writeup for OneByOne [LA CTF 2024]
+type: writeup
 author: H0N3YP0T
 tags:
 - misc

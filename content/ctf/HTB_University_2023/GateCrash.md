@@ -2,6 +2,7 @@
 title: GateCrash
 date: 2023-12-10T13:37:49+02:00
 description: Writeup for GateCrash [HTB University 2023]
+type: writeup
 author: H0N3YP0T
 tags:
   - web

@@ -2,6 +2,7 @@
 title: harder-assembly
 date: 2024-04-07T14:23:28+03:00
 description: Writeup for harder-assembly [Unbreakable 2024]
+type: writeup
 author: sunbather
 tags:
 - pwn

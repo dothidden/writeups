@@ -14,7 +14,7 @@
 	<title>{{ $siteTitle }} | {{ $title }}</title>
     {{- else if and (eq .Kind "page") (not (in .Site.Params.ExcludedSections .Type)) -}}
     {{ with $sectionHeading := .Site.GetPage .Section }}
-    <title>{{ $siteTitle }} | {{ .Title }} - {{ $title }}</title>
+    <title>{{ $siteTitle }} | {{ $title }}</title>
     {{- end -}}
     {{- else -}}
     <title>{{ $siteTitle }} | {{ .Title }}</title>

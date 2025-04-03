@@ -2,6 +2,7 @@
 title: Fork Knife
 date: 2023-11-12T19:56:46+02:00 
 description: Writeup for Fork Knife [Ekoparty 2023]
+type: writeup
 author: Honesty
 tags:
 - misc

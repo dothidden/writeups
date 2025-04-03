@@ -2,6 +2,7 @@
 title: Roplon
 date: 2023-11-17T20:00:00+02:00
 description: Writeup for Roplon [SquareCTF 2023]
+type: writeup
 author: PineBel
 tags:
 - pwn

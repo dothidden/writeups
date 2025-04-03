@@ -2,6 +2,7 @@
 title: Tcache
 date: 2024-04-17T14:23:28+03:00
 description: Information about tcache
+type: writeup
 author: PineBel
 tags:
     - pwn

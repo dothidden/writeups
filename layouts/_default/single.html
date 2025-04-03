@@ -11,10 +11,6 @@
             <div class="meta-bar">
                 <time class="meta">{{ .Date | dateFormat "02/01/06" }}</time>
 
-                {{ if .Draft }} 
-                <span class="draft-label">DRAFT</span>
-                {{ end }}
-
                 {{ if isset .Params "tags" }}
                 {{ range .GetTerms "tags" }}
                 <span class="tag"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></span>

@@ -2,6 +2,7 @@
 title: defcamp6
 date: 2023-10-22T09:56:31+03:00
 description: Writeup for defcamp6 [Defcamp Quals 2023]
+type: writeup
 author: sunbather
 tags:
   - stego

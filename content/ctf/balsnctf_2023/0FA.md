@@ -3,6 +3,7 @@ title: 0FA
 date: 2023-10-09
 tags:
   - web
+type: writeup
 author: cartouche70
 ---
 

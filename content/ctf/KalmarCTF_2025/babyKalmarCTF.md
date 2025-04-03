@@ -2,6 +2,7 @@
 title: babyKalmarCTF
 date: 2025-03-10T03:10:19+03:00
 description: Writeup for babyKalmarCTF [KalmarCTF 2025]
+type: writeup
 author: h3pha
 tags:
 - misc

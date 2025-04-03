@@ -2,6 +2,7 @@
 title: krotate
 date: 2024-04-14T22:43:54+03:00
 description: Writeup for krotate [Unbreakable 2024]
+type: writeup
 author: zenbassi
 tags:
 - crypto

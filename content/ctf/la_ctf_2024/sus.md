@@ -2,6 +2,7 @@
 title: Sus
 date: 2024-02-22T01:42:02+02:00
 description: Writeup for Sus [LA CTF 2024]
+type: writeup
 author: sunbather
 tags:
 - pwn

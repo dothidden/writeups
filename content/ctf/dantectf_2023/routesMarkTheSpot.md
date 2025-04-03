@@ -4,6 +4,7 @@ date: 2023-06-02
 tags:
 - network
 - forensics
+type: writeup
 author: H0N3YP0T
 ---
 

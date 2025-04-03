@@ -4,6 +4,7 @@ title: "Network Detective"
 date: 2023-05-24T22:17:09+03:00
 tags:
 - network
+type: writeup
 author: H0N3YP0T
 ---
 

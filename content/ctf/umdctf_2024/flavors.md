@@ -2,6 +2,7 @@
 title: flavors
 date: 2024-05-08T12:53:05+03:00
 description: Writeup for flavors [UMDCTF 2024]
+type: writeup
 author: zenbassi
 tags:
 - rev

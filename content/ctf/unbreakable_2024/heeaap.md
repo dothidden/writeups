@@ -2,6 +2,7 @@
 title: heeaap
 date: 2024-04-07T14:23:28+03:00
 description: Writeup for heeaap [Unbreakable 2024]
+type: writeup
 author: sunbather
 tags:
 - pwn

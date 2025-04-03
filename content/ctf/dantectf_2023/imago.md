@@ -5,6 +5,7 @@ description: Image Qualitatis writeup
 tags:
 - forensics
 - radio
+type: writeup
 author: zenbassi
 draft: false
 ---

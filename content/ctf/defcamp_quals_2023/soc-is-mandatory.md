@@ -2,6 +2,7 @@
 title: Soc-Is-Mandatory
 date: 2023-10-22T14:06:48+03:00
 description: Writeup for Soc-Is-Mandatory [Defcamp Quals 2023]
+type: writeup
 author: H0N3YP0T
 tags:
   - threat hunting

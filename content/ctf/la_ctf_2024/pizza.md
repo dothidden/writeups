@@ -2,6 +2,7 @@
 title: Pizza
 date: 2024-02-22T01:41:59+02:00
 description: Writeup for Pizza [LA CTF 2024]
+type: writeup
 author: sunbather
 tags:
 - pwn

@@ -2,6 +2,7 @@
 title: Oh My Buffer
 date: 2025-03-30T22:47:05+03:00
 description: Writeup for Oh My Buffer [Swamp CTF 2025]
+type: writeup
 author: sunbather
 tags:
 - pwn

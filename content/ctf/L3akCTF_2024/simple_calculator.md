@@ -2,6 +2,7 @@
 title: simple calculator
 date: 2024-05-27T14:51:02+03:00
 description: Writeup for simple calculator [L3akCTF]
+type: writeup
 author: Hust
 tags:
 - web

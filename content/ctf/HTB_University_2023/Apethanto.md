@@ -2,6 +2,7 @@
 title: Apethanto
 date: 2023-12-10T14:21:20+02:00
 description: Writeup for Apethanto [HTB University 2023]
+type: writeup
 author: H0N3YP0T
 tags:
 - fullpwn

@@ -2,6 +2,7 @@
 title: just-an-upload
 date: 2024-04-07T14:22:29+03:00
 description: Writeup for just-an-upload [Unbreakable 2024]
+type: writeup
 author: H0N3YP0T
 tags:
 - network

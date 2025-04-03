@@ -2,6 +2,7 @@
 title: Circle
 date: 2023-10-22T18:52:45+02:00
 description: Writeup for Circle [Defcamp Quals 2023]
+type: writeup
 author: zenbassi
 tags:
 - rev

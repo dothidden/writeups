@@ -2,6 +2,7 @@
 title: Laconic
 date: 2025-03-29T18:36:19+02:00
 description: Writeup for Laconic [HTB Cyber Apocalypse CTF 2025]
+type: writeup
 author: sunbather
 tags:
 - pwn

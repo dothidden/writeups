@@ -2,6 +2,7 @@
 title: Combination
 date: 2023-10-22T15:53:57+03:00
 description: Writeup for Combination [Defcamp Quals 2023]
+type: writeup
 author: Honesty
 tags:
   - rev

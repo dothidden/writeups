@@ -2,6 +2,7 @@
 title: Write-Flag-Where2
 date: 2023-06-30T13:11:29+03:00
 description: Writeup for Write-Flag-Where2 [Google Ctf 2023]
+type: writeup
 author: sunbather
 tags:
 - pwn

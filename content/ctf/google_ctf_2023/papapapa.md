@@ -2,6 +2,7 @@
 title: Papapapa
 date: 2023-06-30T13:11:37+03:00
 description: Writeup for Papapapa [Google Ctf 2023]
+type: writeup
 author: zenbassi
 tags:
 - misc

@@ -2,6 +2,7 @@
 title: SecurityInFront
 date: 2025-02-28T12:33:22+02:00
 description: Writeup for SecurityInFront [HTB University 2024]
+type: writeup
 author: Mega
 tags:
 - rev

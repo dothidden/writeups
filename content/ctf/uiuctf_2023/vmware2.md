@@ -2,6 +2,7 @@
 title: vmwhere2
 date: 2023-07-08T22:47:53+03:00
 description: Writeup for vmwhere2 [UIUCTF 2023]
+type: writeup
 author: zenbassi
 tags:
 - rev

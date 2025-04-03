@@ -1,6 +1,7 @@
 ---
 title: Geoguesser
 date: 2023-06-10
+type: writeup
 author: sunbather
 tags:
   - rev

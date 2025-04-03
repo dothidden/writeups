@@ -2,6 +2,7 @@
 title: Shattered-Memories
 date: 2024-02-18T20:04:26+02:00
 description: Writeup for Shattered-Memories [LA CTF 2024]
+type: writeup
 author: H0N3YP0T
 tags:
 - rev

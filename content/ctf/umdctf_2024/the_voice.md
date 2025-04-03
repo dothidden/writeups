@@ -2,6 +2,7 @@
 title: The-voice
 date: 2024-04-26T14:23:28+03:00
 description: Writeup for The-voice [UMD 2024]
+type: writeup
 author: PineBel
 tags:
   - pwn

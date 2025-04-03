@@ -3,6 +3,7 @@ title: Damn
 date: 2023-06-10
 tags:
   - osint
+type: writeup
 author: H0N3YP0T
 ---
 

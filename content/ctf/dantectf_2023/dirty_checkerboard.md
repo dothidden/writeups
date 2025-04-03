@@ -4,6 +4,7 @@ date: 2023-06-08T14:51:29+03:00
 description: Dirty Checkerboard writeup
 tags:
 - forensics
+type: writeup
 author: zenbassi
 draft: false
 ---

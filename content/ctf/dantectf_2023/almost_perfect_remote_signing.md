@@ -5,6 +5,7 @@ description: Almost Perfect Remote Signing writeup
 tags:
 - forensics
 - radio
+type: writeup
 author: zenbassi
 draft: false
 ---

@@ -2,6 +2,7 @@
 title: Hourcle
 date: 2025-03-27T18:33:57+03:00
 description: Writeup for Hourcle [HTB Cyber Apocalypse CTF 2025]
+type: writeup
 author: h3pha
 tags:
 - crypto

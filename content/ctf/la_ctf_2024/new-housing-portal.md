@@ -2,6 +2,7 @@
 title: New-Housing-Portal
 date: 2024-02-18T20:05:23+02:00
 description: Writeup for New-Housing-Portal [LA CTF 2024]
+type: writeup
 author: H0N3YP0T
 tags:
 - web

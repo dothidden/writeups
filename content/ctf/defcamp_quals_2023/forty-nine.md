@@ -2,6 +2,7 @@
 title: Forty-Nine
 date: 2023-10-22T14:55:41-04:00
 description: Writeup for Forty-Nine [Defcamp Quals 2023]
+type: writeup
 author: Koyossu
 tags:
 - web

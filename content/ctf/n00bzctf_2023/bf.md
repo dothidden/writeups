@@ -2,6 +2,7 @@
 title: Bf
 date: 2023-06-16T15:20:45+03:00
 description: Writeup for BF [n00bzctf 2023]
+type: writeup
 author: zenbassi
 tags:
 - rev

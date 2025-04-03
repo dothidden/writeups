@@ -2,6 +2,7 @@
 title: Npc
 date: 2023-06-30T13:11:29+03:00
 description: Writeup for Npc [Google Ctf 2023]
+type: writeup
 author: zenbassi
 tags:
 - misc

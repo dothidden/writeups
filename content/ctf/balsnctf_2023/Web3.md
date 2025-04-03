@@ -3,6 +3,7 @@ title: Web3
 date: 2023-10-11
 tags:
   - misc
+type: writeup
 author: expnx
 ---
 

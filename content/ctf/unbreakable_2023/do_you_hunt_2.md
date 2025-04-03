@@ -3,6 +3,7 @@ title: "Do You Hunt 2"
 date: 2023-05-24T22:15:11+03:00
 tags:
   - threat hunting
+type: writeup
 author: H0N3YP0T
 ---
 

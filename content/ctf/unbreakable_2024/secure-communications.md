@@ -2,6 +2,7 @@
 title: secure-communications
 date: 2024-04-14T22:17:52+03:00
 description: Writeup for secure-communications [Unbreakable 2024]
+type: writeup
 author: zenbassi
 tags:
 - network 

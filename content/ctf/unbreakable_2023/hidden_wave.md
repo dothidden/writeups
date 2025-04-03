@@ -5,6 +5,7 @@ tags:
   - forensics
   - stego
   - audio
+type: writeup
 author: H0N3YP0T
 ---
 

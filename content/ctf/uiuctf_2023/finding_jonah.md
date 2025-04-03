@@ -2,6 +2,7 @@
 title: Finding Jonah
 date: 2023-07-01T19:40:40+02:00
 description: Writeup for Finding Jonah [UIUCTF 2023]
+type: writeup
 author: H0N3YP0T
 tags:
 - osint

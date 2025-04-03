@@ -2,6 +2,7 @@
 title: Awesomeone
 date: 2023-10-22T15:39:52+03:00
 description: Writeup for Awesomeone [Defcamp Quals 2023]
+type: writeup
 author: Honesty
 tags:
   - rev
