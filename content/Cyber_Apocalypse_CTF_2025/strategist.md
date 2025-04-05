@@ -1,6 +1,6 @@
 ---
 title: Strategist
-date: 2025-03-26:00:19+03:00
+date: 2025-03-26T0:00:19+03:00
 description: Writeup for Strategist [HTB Cyber Apocalypse 2025]
 author: PineBel
 tags:
