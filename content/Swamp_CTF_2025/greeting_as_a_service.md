@@ -34,7 +34,7 @@ pwndbg> bt
 #10 0x0000000000000000 in ?? ()
 ```
 
-This guess is purelt based on the return addresses. I think from number 4 onwards it's just random values found on the stack, but the addresses 1 to 3 are probably entry functions from libc, like `libc_start_main()`.
+This guess is purely based on the return addresses. I think from number 4 onwards it's just random values found on the stack, but the addresses 1 to 3 are probably entry functions from libc, like `libc_start_main()`.
 So that leaves address 0 to be the `main()` function. Let's disassemble it:
 
 ```
