@@ -9,6 +9,21 @@ draft: false
 
 We're now hosting a technical seminar. Join us on the last Wednesday of every month to discuss exploits, mitigations, new security research and everything in between. 
 
+## Seminar VIII
+
+
+| Title <div style="width:290px"></div> | Speaker <div style="width:90px"></div> | Place <div style="width:40px"></div> | Datetime <div style="width:40px"></div> | Slides <div style="width:40px"></div> |
+| :---: | :-----:  |:------------------------------------:| :------: | :----: |
+| Recovering Lost Media - Tools, Techniques, and a Personal Case Study | Johnson |          Amf Pompeiu @ FMI           | 28.05.2025 18:00 | n/a |
+| Finding Backdoors in Android Apps: Chinese Edition | sunbather |          Amf Pompeiu @ FMI           | 28.05.2025 18:00 | n/a |
+
+## Seminar VII
+
+
+| Title <div style="width:290px"></div> | Speaker <div style="width:90px"></div> | Place <div style="width:40px"></div> | Datetime <div style="width:40px"></div> | Slides <div style="width:40px"></div> |
+| :---: | :-----:  |:------------------------------------:| :------: | :----: |
+| Bad Binder - Exploiting an Android Kernel Vulnerability | zenbassi |          Amf Pompeiu @ FMI           | 30.04.2025 18:00 | n/a |
+
 ## Seminar VI
 
 
