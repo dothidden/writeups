@@ -9,13 +9,20 @@ draft: false
 
 We're now hosting a technical seminar. Join us on the last Wednesday of every month to discuss exploits, mitigations, new security research and everything in between. 
 
+## Seminar IX
+
+
+| Title <div style="width:290px"></div> | Speaker <div style="width:90px"></div> | Place <div style="width:40px"></div> | Datetime <div style="width:40px"></div> | Slides <div style="width:40px"></div> |
+| :---: | :-----:  |:------------------------------------:| :------: | :----: |
+| From Payload to Payback: Dissecting and Deceiving C2 Infrastructures | Levi |          Amf Pompeiu @ FMI           | 25.06.2025 18:00 | n/a |
+
 ## Seminar VIII
 
 
 | Title <div style="width:290px"></div> | Speaker <div style="width:90px"></div> | Place <div style="width:40px"></div> | Datetime <div style="width:40px"></div> | Slides <div style="width:40px"></div> |
 | :---: | :-----:  |:------------------------------------:| :------: | :----: |
-| Recovering Lost Media - Tools, Techniques, and a Personal Case Study | Johnson |          Amf Pompeiu @ FMI           | 28.05.2025 18:00 | n/a |
-| Finding Backdoors in Android Apps: Chinese Edition | sunbather |          Amf Pompeiu @ FMI           | 28.05.2025 18:00 | n/a |
+| Recovering Lost Media - Tools, Techniques, and a Personal Case Study | Johnson |          Amf Pompeiu @ FMI           | 28.05.2025 18:00 | [Link](https://drive.google.com/file/d/17BoreyvPpmTKiDPZp64JLiIxhBSpnvcs/view) |
+| Finding Backdoors in Android Apps: Chinese Edition | sunbather |          Amf Pompeiu @ FMI           | 28.05.2025 18:00 | [Link](https://docs.google.com/presentation/d/1ttjBsMjGiye0-8aP3vaLbuSMWaBLErPmOL4zIJAmLmI/edit?usp=sharing) |
 
 ## Seminar VII
 
