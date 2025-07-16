@@ -114,6 +114,12 @@ params:
       tags: [ 'pwn', 'web', 'rev', 'misc', 'network', 'crypto' ]
       description:
         - Don't hate me, but... Try harder!
+    - name: vikcoc
+      link: https://github.com/vikcoc/
+      picture: https://avatars.githubusercontent.com/u/62379953?s=400&u=c07691e60cefa2a7b44cb65db88eba485ac6eba8&v=4
+      tags: [ 'pwn', 'web' ]
+      description:
+        - The road ahead is long...
   excludedSections:
     - about
     - events
