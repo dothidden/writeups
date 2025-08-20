@@ -1,5 +1,6 @@
 ---
 title: sat1sf1
+type: writeup
 date: 2024-04-14T21:39:26+03:00
 description: Writeup for sat1sf1 [Unbreakable 2024]
 author: zenbassi

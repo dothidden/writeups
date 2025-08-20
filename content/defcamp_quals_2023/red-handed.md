@@ -1,5 +1,6 @@
 ---
 title: Red-Handed
+type: writeup
 date: 2023-10-22T15:29:17-04:00
 description: Writeup for Red-Handed [Defcamp Quals 2023]
 author: Koyossu

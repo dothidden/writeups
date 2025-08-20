@@ -1,5 +1,6 @@
 ---
 title: Crossbow
+type: writeup
 date: 2025-03-29T19:09:45+02:00
 description: Writeup for Crossbow [HTB Cyber Apocalypse CTF 2025]
 author: sunbather

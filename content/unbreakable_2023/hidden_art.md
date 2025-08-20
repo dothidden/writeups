@@ -1,5 +1,6 @@
 ---
 title: Hidden Art
+type: writeup
 date: 2023-05-24T21:44:04+03:00
 tags:
   - stego

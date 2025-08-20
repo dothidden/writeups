@@ -1,5 +1,6 @@
 ---
 title: Report
+type: writeup
 date: 2023-05-27T23:11:16+03:00
 author: H0N3YP0T
 tags:

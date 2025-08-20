@@ -1,5 +1,6 @@
 ---
 title: Finding Artifacts 2
+type: writeup
 date: 2023-07-01T15:47:00+02:00
 description: Writeup for Finding Artifacts 2 [UIUCTF 2023]
 author: H0N3YP0T

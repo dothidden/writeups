@@ -1,5 +1,6 @@
 ---
 title: baby-bof
+type: writeup
 date: 2023-10-22T09:56:31+03:00
 description: Writeup for baby-bof [Defcamp Quals 2023]
 author: sunbather

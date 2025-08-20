@@ -1,5 +1,6 @@
 ---
 title: Storygen
+type: writeup
 date: 2023-06-30T13:11:29+03:00
 description: Writeup for Storygen [Google Ctf 2023]
 author: sunbather

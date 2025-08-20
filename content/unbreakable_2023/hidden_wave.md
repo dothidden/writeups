@@ -1,5 +1,6 @@
 ---
 title: "Hidden Wave"
+type: writeup
 date: 2023-05-24T21:53:09+03:00
 tags:
   - forensics

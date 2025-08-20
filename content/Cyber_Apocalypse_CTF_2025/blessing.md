@@ -1,5 +1,6 @@
 ---
 title: Blessing
+type: writeup
 date: 2025-03-26T03:00:19+03:00
 description: Writeup for Blessing [HTB Cyber Apocalypse 2025]
 author: PineBel

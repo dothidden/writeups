@@ -1,5 +1,6 @@
 ---
 title: RWX-Bronze
+type: writeup
 date: 2025-03-10T02:48:43+03:00
 description: Writeup for RWX-Bronze [KalmarCTF 2025]
 author: h3pha

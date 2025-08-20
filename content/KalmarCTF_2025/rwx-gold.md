@@ -1,5 +1,6 @@
 ---
 title: RWX-Gold
+type: writeup
 date: 2025-03-10T03:03:41+03:00
 description: Writeup for RWX-Gold [KalmarCTF 2025]
 author: h3pha

@@ -1,5 +1,6 @@
 ---
 title: Code-Transpiler
+type: writeup
 date: 2023-10-22T14:04:13-04:00
 description: Writeup for Code-Transpiler [Defcamp Quals 2023]
 author: Koyossu

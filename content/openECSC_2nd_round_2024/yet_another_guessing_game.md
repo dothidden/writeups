@@ -1,5 +1,6 @@
 ---
 title: yet another guessing game
+type: writeup
 date: 2024-05-10T16:37:39+03:00
 description: Writeup for yet another guessing game [openecsc_round2_2024s]
 author: zenbassi

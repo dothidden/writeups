@@ -1,5 +1,6 @@
 ---
 title: Comments
+type: writeup
 date: 2023-11-12T19:56:46+02:00 
 description: Writeup for Comments [Ekoparty 2023]
 author: Honesty

@@ -1,5 +1,6 @@
 ---
 title: Traces
+type: writeup
 date: 2025-03-27T16:12:33+03:00
 description: Writeup for Traces [HTB Cyber Apocalypse CTF 2025]
 author: h3pha

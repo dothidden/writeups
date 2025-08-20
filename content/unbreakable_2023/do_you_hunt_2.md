@@ -1,5 +1,6 @@
 ---
 title: "Do You Hunt 2"
+type: writeup
 date: 2023-05-24T22:15:11+03:00
 tags:
   - threat hunting

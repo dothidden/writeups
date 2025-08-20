@@ -1,12 +1,13 @@
 ---
 title: Babysandbox
+type: writeup
 date: 2023-07-09T01:52:07+03:00
 description: Writeup for Babysandbox [Codegate Qualifs 2023]
 author: zenbassi
 tags:
 - pwn
 - misc
-draft: true
+draft: false
 ---
 ___
 

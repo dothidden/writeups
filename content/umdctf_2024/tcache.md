@@ -1,5 +1,6 @@
 ---
 title: Tcache
+type: writeup
 date: 2024-04-17T14:23:28+03:00
 description: Information about tcache
 author: PineBel

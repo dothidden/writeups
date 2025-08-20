@@ -1,0 +1,30 @@
+{{ define "main" }}
+<main>
+    <article>
+        <div>
+            <h1>{{ .Title }} [{{- .Parent.Title -}}] </h1>
+
+            <div class="meta-bar">
+                <time class="meta">{{ .Date | dateFormat "02/01/06" }}</time>
+
+                {{ if isset .Params "tags" }}
+                {{ range .GetTerms "tags" }}
+                <span class="tag"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></span>
+                {{ end }}
+                {{ end }}
+            </div>
+            {{ if .Params.Author }}
+            <div class="author">
+                {{ $member := index (where .Site.Params.members "name" .Params.Author) 0 }}
+                <span>writeup by: <a href="{{ $member.link }}">{{ $member.name }}</a></span>
+            </div>
+            {{ end }}
+        </div>
+
+        <section class="body">
+            {{ .Content }}
+        </section>
+
+    </article>
+</main>
+{{ end }}

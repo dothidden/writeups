@@ -1,5 +1,6 @@
 ---
 title: "UMDCTF 2023"
+type: writeup
 date: 2023-04-28T01:03:27+03:00
 place: 55
 total: 745

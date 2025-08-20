@@ -1,6 +1,7 @@
 ---
 {{ $title := replace .Name "_" " " | title -}}
 title: {{ $title }}
+type: writeup
 date: {{ .Date }}
 {{ $sectionHeading := .Site.GetPage .Section .Section -}}
 description: Writeup for {{ $title }} [{{ $sectionHeading.Title }}]
@@ -8,7 +9,6 @@ author: author [optional]
 tags:
 - tag1 [change it]
 - tag2
-draft: true
 ---
 ___
 

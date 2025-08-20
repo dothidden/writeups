@@ -1,5 +1,6 @@
 ---
 title: Pogn
+type: writeup
 date: 2024-02-22T01:42:10+02:00
 description: Writeup for Pogn [LA CTF 2024]
 author: sunbather

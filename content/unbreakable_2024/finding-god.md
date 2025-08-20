@@ -1,5 +1,6 @@
 ---
 title: finding-god
+type: writeup
 date: 2024-04-07T13:45:05+03:00
 description: Writeup for finding-god [Unbreakable 2024]
 author: H0N3YP0T

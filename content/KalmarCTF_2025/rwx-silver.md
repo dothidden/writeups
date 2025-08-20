@@ -1,5 +1,6 @@
 ---
 title: RWX-Silver
+type: writeup
 date: 2025-03-10T03:00:19+03:00
 description: Writeup for RWX-Silver [KalmarCTF 2025]
 author: h3pha

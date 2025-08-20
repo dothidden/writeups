@@ -1,5 +1,6 @@
 ---
 title: Flag L3ak
+type: writeup
 date: 2025-07-14T21:45:51+03:00
 description: Writeup for Flag L3ak [L3akCTF_2025s]
 author: vikcoc

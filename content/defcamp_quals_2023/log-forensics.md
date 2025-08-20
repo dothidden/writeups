@@ -1,5 +1,6 @@
 ---
 title: Log-Forensics
+type: writeup
 date: 2023-10-22T20:05:26+02:00
 description: Writeup for Log-Forensics [Defcamp Quals 2023]
 author: zenbassi

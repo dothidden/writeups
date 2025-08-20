@@ -1,5 +1,6 @@
 ---
 title: Very Serious Cryptography
+type: writeup
 date: 2025-03-10T03:15:35+03:00
 description: Writeup for Very Serious Cryptography [KalmarCTF 2025]
 author: h3pha 

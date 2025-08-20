@@ -1,5 +1,6 @@
 ---
 title: Contractor
+type: writeup
 date: 2025-03-29T20:14:26+02:00
 description: Writeup for Contractor [HTB Cyber Apocalypse CTF 2025]
 author: sunbather

@@ -1,5 +1,6 @@
 ---
 title: Oh My Buffer
+type: writeup
 date: 2025-03-30T22:47:05+03:00
 description: Writeup for Oh My Buffer [Swamp CTF 2025]
 author: sunbather

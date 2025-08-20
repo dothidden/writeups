@@ -1,5 +1,6 @@
 ---
 title: the_spice
+type: writeup
 date: 2024-04-28T23:58:34+03:00
 description: Writeup for the_spice [UMDCTF_2024]
 author: sunbather

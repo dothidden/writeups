@@ -1,5 +1,6 @@
 ---
 title: What's for Dinner
+type: writeup
 date: 2023-07-01T19:41:58+02:00
 description: Writeup for Whats for Dinner [UIUCTF 2023]
 author: H0N3YP0T

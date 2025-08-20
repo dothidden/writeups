@@ -1,5 +1,6 @@
 ---
 title: ready-aim-fire
+type: writeup
 date: 2024-04-26T14:23:28+03:00
 description: Writeup for ready-aim-fire [UMD 2024]
 author: PineBel

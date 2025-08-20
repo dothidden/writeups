@@ -1,5 +1,6 @@
 ---
 title: Internet-Is-Dangerous
+type: writeup
 date: 2023-10-22T09:56:31+03:00
 description: Writeup for Internet-Is-Dangerous [Defcamp Quals 2023]
 author: H0N3YP0T

@@ -1,5 +1,6 @@
 ---
 title: Dirty Checkerboard
+type: writeup
 date: 2023-06-08T14:51:29+03:00
 description: Dirty Checkerboard writeup
 tags:

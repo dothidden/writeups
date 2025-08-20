@@ -1,5 +1,6 @@
 ---
 title: Boze
+type: writeup
 date: 2023-10-22T18:37:18-04:00
 description: Writeup for Boze [Defcamp Quals 2023]
 author: Koyossu

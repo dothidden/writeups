@@ -1,5 +1,6 @@
 ---
 title: "Ipv6 Evil"
+type: writeup
 date: 2023-05-24T22:00:43+03:00
 tags:
   - network

@@ -1,5 +1,6 @@
 ---
 title: First Class Mail
+type: writeup
 date: 2023-07-01T15:47:00+02:00
 description: Writeup for First Class Mail [UIUCTF 2023]
 author: H0N3YP0T

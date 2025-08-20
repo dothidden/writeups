@@ -1,5 +1,6 @@
 ---
 title: Pwn1
+type: writeup
 date: 2023-06-10
 author: sunbather
 tags:

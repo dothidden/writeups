@@ -1,5 +1,6 @@
 ---
 title: Wicked-Monitoring
+type: writeup
 date: 2024-04-07T18:00:08+03:00
 description: Writeup for Wicked-Monitoring [Unbreakable 2024]
 author: H0N3YP0T

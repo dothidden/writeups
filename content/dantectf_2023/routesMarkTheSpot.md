@@ -1,5 +1,6 @@
 ---
 title: Routes Mark The Spot
+type: writeup
 date: 2023-06-02
 tags:
 - network

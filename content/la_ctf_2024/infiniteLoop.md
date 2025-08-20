@@ -1,5 +1,6 @@
 ---
 title: InfniteLoop
+type: writeup
 date: 2024-02-18T20:03:20+02:00
 description: Writeup for InfniteLoop [LA CTF 2024]
 author: H0N3YP0T

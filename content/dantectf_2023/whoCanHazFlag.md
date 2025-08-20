@@ -1,5 +1,6 @@
 ---
 title: Who Can Haz Flag
+type: writeup
 date: 2023-06-02
 tags:
   - network

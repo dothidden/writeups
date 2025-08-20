@@ -1,5 +1,6 @@
 ---
 title: not-allowed
+type: writeup
 date: 2024-04-07T14:23:28+03:00
 description: Writeup for not-allowed [Unbreakable 2024]
 author: sunbather

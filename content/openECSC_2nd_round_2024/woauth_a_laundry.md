@@ -1,5 +1,6 @@
 ---
 title: woauth a laundry
+type: writeup
 date: 2024-05-09T13:39:57+03:00
 description: Writeup for woauth a laundry [openECSC 2024 (2nd Round)]
 author: zenbassi

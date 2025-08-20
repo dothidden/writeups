@@ -1,5 +1,6 @@
 ---
 title: merger_2077
+type: writeup
 date: 2023-10-09
 tags:
   - rev

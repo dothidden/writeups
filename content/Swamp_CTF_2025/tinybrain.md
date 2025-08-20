@@ -1,5 +1,6 @@
 ---
 title: Tinybrain
+type: writeup
 date: 2025-03-30T18:09:17+03:00
 description: Writeup for Tinybrain [Swamp CTF 2025]
 author: sunbather

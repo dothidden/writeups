@@ -1,5 +1,6 @@
 ---
 title: Tornado Warning
+type: writeup
 date: 2023-07-08T23:39:52+03:00
 description: Writeup for Tornado Warning [UIUCTF 2023]
 author: zenbassi

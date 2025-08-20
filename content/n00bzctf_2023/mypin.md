@@ -1,5 +1,6 @@
 ---
 title: MyPin
+type: writeup
 date: 2023-06-15T12:43:32+03:00
 description: Writeup for MyPin [n00bzctf 2023]
 author: zenbassi

@@ -1,5 +1,6 @@
 ---
 title: Memorial Cabbage
+type: writeup
 date: 2023-11-23T23:24:31+02:00
 description: Writeup for Memorial Cabbage [Cakectf 2023]
 author: sunbather

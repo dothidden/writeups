@@ -1,5 +1,6 @@
 ---
 title: wicked-firmware
+type: writeup
 date: 2024-04-14T23:10:18+03:00
 description: Writeup for wicked-firmware [Unbreakable 2024]
 author: zenbassi

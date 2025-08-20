@@ -1,5 +1,6 @@
 ---
 title: GateCrash
+type: writeup
 date: 2023-12-10T13:37:49+02:00
 description: Writeup for GateCrash [HTB University 2023]
 author: H0N3YP0T

@@ -1,5 +1,6 @@
 ---
 title: The Goose
+type: writeup
 date: 2025-07-14T21:39:11+03:00
 description: Writeup for The Goose [L3akCTF_2025s]
 author: vikcoc

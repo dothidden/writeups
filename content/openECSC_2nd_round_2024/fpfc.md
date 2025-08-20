@@ -1,5 +1,6 @@
 ---
 title: fpfc
+type: writeup
 date: 2024-05-09T13:40:50+03:00
 description: Writeup for fpfc [openECSC 2024 (2nd Round)]
 author: zenbassi

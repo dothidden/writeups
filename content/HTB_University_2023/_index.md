@@ -1,5 +1,6 @@
 ---
 title: HTB University 2023
+type: writeup
 date: 2023-12-10T13:27:52+02:00
 description: Writeups for [HTB University 2023]
 place: 86

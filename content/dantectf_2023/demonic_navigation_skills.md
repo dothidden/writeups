@@ -1,5 +1,6 @@
 ---
 title: Demonic Navigation Skills
+type: writeup
 date: 2023-06-08T22:42:49+03:00
 description: Demonic Navigation Skills writeup
 tags:

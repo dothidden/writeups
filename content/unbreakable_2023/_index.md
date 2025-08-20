@@ -1,5 +1,6 @@
 ---
 title: Unbreakable 2023
+type: writeup
 date: 2023-05-19T01:04:31+03:00
 description: Writeups for [Unbreakable 2023]
 place: 7

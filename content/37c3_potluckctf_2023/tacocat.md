@@ -1,5 +1,6 @@
 ---
 title: Tacocat
+type: writeup
 date: 2024-01-05T22:50:30+01:00
 description: Writeup for Tacocat [37c3 Potluckctf 2023]
 author: zenbassi

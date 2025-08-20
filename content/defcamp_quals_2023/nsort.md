@@ -1,5 +1,6 @@
 ---
 title: Nsort
+type: writeup
 date: 2023-10-22T16:00:34+03:00
 description: Writeup for Nsort [Defcamp Quals 2023]
 author: Koyossu

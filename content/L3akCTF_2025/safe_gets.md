@@ -1,5 +1,6 @@
 ---
 title: Safe Gets
+type: writeup
 date: 2025-07-14T21:42:41+03:00
 description: Writeup for Safe Gets [L3akCTF_2025s]
 author: vikcoc

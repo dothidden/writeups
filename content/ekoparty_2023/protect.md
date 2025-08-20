@@ -1,5 +1,6 @@
 ---
 title: Protect
+type: writeup
 date: 2023-11-12T18:53:58+02:00
 description: Writeup for Protect [Ekoparty 2023]
 author: sunbather

@@ -1,5 +1,6 @@
 ---
 title: Greeting as a Service
+type: writeup
 date: 2025-03-30T17:34:37+03:00
 description: Writeup for Greeting as a Service [Swamp CTF 2025]
 author: sunbather

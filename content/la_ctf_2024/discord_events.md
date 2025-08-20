@@ -1,5 +1,6 @@
 ---
 title: Discord Events
+type: writeup
 date: 2024-02-18T12:18:57+02:00
 description: Writeup for Discord Events [LA CTF 2024]
 author: H0N3YP0T

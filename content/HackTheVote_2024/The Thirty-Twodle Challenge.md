@@ -1,5 +1,6 @@
 ---
 title: The Thirty-Twodle Challenge
+type: writeup
 date: 2024-11-06T22:20:02+03:00
 description: Writeup for The Thirty-Twodle Challenge [HackTheVote 2024]
 author: MettleSphee

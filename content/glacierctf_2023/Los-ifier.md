@@ -1,5 +1,6 @@
 ---
 title: Los-ifier
+type: writeup
 date: 2023-11-24T20:00:00+02:00
 description: Writeup for Los-ifier [GlacierCTF 2023]
 author: PineBel

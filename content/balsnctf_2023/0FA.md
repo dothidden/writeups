@@ -1,5 +1,6 @@
 ---
 title: 0FA
+type: writeup
 date: 2023-10-09
 tags:
   - web

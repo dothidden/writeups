@@ -1,5 +1,6 @@
 ---
 title: 52-card-monty
+type: writeup
 date:  2024-02-25T20:00:00+02:00
 description: Writeup for 52-card-monty [LA CTF 2024]
 author: PineBel

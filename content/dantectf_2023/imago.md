@@ -1,5 +1,6 @@
 ---
 title: Imago Qualitatis
+type: writeup
 date: 2023-06-08T15:11:49+03:00
 description: Image Qualitatis writeup
 tags:

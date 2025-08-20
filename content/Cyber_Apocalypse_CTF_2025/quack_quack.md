@@ -1,5 +1,6 @@
 ---
 title: Quack Quack
+type: writeup
 date: 2025-03-29T18:19:13+02:00
 description: Writeup for Quack Quack [HTB Cyber Apocalypse CTF 2025]
 author: sunbather

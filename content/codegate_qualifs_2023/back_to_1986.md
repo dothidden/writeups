@@ -1,5 +1,6 @@
 ---
 title: Back to 1986
+type: writeup
 date: 2023-06-30T15:05:27+03:00
 description: Writeup for Back to 1986 [Codegate Qualifs 2023]
 author: zenbassi

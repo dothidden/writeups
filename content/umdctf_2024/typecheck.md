@@ -1,5 +1,6 @@
 ---
 title: typecheck
+type: writeup
 date: 2024-04-28T23:58:34+03:00
 description: Writeup for typecheck [UMDCTF_2024]
 author: sunbather

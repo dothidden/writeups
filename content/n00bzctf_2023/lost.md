@@ -1,5 +1,6 @@
 ---
 title: Lost
+type: writeup
 date: 2023-06-10
 tags:
   - osint

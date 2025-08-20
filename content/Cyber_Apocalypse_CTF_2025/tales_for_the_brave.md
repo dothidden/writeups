@@ -1,5 +1,6 @@
 ---
 title: Tales for the Brave
+type: writeup
 date: 2025-03-29T20:52:57+02:00
 description: Writeup for Tales for the Brave [HTB Cyber Apocalypse CTF 2025]
 author: sunbather

@@ -1,5 +1,6 @@
 ---
 title: DanteCTF 2023
+type: writeup
 date: 2023-06-02T13:16:05+03:00
 description: Writeups for [DanteCTF 2023]
 place: 19

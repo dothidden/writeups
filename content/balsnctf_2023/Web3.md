@@ -1,5 +1,6 @@
 ---
 title: Web3
+type: writeup
 date: 2023-10-11
 tags:
   - misc

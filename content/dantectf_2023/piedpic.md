@@ -1,5 +1,6 @@
 ---
 title: Piedpic
+type: writeup
 date: 2023-06-08T12:43:14+03:00
 description: piedpic writeup
 tags:
