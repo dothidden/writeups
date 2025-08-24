@@ -1,28 +1,35 @@
 {{ define "main" }}
+    {{ $currentTag := "" }}
+    {{ if isset .Data "Term" }}
+        {{ $currentTag = .Data.Term }}
+        <h1>Entries tagged - "{{ $currentTag }}"</h1>
+    {{ else }}
+        <h1 class="page-title">All writeups</h1>
+    {{ end }}
 
-{{ if isset .Data "Term" }}
-<h1>Entries tagged - "{{ .Data.Term }}"</h1>
-{{ else }}
-<h1 class="page-title">All writeups</h1>
-{{ end }}
+    {{/* Get all unique CTF sections */}}
+    {{ $sections := slice }}
+    {{ range .Pages }}
+        {{ $sections = $sections | append .CurrentSection }}
+    {{ end }}
+    {{ $sections = $sections | uniq }}
 
-{{ $allPages := where .Data.Pages "Kind" "==" "page" }}
-{{ range ($allPages.GroupBy "Section") }}
+    {{/* Loop through each CTF section */}}
+    {{ range $sections }}
+        <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+        <ul class="posts terminal-prefix">
+            {{ range sort .Pages "Title" "asc" }}
 
-    {{ $sectionHeading := $.Site.GetPage .Key }}
-    <h3><a href="{{ $sectionHeading.RelPermalink }}">{{ $sectionHeading.Title }}</a></h3>
-
-    <ul class="posts terminal-prefix">
-        {{ range sort .Pages "Title" "asc" }}
-        <li class="post">
-            <time>[{{- .Date | dateFormat "02/01/06" -}}]</time>
-            <a href="{{ .RelPermalink }}">{{.Title}}</a>
-            {{ if .Draft }}
-            <span class="draft-label">DRAFT</span>
+                {{ if in .Params.tags $currentTag }}
+                    <li class="post">
+                        <time>[{{ .Date | dateFormat "02/01/06" }}]</time>
+                        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                        {{ if .Draft }}
+                            <span class="draft-label">DRAFT</span>
+                        {{ end }}
+                    </li>
+                {{ end }}
             {{ end }}
-        </li>
-        {{ end }}
-    </ul>
-
-{{ end }}
+        </ul>
+    {{ end }}
 {{ end }}

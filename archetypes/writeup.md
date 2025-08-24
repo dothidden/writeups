@@ -1,10 +1,12 @@
 ---
-{{ $title := replace .Name "_" " " | title -}}
+{{- $title := replace .Name "_" " " | title -}}
+{{- $parts := split .Path "/" -}}
+{{- $ctf := index $parts (sub (len $parts) 2) -}}
+
 title: {{ $title }}
 type: writeup
 date: {{ .Date }}
-{{ $sectionHeading := .Site.GetPage .Section .Section -}}
-description: Writeup for {{ $title }} [{{ $sectionHeading.Title }}]
+description: Writeup for {{ $title }} [{{ replace $ctf "_" " " | title }}]
 author: author [optional]
 tags:
 - tag1 [change it]
