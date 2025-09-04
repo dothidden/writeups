@@ -1,0 +1,21 @@
+{{ define "main" }}
+<h1 class="page-title">{{.Title}} - all writeups</h1>
+<ul class="terminal-prefix">
+    {{ if eq (len .Data.Pages) 0 }}
+    <p class="sorry-message">Sorry, we couldn't be bothered to write any solutions for this one 😢.</p>
+    <section class="sorry-section">
+    <img src="{{- $.Site.LanguagePrefix | absURL -}}images/others/meme_lost.gif" alt="sorry" class="sorry-image">
+    </section>
+    {{ else }}
+        {{- range sort .Data.Pages "Title" "asc" -}}
+        <li>
+            <a href="{{ .RelPermalink }}">{{.Title}}</a>
+            {{- if .Draft -}}
+            <span class="draft-label">DRAFT</span>
+            {{- end -}}</span>
+
+        </li>
+        {{- end -}}
+</ul>
+{{ end }}
+{{ end }}
