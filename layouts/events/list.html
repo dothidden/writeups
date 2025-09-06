@@ -1,0 +1,27 @@
+{{ define "main" }}
+
+{{ .Content }}
+
+<h1 class="page-title">Upcoming Events</h1>
+<ul class="terminal-prefix">
+    {{- range sort (where .Data.Pages "Date" ">" now) "Date" "asc" -}}
+        <li>
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            {{- if .Draft -}} <span class="draft-label">DRAFT</span> {{- end -}}
+        </li>
+    {{- else }}
+        <li>No upcoming events.</li>
+    {{- end }}
+</ul>
+<h1 class="page-title">Past Events</h1>
+<ul class="terminal-prefix">
+    {{- range sort (where .Data.Pages "Date" "<=" now) "Date" "desc" -}}
+        <li>
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            {{- if .Draft -}} <span class="draft-label">DRAFT</span> {{- end -}}
+        </li>
+    {{- else }}
+        <li>No past events.</li>
+    {{- end }}
+</ul>
+{{ end }}
