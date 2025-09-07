@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# ─── Constants ────────────────────────────────────────────────────────────────
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
 # ─── Color Output ─────────────────────────────────────────────────────────────
 green='\033[0;32m'
 red='\033[0;31m'
@@ -9,7 +12,7 @@ reset='\033[0m'
 echo "This script helps you create CTF directories and writeup files using the templates provided."
 echo -e "\n${yellow}NOTE: The script will automatically replace spaces with underscores in titles.${reset}\n"
 
-# ─── Get CTF Title and Slug ───────────────────────────────────────────────────
+# ─── Get Title and Slug ───────────────────────────────────────────────────
 read -p "Enter the object name: " NAME
 SLUG=$(echo "$NAME" | tr ' ' '_')
 
@@ -45,6 +48,45 @@ select action in "Create new CTF" "Add writeups to existing CTF" "Add a new even
             read -p "Enter the hour of the event (format: HH:MM): " HOUR
             read -p "Enter the event location: " LOCATION
             TARGET="events/$SLUG.md"
+
+            read -p "Is this event a seminar? (y/n): " IS_SEMINAR
+            if [[ $IS_SEMINAR =~ ^[Yy]$ ]]; then
+                echo -e "${green}Creating an event page in content/events...${reset}"
+                DATETIME="${DATE}T${HOUR}:00+02:00"
+                export HUGO_EVENT_DATETIME="$DATETIME"
+                output=$(hugo new --kind seminar "$TARGET" 2>&1)
+                unset HUGO_EVENT_DATETIME
+                exit_code=$?
+
+                if [[ $exit_code -eq 0 ]]; then
+                    echo -e "${green}$output${reset}"
+                else
+                    echo -e "${red}$output${reset}"
+                fi
+
+                while true; do
+                    read -p "Do you want to add a presentation? (y/n): " ADD_PRESENTATION
+                    if [[ $ADD_PRESENTATION =~ ^[Yy]$ ]]; then
+                        read -p "Enter the description: " DESCRIPTION
+                        read -p "Enter the author: " AUTHOR
+                        read -p "Enter link for slides (or leave empty): " SLIDES
+                        if [[ -z "$SLIDES" ]]; then
+                            SLIDES="N/A"
+                        else
+                            SLIDES="[Link]($SLIDES)"
+                        fi
+                        echo -e "| ${DESCRIPTION} | ${AUTHOR} | ${LOCATION} | $(date -d "$DATETIME" +"%d %b %Y %H:%M") | ${SLIDES} |" >> "${SCRIPT_DIR}/content/${TARGET}"
+
+                    else
+                        echo -e "${green}Done!${reset}"
+                        exit 0
+                    fi
+                done
+                
+                
+                exit 0
+            fi
+
             echo -e "${green}Creating an event directory and index page...${reset}"
             DATETIME="${DATE}T${HOUR}:00+02:00"
             export HUGO_EVENT_DATETIME="$DATETIME"

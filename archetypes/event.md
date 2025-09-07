@@ -3,13 +3,9 @@
 {{ $date := getenv "HUGO_EVENT_DATETIME" }}
 {{ $location := getenv "HUGO_EVENT_LOCATION" }}
 title: {{ $title }}
-type: event
+type: events
 date: {{ $date }}
-location: {{ $location }}
 ---
 
-# {{ $title }}
-
-**Time & Date**: `{{ $date | time | time.Format "15:04, 02 Jan 2006" }}`
-
-**Location**: `{{ $location }}`
+Date & Time: {{ $date | time | time.Format "15:04, 02 Jan 2006" }}
+Location: {{ $location }}

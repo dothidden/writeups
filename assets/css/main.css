@@ -427,3 +427,22 @@ table td{
         --logo-size: 75vw;
     }
 }
+
+/* Custom code here */
+
+.event-list {
+    padding: 0;
+}
+
+.event-summary {
+    list-style: none;
+    cursor: pointer;
+}
+
+.event-summary::-webkit-details-marker {
+    display: none;
+}
+
+.event-details {
+    padding-top: 0;
+}
