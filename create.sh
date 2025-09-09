@@ -52,8 +52,8 @@ select action in "Create new CTF" "Add writeups to existing CTF" "Add a new even
             read -p "Is this event a seminar? (y/n): " IS_SEMINAR
             if [[ $IS_SEMINAR =~ ^[Yy]$ ]]; then
                 echo -e "${green}Creating an event page in content/events...${reset}"
-                DATETIME="${DATE}T${HOUR}:00+02:00"
-                export HUGO_EVENT_DATETIME="$DATETIME"
+                DATETIME="${DATE}T${HOUR}"
+                export HUGO_EVENT_DATETIME="$DATETIME:00+02:00"
                 output=$(hugo new --kind seminar "$TARGET" 2>&1)
                 unset HUGO_EVENT_DATETIME
                 exit_code=$?
