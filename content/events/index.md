@@ -9,6 +9,13 @@ draft: false
 
 We're now hosting a technical seminar. Join us on the last Wednesday of every month to discuss exploits, mitigations, new security research and everything in between. 
 
+## Seminar X
+
+
+| Title <div style="width:290px"></div> | Speaker <div style="width:90px"></div> | Place <div style="width:40px"></div> | Datetime <div style="width:40px"></div> | Slides <div style="width:40px"></div> |
+| :---: | :-----:  |:------------------------------------:| :------: | :----: |
+| Nostalgic times in modern days: A short visit from the ghost of technology’s past | MettleSphee |          Amf Pompeiu @ PBT           | 24.09.2025 18:00 | [Link](https://docs.google.com/presentation/d/1weSb4RV7z9imhGzl-vJKYwKpeiyXhsPbEmQhU7H0WxE/edit?usp=sharing) |
+
 ## Seminar IX
 
 
@@ -61,7 +68,7 @@ We're now hosting a technical seminar. Join us on the last Wednesday of every mo
 | :---: | :-----:  | :---: | :------: |:--------------------------------------------------------------------------------------------------------------------------------------------------------:|
 |  DNS Tunneling | h3pha | Amf Pompeiu @ FMI | 18.12.2024 18:00 |   [Link](https://docs.google.com/presentation/d/1Ne63U08HZiVEf2CU29Ybys3AalocJyGG2UUt9PZ7LhE/edit?slide=id.g32010dfb119_0_0#slide=id.g32010dfb119_0_0)   |
 |  ROP Techniques | sunbather | Amf Pompeiu @ FMI | 18.12.2024 18:00 | [Link](https://docs.google.com/presentation/d/1zrBrUuMewJYIOim5Nl2XRIBlW6ovatvzK8rnvE6qt14/edit?slide=id.g31eb2b1e0e5_1_656#slide=id.g31eb2b1e0e5_1_656) |
-| OpenWRT| MettleSphee | Amf Pompeiu @ FMI | 18.12.2024 18:00 |                 [Link](https://docs.google.com/presentation/d/1Wfjz62XBLOXUvr_fNUq8317_ESXfDmXSRmpm6QtoebM/edit?slide=id.p1#slide=id.p1)                 |
+| OpenWRT & PostmarketOS| MettleSphee | Amf Pompeiu @ FMI | 18.12.2024 18:00 |                 [Link](https://docs.google.com/presentation/d/1Wfjz62XBLOXUvr_fNUq8317_ESXfDmXSRmpm6QtoebM/edit?slide=id.p1#slide=id.p1)                 |
 | Function Hooking | zenbassi | Amf Pompeiu @ FMI | 18.12.2024 18:00 |                                                     [Link](/presentations/frida-lightning-talk.pdf)                                                      |
 |  Binary Patching | PineBel | Amf Pompeiu @ FMI | 18.12.2024 18:00 |                       [Link](https://docs.google.com/presentation/d/1YhvLMWwQ_YzhfzmosAk76YJGzCIt2UYOddU5JGAAM9o/edit?usp=sharing)                       |
 |  How I lost all my data | Mircea | Amf Pompeiu @ FMI | 18.12.2024 18:00 |                                                      [Link](/presentations/cum-sa-pierzi-date.pdf)                                                       |
