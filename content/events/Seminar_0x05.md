@@ -1,6 +1,6 @@
 ---
 
-title: Seminar V
+title: Seminar 0x05
 type: events
 date: 2025-02-26T18:30:00+02:00
 ---

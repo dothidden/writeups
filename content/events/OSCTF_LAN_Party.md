@@ -1,6 +1,4 @@
 ---
-
-
 title: OSCTF LAN Party
 type: events
 date: 2024-07-13T10:00:00+02:00

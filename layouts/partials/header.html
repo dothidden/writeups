@@ -45,6 +45,16 @@
 	{{ $fontstyle := resources.Get "css/fonts.css" | fingerprint }}
         <link href="{{ $fontstyle.Permalink }}" rel="stylesheet">
 	{{ end }}
+		
+	{{ $cssRelPath := "css/custom.css" }}         <!-- relative to assets/ -->
+	{{ $cssFullPath := printf "assets/%s" $cssRelPath }}
+
+	{{ if fileExists $cssFullPath }}
+		{{ $style := resources.Get $cssRelPath | resources.Minify | resources.Fingerprint }}
+		<link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">
+	{{ else }}
+		{{ warnf "CSS file not found: %s" $cssFullPath }}
+	{{ end }}
 
 	{{ $style := resources.Get "css/main.css" | fingerprint }}
 	<link rel="stylesheet" type="text/css" media="screen" href="{{ $style.Permalink }}" />

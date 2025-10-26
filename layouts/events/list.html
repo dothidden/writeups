@@ -4,10 +4,16 @@
 <div class="list">
     <h1 class="page-title">Upcoming Events</h1>
     <ul class="terminal-prefix">
-        {{- range sort (where .Data.Pages "Date" ">" now) "Date" "asc" -}}
-            <li class="nowrap">
-                <time>[{{ .Date | dateFormat "02/01/06" }}]</time>
-                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        {{- $events := sort (where .Data.Pages "Date" ">" now) "Date" "asc" -}}
+        {{- range $index, $event := $events -}}
+            <li class="event-item">
+                <details class="event-details" {{ if eq $index 0 }}open{{ end }} >
+                    <summary class="event-summary">
+                        <time>[{{ $event.Date | dateFormat "02/01/06" }}]</time>
+                        <a>{{ $event.Title }}</a>
+                    </summary>
+                    {{ $event.Content }}
+                </details>
             </li>
         {{- else }}
             <li>No upcoming events.</li>

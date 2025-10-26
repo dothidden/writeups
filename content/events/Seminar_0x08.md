@@ -1,6 +1,6 @@
 ---
 
-title: Seminar VIII
+title: Seminar 0x08
 type: events
 date: 2025-05-28T18:00:00+02:00
 ---

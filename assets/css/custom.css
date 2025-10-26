@@ -1,0 +1,117 @@
+/* Custom code here */
+
+.event-list {
+    padding: 0;
+}
+
+.event-summary {
+    list-style: none;
+    cursor: pointer;
+}
+
+.event-summary::-webkit-details-marker {
+    display: none;
+}
+
+.event-details {
+    padding-top: 0;
+}
+
+.navbar {
+  /* background: #fff; */
+  /* border-bottom: 1px solid #eee; */
+  padding: 1rem;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  /* display: flex;
+  align-items: center; */
+  /* color: #333; */
+}
+
+
+/* Responsive stuff */
+@media (max-width: 600px) {
+  .nav-container {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  .navbar {
+    padding-left: 0;
+    margin-top: 3%;
+  }
+
+  .nav-links {
+    /* flex-direction: column; */
+    /* justify-content: end; */
+    width: 100%;
+    gap: 0.5rem;
+  }
+
+  .nav-links a {
+    display: block;
+    /* width: 100%;
+    padding: 0.5rem 0; */
+  }
+
+  header {
+    display: block;
+  }
+}
+
+
+@media (max-width: 1000px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  thead {
+    display: none; /* hide header */
+  }
+
+  tr {
+    display: block;
+    margin-bottom: 1rem; /* adds space between rows/cards */
+    /* border: 1px solid #ddd; */
+    border-radius: 8px;
+    padding: 0.5rem;
+    /* background: #fff; */
+  }
+
+  td {
+    position: relative;
+    padding-left: 50%;
+    text-align: right;
+    border: 0px solid var(--darkbordercl);
+  }
+
+  td::before {
+    content: attr(data-label); /* use data-label to show header name */
+    position: absolute;
+    left: 0;
+    width: 45%;
+    padding-left: 1rem;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  .label-wrap .label {
+    display: none;
+  }
+}

@@ -1,6 +1,6 @@
 ---
 
-title: Seminar III (Lightning Talks)
+title: Seminar 0x03 (Lightning Talks)
 type: events
 date: 2024-12-18T18:00:00+02:00
 ---
