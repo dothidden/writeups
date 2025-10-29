@@ -62,10 +62,6 @@ add_event() {
 	TARGET="events/$SLUG.md"
 	
 	if [[ "$1" == "seminar" ]]; then
-
-
-	#read -p "Is this event a seminar? (y/n): " IS_SEMINAR
-	#if [[ $IS_SEMINAR =~ ^[Yy]$ ]]; then
 		echo -e "${green}Creating an event page in content/events...${reset}"
 		DATETIME="${DATE}T${HOUR}"
 		export HUGO_EVENT_DATETIME="$DATETIME:00+02:00"
