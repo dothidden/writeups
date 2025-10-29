@@ -275,12 +275,12 @@ footer {
 }
 
 .member-text {
+    word-wrap: break-all;
+    overflow-wrap: anywhere;
     font-size: 0.9em;
 }
 
 /* Common */
-
-
 @media screen and (max-width: 600px) {
     .nowrap {
         white-space: nowrap;

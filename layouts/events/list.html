@@ -1,0 +1,39 @@
+{{ define "main" }}
+
+{{ .Content }}
+<div class="list">
+    <h1 class="page-title">Upcoming Events</h1>
+    <ul class="terminal-prefix">
+        {{- $events := sort (where .Data.Pages "Date" ">" now) "Date" "asc" -}}
+        {{- range $index, $event := $events -}}
+            <li class="event-item">
+                <details class="event-details" {{ if eq $index 0 }}open{{ end }} >
+                    <summary class="event-summary">
+                        <time>[{{ $event.Date | dateFormat "02/01/06" }}]</time>
+                        <a>{{ $event.Title }}</a>
+                    </summary>
+                    {{ $event.Content }}
+                </details>
+            </li>
+        {{- else }}
+            <li>No upcoming events.</li>
+        {{- end }}
+    </ul>
+    
+    <h1 class="page-title">Past Events</h1>
+    <ul class="terminal-prefix">
+        {{- range sort (where .Data.Pages "Date" "<=" now) "Date" "desc" -}}
+            <li class="event-item">
+                <details class="event-details">
+                    <summary class="event-summary">
+                        <time>[{{ .Date | dateFormat "02/01/06" }}]</time>
+                        <a>{{ .Title }}</a>
+                    </summary>
+                    {{ .Content }}
+                </details>
+            </li>
+        {{- end }}
+    </ul>
+</div>
+    
+{{ end }}

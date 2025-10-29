@@ -125,6 +125,8 @@ params:
     - events
   homeWriteupCnt: 10
   katex: true
+  buildFuture: true
+
 
 menu:
   main:

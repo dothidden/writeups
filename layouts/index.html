@@ -15,11 +15,11 @@
                         {{/* Get all ctfs under content/ctfs/ */}}
                         {{ with .Site.GetPage "section" "ctfs" }}
                             {{ range .Sections }}
-                                <li class="nowrap">
+                                <li class="label-wrap">
                                     <time>[{{ .Date | dateFormat "02/01/06" }}]</time>
                                     <a href="{{ .Permalink }}">{{ .Title }}</a>
                                     {{ if and (isset .Params "place") (isset .Params "total") }}
-                                        <span> - {{ .Params.place }}/{{ .Params.total }}</span>
+                                        <span class="label"> - {{ .Params.place }}/{{ .Params.total }}</span>
                                     {{ end }}
                                 </li>
                             {{ end }}
@@ -45,9 +45,10 @@
                 {{/* Get the parent CTF section (the subfolder name under ctfs/) */}}
                 {{ $ctf := .Parent }}
                 <div>
-                    <h3 class="nowrap">
-                    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-                    <span>[{{ $ctf.Title }}]</span>
+                    <h3 class="label-wrap">
+                    <!-- <h3> -->
+                        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                        <span class="label">[{{ $ctf.Title }}]</span>
                     </h3>
                 </div>
                 {{ end }}
