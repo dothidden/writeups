@@ -56,7 +56,7 @@ One interesting chain of API calls were:
 
 I was most interested in the `WriteFile` call since that's most likely the function that changes the bytes in the new binary. This is also a nice shortcut in RE since we can get the address where `WriteFile` is called.
 
-![ch4-api_monitor-writefile](images/FlareOn12_2025/ch4-api_monitor-writefile.png)
+![ch4-api_monitor-writefile](/images/FlareOn12_2025/ch4-api_monitor-writefile.png)
 
 The official writeup suggests it's easier to find the main function by searching for the string `"Unholy-"` in Ghidra, which also works. I personally prefer the API Monitor approach because we can see which function called the API and then inspect the function call trees in Ghidra to see where it's referenced.
 
