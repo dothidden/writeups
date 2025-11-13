@@ -9,7 +9,6 @@ tags:
 draft: false
 ---
 
-# Challenge 5 (ntfsm)
 
 We get a really big Windows executable in this challenge.  
 It's most likely this big because of the jump table:  

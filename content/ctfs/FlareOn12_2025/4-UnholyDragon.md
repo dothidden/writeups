@@ -9,7 +9,6 @@ tags:
 draft: false
 ---
 
-# Challenge 4 (UnholyDragon)
 
 ## Cheese
 For this challenge we get a Windows executable (`UnholyDragon-150.exe`).  

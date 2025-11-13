@@ -9,7 +9,6 @@ tags:
 draft: false
 ---
 
-# Challenge 1 (Drill Baby Drill!)
 
 The first challenge in Flare-On starts with a game where the source code is provided.
 

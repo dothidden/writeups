@@ -9,7 +9,6 @@ tags:
 draft: false
 ---
 
-# Challenge 3 (pretty_devilish_file)
 
 I didn't really enjoy this challenge since it was pretty guessy.
 In this challenge we only receive a PDF file.

@@ -10,7 +10,6 @@ tags:
 draft: false
 ---
 
-# Challenge 6 (chain_of_demands)
 
 While I didn't solve this challenge, I feel I was pretty close but got sidetracked down a rabbit hole.  
 For this challenge we get a Linux executable. When running it we get a console application that acts as a chat client.  

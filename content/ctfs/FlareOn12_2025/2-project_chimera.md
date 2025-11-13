@@ -9,7 +9,6 @@ tags:
 draft: false
 ---
 
-# Challenge 2 (project_chimera)
 
 For the second challenge we receive a python file only.
 The file is pretty small:
