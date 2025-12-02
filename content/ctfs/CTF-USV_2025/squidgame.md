@@ -304,7 +304,7 @@ The VM was broken, after a simple restart everything works.
 ![Root Shell](/images/usv_ctf-2025/root-shell.png)
 
 NOOOO! WAIT, do you think, we forgot about task 5 ???? 
-N0pe, after reset, flag 5 was in SMTP via MESSAGE command. 
+Nope, after reset, flag 5 was in SMTP via MESSAGE command. 
 
 **Flag 5:** `flag{m4sk3d_m4n_c0ntr0l_3ntry}`
 
