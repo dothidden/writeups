@@ -1,21 +1,22 @@
 {{ define "main" }}
-<h1 class="page-title">{{.Title}} - all writeups</h1>
-<ul class="terminal-prefix">
-    {{ if eq (len .Data.Pages) 0 }}
-    <p class="sorry-message">Sorry, we couldn't be bothered to write any solutions for this one 😢.</p>
-    <section class="sorry-section">
-    <img src="{{- $.Site.LanguagePrefix | absURL -}}images/others/meme_lost.gif" alt="sorry" class="sorry-image">
-    </section>
-    {{ else }}
-        {{- range sort .Data.Pages "Title" "asc" -}}
-        <li>
-            <a href="{{ .RelPermalink }}">{{.Title}}</a>
-            {{- if .Draft -}}
-            <span class="draft-label">DRAFT</span>
-            {{- end -}}</span>
+<h1 class="title"> All CTFs we took part in </h1>
 
-        </li>
-        {{- end -}}
-</ul>
-{{ end }}
+<section>
+    <ul class="terminal-prefix">
+        {{/* Get all ctfs under content/ctfs/ */}}
+        {{ with .Site.GetPage "section" "ctfs" }}
+            {{ range .Sections }}
+                <li class="label-wrap">
+                    <time>[{{ .Date | dateFormat "02/01/06" }}]</time>
+                    <a href="{{ .Permalink }}">{{ .Title }}</a>
+                    {{ if and (isset .Params "place") (isset .Params "total") }}
+                        <span class="label"> - {{ .Params.place }}/{{ .Params.total }}</span>
+                    {{ end }}
+                </li>
+            {{ end }}
+        {{ else }}
+            <li>No CTFs found.</li>
+        {{ end }}
+    </ul>
+</section>
 {{ end }}

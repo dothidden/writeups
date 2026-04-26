@@ -2,10 +2,11 @@
 	<div class="main">
 		<a class="logo" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
 	</div>
-	<!-- <nav style="display:flex;"> -->
+
 	<nav class="navbar">
 		<div class="navbar-container">
 			<ul class="nav-links">
+				<!-- .Site variables are in config.yaml -->
 				{{ range .Site.Menus.main }}
 				<li><a href="{{ .URL }}">{{ .Name }}</a></li>
 				{{ end }}

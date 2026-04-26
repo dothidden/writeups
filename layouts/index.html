@@ -8,13 +8,30 @@
             <div class="spacer"></div>
 
 			<main class="list">
-                <h1 class="title"> Past CTFs we took part in </h1>
 
+                <!-- Edited from /layouts/events/list.html -->
+                <h1 class="title">Upcoming events</h1>
+                <ul class="terminal-prefix">
+                    {{- $events := sort (where (where site.RegularPages "Section" "events") "Date" ">" now) "Date" "asc" -}}
+                    {{- range $index, $event := $events -}}
+                        <li class="event-item">
+                            <summary class="event-summary">
+                                <time>[{{ $event.Date | dateFormat "02/01/06" }}]</time>
+                                <a href="{{ $event.RelPermalink }}">{{ $event.Title }}</a>
+                            </summary>
+                            {{ $event.Content }}
+                        </li>
+                    {{- else }}
+                        <li>No upcoming events.</li>
+                    {{- end }}
+                </ul>
+
+                <h1 class="title">Recent CTFs we took part in</h1>
                 <section>
                     <ul class="terminal-prefix">
                         {{/* Get all ctfs under content/ctfs/ */}}
                         {{ with .Site.GetPage "section" "ctfs" }}
-                            {{ range .Sections }}
+                            {{ range first 5 .Sections }}
                                 <li class="label-wrap">
                                     <time>[{{ .Date | dateFormat "02/01/06" }}]</time>
                                     <a href="{{ .Permalink }}">{{ .Title }}</a>
@@ -29,7 +46,7 @@
                     </ul>
                 </section>
 
-               <h1 class="title"> Most recent writeups </h1>
+               <h1 class="title"> Latest writeups </h1>
 
                 {{/* Get all writeups under content/ctfs/ */}}
                 {{ $writeups := where .Site.RegularPages "Section" "ctfs" }}
@@ -39,19 +56,21 @@
                 {{ if .Site.Params.excludedSections }}
                 {{ $filtered = where $writeups "Type" "not in" .Site.Params.excludedSections }}
                 {{ end }}
+                <ul class="terminal-prefix">
+                    {{/* Limit to recent N writeups (default: 5) */}}
+                    {{ range first (.Site.Params.HomeWriteupCnt | default 5) $filtered }}
+                        {{/* Get the parent CTF section (the subfolder name under ctfs/) */}}
+                        {{ $ctf := .Parent }}
 
-                {{/* Limit to recent N writeups (default: 5) */}}
-                {{ range first (.Site.Params.HomeWriteupCnt | default 5) $filtered }}
-                {{/* Get the parent CTF section (the subfolder name under ctfs/) */}}
-                {{ $ctf := .Parent }}
-                <div>
-                    <h3 class="label-wrap">
-                    <!-- <h3> -->
-                        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-                        <span class="label">[{{ $ctf.Title }}]</span>
-                    </h3>
-                </div>
-                {{ end }}
+                        <li class="label-wrap">
+                            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                            <span class="label">[{{ $ctf.Title }}]</span>
+                        </li>
+                    {{ end }}
+                </ul>
+            
+            
+
 			</main>
 			{{ partial "footer.html" . }}
 		</div>
