@@ -150,7 +150,7 @@ menu:
     #   weight: 3
     - name: About
       url: /about
-      weight: 5
+      weight: 4
 
 markup:
   goldmark:
