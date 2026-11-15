@@ -1,4 +1,7 @@
 {{ define "main" }}
+
+{{.Content}}
+
 <h1 class="page-title">Past CTFs we took part in </h1>
 <ul class="terminal-prefix">
     {{/* Get all ctfs under content/ctfs/ */}}
@@ -16,4 +19,28 @@
         <li>No CTFs found.</li>
     {{ end }}
 </ul>
+
+<h1 class="title"> Most recent writeups </h1>
+
+{{/* Get all writeups under content/ctfs/ */}}
+{{ $writeups := where .Site.RegularPages "Section" "ctfs" }}
+
+{{/* Optionally exclude certain sections if needed (like drafts or tags) */}}
+{{ $filtered := $writeups }}
+{{ if .Site.Params.excludedSections }}
+{{ $filtered = where $writeups "Type" "not in" .Site.Params.excludedSections }}
+{{ end }}
+
+{{/* Limit to recent N writeups (default: 5) */}}
+{{ range first (.Site.Params.HomeWriteupCnt | default 5) $filtered }}
+{{/* Get the parent CTF section (the subfolder name under ctfs/) */}}
+{{ $ctf := .Parent }}
+<div>
+    <h3 class="label-wrap">
+    <!-- <h3> -->
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        <span class="label">[{{ $ctf.Title }}]</span>
+    </h3>
+</div>
+{{ end }}
 {{ end }}
