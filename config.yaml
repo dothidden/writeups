@@ -2,6 +2,7 @@ baseURL: https://dothidden.xyz/
 languageCode: en-us
 title: .hidden
 buildDrafts: true
+buildFuture: true
 copyright: .hidden
 titleCaseStyle: none
 
@@ -131,7 +132,6 @@ params:
     - events
   homeWriteupCnt: 10
   katex: true
-  buildFuture: true
 
 
 menu:
