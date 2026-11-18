@@ -1,10 +1,33 @@
+{{ $events := where .Site.RegularPages "Section" "events" }}
+{{ $upcoming := where $events "Date" "ge" now }}
+{{ $selected := first 1 (sort $upcoming "Date" "asc") }}
+
+{{ if eq (len $selected) 0 }}
+    {{ $selected = first 1 (sort $events "Date" "desc") }}
+{{ end }}
+
+
 <!DOCTYPE html>
 <html>
     {{ partial "header.html" . }}
     <body class="background-logo">
         <div class="content">
             {{ partial "head.html" . }}
-            
+
+            {{ .Content }}
+
+            {{ with index $selected 0 }}
+            <section class="featured-event">
+                {{ if ge .Date now }}
+                    <h2>Upcoming seminar</h2>
+                {{ else }}
+                    <h2>Latest seminar</h2>
+                {{ end }}
+
+                <p>{{ .Summary }}</p>
+            </section>
+            {{ end }}
+                    
             {{ partial "footer.html" . }}
         </div>
         
