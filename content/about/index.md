@@ -5,10 +5,14 @@ type: about
 draft: false
 ---
 
-# About the team
+# About us
 
-Email us at: `Y29udGFjdEBkb3RoaWRkZW4ueHl6Cg==`
+.hidden was born on the 28th of April 2023, once four of us randomly decided
+to take part in a CTF competition. It all took off from there. Nowadays, the
+team has grown, and also branched off into various non-CTF directions.
 
-We would love to expand the team!
+Contact us at: `Y29udGFjdEBkb3RoaWRkZW4ueHl6Cg==`
+
+We would love if if you joined us!
 
 You can find *contributing* members of the community below.
