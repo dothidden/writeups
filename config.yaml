@@ -136,7 +136,7 @@ params:
 
 menu:
   main:
-    - name: Home
+    - name: Home # Do we really need this?
       url: /
       weight: 1
     - name: CTFs
@@ -145,9 +145,6 @@ menu:
     - name: Events
       url: /events
       weight: 3
-    # - name: Tags
-    #   url: /tags
-    #   weight: 3
     - name: About
       url: /about
       weight: 4
