@@ -4,7 +4,9 @@
     <body class="background-logo">
         <div class="content">
         {{- partial "head.html" . -}}
+        <div class="page-main">
         {{- block "main" . }}{{- end }}
+        </div>
         {{- partial "footer.html" . -}}
         </div>
     </body>
