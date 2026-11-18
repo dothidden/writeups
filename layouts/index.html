@@ -14,20 +14,22 @@
         <div class="content">
             {{ partial "head.html" . }}
 
-            {{ .Content }}
+            <main class="page-main">
+                {{ .Content }}
 
-            {{ with index $selected 0 }}
-            <section class="featured-event">
-                {{ if ge .Date now }}
-                    <h2>Upcoming seminar</h2>
-                {{ else }}
-                    <h2>Latest seminar</h2>
+                {{ with index $selected 0 }}
+                <section class="featured-event">
+                    {{ if ge .Date now }}
+                        <h2>Upcoming seminar</h2>
+                    {{ else }}
+                        <h2>Latest seminar</h2>
+                    {{ end }}
+
+                    <p>{{ .Summary }}</p>
+                </section>
                 {{ end }}
+            </main>
 
-                <p>{{ .Summary }}</p>
-            </section>
-            {{ end }}
-                    
             {{ partial "footer.html" . }}
         </div>
         
