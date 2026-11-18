@@ -1,14 +1,24 @@
 # Who are we?
 
-[.hidden](/about) (dot-hidden) is a community of students from the [University of
-Bucharest](https://fmi.unibuc.ro), passionate about hacking and cybersecurity.
+**.hidden** (pronounced "dot hidden") is a community of
+[hackers](https://en.wikipedia.org/wiki/Hacker_culture) - as in "individuals who
+enjoy the technical challenge of creatively overcoming the limitations of
+software systems and electronic hardware, to achieve novel and clever outcomes".
 
-We formed the team on the 28th of April 2023, once we randomly decided to take
-part in a CTF competition. It all took off from there. Nowadays, the team has [grown](/about)
-quite a bit, and we are always looking for new members to join us in our journey.
+Most (but not all) of us are either students or graduates from the [University
+of Bucharest](https://fmi.unibuc.ro), which hosts our in-person events. 
 
-Our goal is to contribute to the local CTF and hacking scene by learning and
-sharing our experiences with students of the University, as well as anyone else
-that wants to join in on the fun.
+Our goal is to contribute to the local CTF and hacking scene by collectively
+learning and sharing our experiences with students of the University, as well as
+anyone else that wants to join in on the fun.
 
-Our biggest event is the [.hidden seminar](/events), which we try to hold monthly and gather the local hacking community to share knowledge and experiences. Anyone is welcome to join and hold a talk, regardless of the technical level. See you there!
+See more about us on the [about](/about) page.
+
+# Events
+
+Our biggest event is the [.hidden seminar](/events), which is a monthly
+community meetup which gathers the local hacking community to share knowledge
+and experiences. Anyone is welcome to attend and even give a talk, regardless of
+the technical level. 
+
+Join us! We're waiting for you!
