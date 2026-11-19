@@ -2,6 +2,7 @@ baseURL: https://dothidden.xyz/
 languageCode: en-us
 title: .hidden
 buildDrafts: true
+buildFuture: true
 copyright: .hidden
 titleCaseStyle: none
 
@@ -131,23 +132,19 @@ params:
     - events
   homeWriteupCnt: 10
   katex: true
-  buildFuture: true
 
 
 menu:
   main:
-    - name: Home
-      url: /
+    - name: CTFs
+      url: /ctfs
       weight: 1
     - name: Events
       url: /events
       weight: 2
-    - name: Tags
-      url: /tags
-      weight: 3
     - name: About
       url: /about
-      weight: 4
+      weight: 3
 
 markup:
   goldmark:

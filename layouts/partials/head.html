@@ -1,19 +1,20 @@
 <header>
-	<div class="main">
-		<a class="logo" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
-	</div>
-	<!-- <nav style="display:flex;"> -->
-	<nav class="navbar">
-		<div class="navbar-container">
-			<ul class="nav-links">
-				{{ range .Site.Menus.main }}
-				<li><a href="{{ .URL }}">{{ .Name }}</a></li>
-				{{ end }}
-				{{ if eq .Site.Params.mode "toggle" -}}
-				| <span id="dark-mode-toggle" onclick="toggleTheme()"></span>
-				<script src="{{ .Site.BaseURL }}js/themetoggle.js"></script>
-				{{ end }}
-			</ul>
-		</div>
-	</nav>
+    <div class="main">
+        <a class="logo" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+    </div>
+
+    <nav class="navbar">
+        <div class="navbar-container">
+            <ul class="nav-links">
+                <!-- .Site variables are in config.yaml -->
+                {{ range .Site.Menus.main }}
+                <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                {{ end }}
+                {{ if eq .Site.Params.mode "toggle" -}}
+                | <span id="dark-mode-toggle" onclick="toggleTheme()"></span>
+                <script src="{{ .Site.BaseURL }}js/themetoggle.js"></script>
+                {{ end }}
+            </ul>
+        </div>
+    </nav>
 </header>
