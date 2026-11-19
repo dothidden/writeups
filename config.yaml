@@ -136,18 +136,15 @@ params:
 
 menu:
   main:
-    - name: Home # Do we really need this?
-      url: /
-      weight: 1
     - name: CTFs
       url: /ctfs
-      weight: 2
+      weight: 1
     - name: Events
       url: /events
-      weight: 3
+      weight: 2
     - name: About
       url: /about
-      weight: 4
+      weight: 3
 
 markup:
   goldmark:
