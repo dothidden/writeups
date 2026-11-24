@@ -13,6 +13,6 @@ team has grown, and also branched off into various non-CTF directions.
 
 Contact us at: `Y29udGFjdEBkb3RoaWRkZW4ueHl6Cg==`
 
-We would love if if you joined us!
+We would love it if you joined us!
 
 You can find *contributing* members of the community below.
